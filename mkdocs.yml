@@ -1,0 +1,10 @@
+site_name: Ucupaint
+theme: readthedocs
+nav:
+  - Starting :
+    - Introduction : 00.introduction.md
+    - Quick Setup : 01.quick-setup.md
+  
+  - Main :
+    - Channels : 02.channels.md
+    - Layers : 03.layers.md
