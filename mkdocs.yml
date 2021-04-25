@@ -5,6 +5,10 @@ nav:
     - Introduction : 00.introduction.md
     - Quick Setup : 01.quick-setup.md
   
-  - Main :
+  - Channels:
     - Channels : 02.channels.md
-    - Layers : 03.layers.md
+  
+  - Layers :
+    - Layers : 03.00.layers.md
+    - Layer Operation : 03.01.layer-operation.md
+    - Layer Type : 03.02.layer-type.md
