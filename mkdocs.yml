@@ -7,8 +7,8 @@ nav:
   
   - Channels:
     - Channels : 02.00.channels.md
-    - Channel Operation : 02.01.channels-operation.md
-    - Channel Type : 02.02.channels-type.md
+    - Channel Operation : 02.01.channel-operation.md
+    - Channel Type : 02.02.channel-type.md
   
   - Layers :
     - Layers : 03.00.layers.md
