@@ -6,7 +6,9 @@ nav:
     - Quick Setup : 01.quick-setup.md
   
   - Channels:
-    - Channels : 02.channels.md
+    - Channels : 02.00.channels.md
+    - Channel Operation : 02.00.channels.md
+    - Channel Type : 02.00.channels.md
   
   - Layers :
     - Layers : 03.00.layers.md
