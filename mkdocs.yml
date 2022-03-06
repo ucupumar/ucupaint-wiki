@@ -1,21 +1,30 @@
-site_name: Ucupaint
+site_name: PAINTERy
 theme: readthedocs
 nav:
-  - Starting :
+  - PAINTERy :
     - Introduction : 00.introduction.md
     - Quick Setup : 01.quick-setup.md
-  
-  - Channels:
-    - Channels : 02.00.channels.md
-    - Channel Operation : 02.01.channel-operation.md
-    - Channel Type : 02.02.channel-type.md
-  
-  - Layers :
-    - Layers : 03.00.layers.md
-    - Layer Operation : 03.01.layer-operation.md
-    - Layer Type : 03.02.layer-type.md
-
-  - Modifier : 
-    - Modifier : 04.00.modifier.md
-    - Modifier Operation : 04.01.modifier-operation.md
-    - Modifier Type : 04.02.modifier-type.md
+    - Channels:
+      - Channels : 02.00.channels.md
+      - Channel Operation : 02.01.channel-operation.md
+      - Channel Type : 02.02.channel-type.md
+      - Channel Modifier : 02.03.channel-modifier.md
+    - Layers :
+      - Layers : 03.00.layers.md
+      - Layer Operation : 03.01.layer-operation.md
+      - Layer Type : 03.02.layer-type.md
+      - Layer Modifier : 03.03.layer-modifier.md
+      - Layer Channel :
+        - Layer Channel : 03.04.00.layer-channel.md
+        - Layer Channel Modifier : 03.04.01.layer-channel-modifier.md
+      - Layer Mask : 
+        - Layer Mask : 03.05.00.layer-mask.md
+        - Layer Mask Operation : 03.05.01.layer-mask-operation.md
+        - Layer Mask Type : 03.05.02.layer-mask-type.md
+        - Layer Mask Modifier : 03.05.03.layer-mask-modifier.md
+    - Modifier : 
+      - Modifier : 04.00.modifier.md
+      - Modifier Operation : 04.01.modifier-operation.md
+      - Modifier Type : 04.02.modifier-type.md
+  - Tutorial :
+    - test : tuts.01.md
