@@ -2,7 +2,6 @@ site_name: PAINTERy
 theme: readthedocs
 nav:
   - PAINTERy :
-    - Introduction : 00.introduction.md
     - Quick Setup : 01.quick-setup.md
     - Channels:
       - Channels : 02.00.channels.md
