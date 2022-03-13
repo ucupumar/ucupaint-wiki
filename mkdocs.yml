@@ -1,8 +1,15 @@
 site_name: PAINTERy
 theme: readthedocs
 nav:
-  - PAINTERy :
-    - Quick Setup : 01.quick-setup.md
+  - Tutorial :
+    - Quick Setup : 01.00.quick-setup.md
+    - Default channels : 01.01.default-channels.md 
+    - Creating layers : 01.02.creating-layers.md
+    - Setting up layer channel : 01.03.setting-up-layer-channel.md
+    - Masking layers : 01.04.masking-layers.md
+    - Add modifiers : 01.05.add-masking.md
+    - Bake your material : 01.06.bake-material.md
+  - UI :
     - Channels:
       - Channels : 02.00.channels.md
       - Channel Operation : 02.01.channel-operation.md
@@ -25,5 +32,5 @@ nav:
       - Modifier : 04.00.modifier.md
       - Modifier Operation : 04.01.modifier-operation.md
       - Modifier Type : 04.02.modifier-type.md
-  - Tutorial :
-    - test : tuts.01.md
+  # - Tutorial :
+  #   - test : tuts.01.md
