@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Layer Operation - UCUPAINT</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Layer Operation";
+    var mkdocs_page_input_path = "03.01.layer-operation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> UCUPAINT</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Tutorial</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.01.default-channels/">Default channels</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.02.creating-layers/">Creating layers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.03.setting-up-layer-channel/">Setting up layer channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.04.masking-layers/">Masking layers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.05.add-masking/">Add modifiers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.06.bake-material/">Bake your material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">UI</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="#">Channels</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../02.00.channels/">Channels</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../02.01.channel-operation/">Channel Operation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../02.02.channel-type/">Channel Type</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../02.03.channel-modifier/">Channel Modifier</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Layers</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../03.00.layers/">Layers</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Layer Operation</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#create">Create</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#move">Move</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete">Delete</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#advance-layer-operation">Advance Layer Operation</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#merge-layer">Merge Layer</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#layer-only-viewer">Layer Only Viewer</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#resize-image">Resize Image</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack-image">Pack Image</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#save-image">Save Image</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unpack-as-image">Unpack As Image</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#reload-image">Reload Image</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#invert-image">Invert Image</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../03.02.layer-type/">Layer Type</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../03.03.layer-modifier/">Layer Modifier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Layer Channel</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../03.04.00.layer-channel/">Layer Channel</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../03.04.01.layer-channel-modifier/">Layer Channel Modifier</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Layer Mask</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../03.05.00.layer-mask/">Layer Mask</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../03.05.01.layer-mask-operation/">Layer Mask Operation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../03.05.02.layer-mask-type/">Layer Mask Type</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../03.05.03.layer-mask-modifier/">Layer Mask Modifier</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Modifier</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../04.00.modifier/">Modifier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../04.01.modifier-operation/">Modifier Operation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../04.02.modifier-type/">Modifier Type</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">UCUPAINT</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>UI &raquo;</li>
+        
+      
+        
+          <li>Layers &raquo;</li>
+        
+      
+    
+    <li>Layer Operation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="layer-operation">Layer Operation</h1>
+<h2 id="create">Create</h2>
+<p><img alt="00" src="../source/03.layers/00.gif" /></p>
+<p>We can create layer using the <img alt="01" src="../source/03.layers/01.png" />  button with different <a href="/03.layers/#layer_type">layer type</a>. In this case we create new image layer.</p>
+<h2 id="move">Move</h2>
+<p><img alt="02" src="../source/03.layers/02.gif" /></p>
+<p>Moving selected layer, can be done using the <img alt="03" src="../source/03.layers/03.png" /> button. <img alt="04" src="../source/03.layers/04.png" /> for moving up the layer, and <img alt="05" src="../source/03.layers/05.png" /> to bring the layer down.</p>
+<h2 id="delete">Delete</h2>
+<p><img alt="06" src="../source/03.layers/06.gif" /></p>
+<p><img alt="07" src="../source/03.layers/07.png" /> button can be used for deleting selected layer.</p>
+<h2 id="advance-layer-operation">Advance Layer Operation</h2>
+<p>We have some advance layer operation, most of the operation is work just for image layer type. So don't be suprised if the operation might be disabled in some layer type.</p>
+<p>Some of operation can be found in layer special menu.</p>
+<p><img alt="13" src="../source/03.layers/13.png" /></p>
+<h3 id="merge-layer">Merge Layer</h3>
+<p><img alt="08" src="../source/03.layers/08.gif" /></p>
+<p>Using merge layer, we can merge selected layer with the upper or lower layer. In this current version, merge layer operation have some limitation :</p>
+<ol>
+<li>Merge layer is only work in image layer type</li>
+<li>Merge layer is only support to merge one layer channel. So if you have different texture in each layer channels, only the selected layer channel will be merged.</li>
+</ol>
+<h3 id="layer-only-viewer">Layer Only Viewer</h3>
+<p><img alt="09" src="../source/03.layers/09.gif" /></p>
+<p>Layer Only Viewer is preview of the active layer only, there are two ways to do this operation. </p>
+<ol>
+<li>using the <img alt="10" src="../source/03.layers/10.png" /> button on the top of layer list.</li>
+<li>using the <img alt="11" src="../source/03.layers/11.png" /> check box in layer special menu <img alt="12" src="../source/03.layers/12.png" />.</li>
+</ol>
+<h3 id="resize-image">Resize Image</h3>
+<p>Resize Image operation can be usefull for resizing your texture.</p>
+<h3 id="pack-image">Pack Image</h3>
+<p>Pack Image operation is doing <a href="https://docs.blender.org/manual/en/latest/files/blend/packed_data.html#pack-data">Blender Pack Data</a>.</p>
+<h3 id="save-image">Save Image</h3>
+<p>Saving your edited image texture.</p>
+<h3 id="unpack-as-image">Unpack As Image</h3>
+<p>Unpack Image Operation is doing <a href="https://docs.blender.org/manual/en/latest/files/blend/packed_data.html#unpack-data">Blender Unpack Data</a>.</p>
+<h3 id="reload-image">Reload Image</h3>
+<p>We can reload the image texture, meant for reloading the image texture if we make changes outside Blender.</p>
+<h3 id="invert-image">Invert Image</h3>
+<p>-</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../03.02.layer-type/" class="btn btn-neutral float-right" title="Layer Type">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../03.00.layers/" class="btn btn-neutral" title="Layers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../03.00.layers/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../03.02.layer-type/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
