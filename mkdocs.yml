@@ -1,0 +1,27 @@
+site_name: UCUPAINT
+site_description : Ucupaint is Blender addon to manage texture as layers for Eevee and Cycles renderer.
+theme: 
+  name : readthedocs
+  icon:
+    admonition:
+      <type>: <icon>
+nav:
+  - Quick Setup : 01.00.quick-setup.md
+  - Channel : 01.01.channel.md 
+  - Layer : 01.02.layer.md
+  - Layer Channel : 01.03.layer-channel.md
+  - Mask : 01.04.mask.md
+  - Modifier : 01.05.modifier.md
+  - Preview Mode : 01.06.preview-mode.md
+  - Bake to Layer : 01.07.bake-to-layer.md
+  - Transfer UV : 01.08.transfer-uv.md
+  - Bake Channels : 01.09.bake-Channels.md
+plugins:
+  - mkdocs-video:
+      css_style:
+        width: "650px"
+        height: "500px"
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
