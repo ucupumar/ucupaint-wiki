@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Bake to Layer - UCUPAINT</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Bake to Layer";
+        var mkdocs_page_input_path = "01.07.bake-to-layer.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> UCUPAINT
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.01.channel/">Channel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.02.layer/">Layer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.03.layer-channel/">Layer Channel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.04.mask/">Mask</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.05.modifier/">Modifier</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.06.preview-mode/">Preview Mode</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Bake to Layer</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rebake-layer">Rebake Layer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rebake-using-overwrite">Rebake using Overwrite</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rebake-using-rebake-button">Rebake using rebake button</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#baked-texture-types">Baked Texture Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ao">AO</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pointiness">Pointiness</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cavity">Cavity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dust">Dust</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#paint-base">Paint Base</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bevel-normal">Bevel Normal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bevel-grayscale">Bevel Grayscale</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multires-normal">Multires Normal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multires-displacement">Multires Displacement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-objects-normal">Other Objects Normal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#other-objects-emission">Other Objects Emission</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selected-vertices">Selected Vertices</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-Channels/">Bake Channels</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">UCUPAINT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Bake to Layer</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="bake-to-layer">Bake to Layer</h1>
+<p>When creating new layer, there are options to bake textures to layer. The process can take a while depending on your system. You can see how to do it on the video below.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.10.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Bake AO to layer</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h2 id="rebake-layer">Rebake Layer</h2>
+<p>After you edit the mesh or the scene, sometimes you want to rebake the layer, there are two ways to do it.</p>
+<h3 id="rebake-using-overwrite">Rebake using Overwrite</h3>
+<p>If you try to add ambient occlusion layer again, it will gives you option to overwrite the currently available ambient occlusion layer. It's turned on by default so be aware of that.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.08.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Using Overide Option</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="rebake-using-rebake-button">Rebake using rebake button</h3>
+<p>You can also use rebake button on the layer source panel.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.09.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Using Rebake Menu</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h2 id="baked-texture-types">Baked Texture Types</h2>
+<p>There are several texture types that can be baked to a layer:</p>
+<h3 id="ao">AO</h3>
+<p>AO (Ambient Occlusion) can darken the valley or crease of your mesh. You can use options such as distance and local only.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.01.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">AO</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="pointiness">Pointiness</h3>
+<p>Pointiness will show you valley and ridge of your meshes. Since it need a lot of precision, by default, baking pointiness will use 32-bit float image as a target.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.02.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Pointiness</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="cavity">Cavity</h3>
+<p>Similar to pointiness, cavity will shows valley and ridge of your meshes but with clearer distinction, it also only use standard 8bit image by default, so it won't take a lot of space.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.03.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Cavity</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="dust">Dust</h3>
+<p>Dust is similar to the cavity map but adds additional Z top normals to the mix.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.04.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Dust</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="paint-base">Paint Base</h3>
+<p>Sometimes also referred to Blizzard or Dota diffuse map. This bake combines a dirt map with vertical gradient and top facing normals with a highlight. Credits to Danyl Bekhoucha for the shader setup.
+This bake is a good starting point for character texture maps.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.05.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Paint Base</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="bevel-normal">Bevel Normal</h3>
+<p>Bevel normal map in tangent space. This will bake bevel on sharp edges.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.06.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Bevel Normal</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="bevel-grayscale">Bevel Grayscale</h3>
+<p>Grayscale bevel of the meshes.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="AO" src="../source/08.bake.07.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Bevel Grayscale</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="multires-normal">Multires Normal</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.11.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Multiers Normal</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="multires-displacement">Multires Displacement</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.12.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Multiers Displacement</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="other-objects-normal">Other Objects Normal</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.13.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Other Objects Normal</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="other-objects-emission">Other Objects Emission</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.14.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Other Objects Emission</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="selected-vertices">Selected Vertices</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/08.bake.15.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Selected Vertices</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01.06.preview-mode/" class="btn btn-neutral float-left" title="Preview Mode"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../01.08.transfer-uv/" class="btn btn-neutral float-right" title="Transfer UV">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../01.06.preview-mode/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../01.08.transfer-uv/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

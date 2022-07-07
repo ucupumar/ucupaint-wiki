@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Modifier - UCUPAINT</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Modifier";
+        var mkdocs_page_input_path = "01.05.modifier.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> UCUPAINT
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.01.channel/">Channel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.02.layer/">Layer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.03.layer-channel/">Layer Channel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.04.mask/">Mask</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Modifier</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#adding-modifier-quick-guide">Adding Modifier (Quick Guide)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modifier-types">Modifier types</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modifier-orders">Modifier orders</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#transition">Transition</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.06.preview-mode/">Preview Mode</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.07.bake-to-layer/">Bake to Layer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-Channels/">Bake Channels</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">UCUPAINT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Modifier</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="modifier">Modifier</h1>
+<p>Modifier is useful to add non destructive effect to a layer, mask, layer channel, or the main channel itself.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Pic: Modifier menu location, legend channel modifier, layer modifer, layer channel modifier, mask modifier" src="../source/06.modifier.01.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Various modifier menu locations</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<p>Keep in mind that not all modifier types are available in each place. For example, there are only three modifiers on the mask modifier (Invert, Ramp, and Curve).</p>
+<h2 id="adding-modifier-quick-guide">Adding Modifier (Quick Guide)</h2>
+<p>Let's try to add a modifier on the color channel. You can see more details about modifier here (link 6.2). For now we will try using RGB Curve modifier.</p>
+<p>|<img alt="pic : Add modifier menu popup, point on RGB Curve" src="../source/06.modifier.02.png" />|</p>
+<p>With the RGB curve modifier applied, you can adjust the output of the color channel with the curve.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic : gif, try adjust the RGB curve modifier" src="../source/06.modifier.03.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Adjusting color with RGB Curve modifier</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h2 id="modifier-types">Modifier types</h2>
+<ul>
+<li>Invert: will invert selectable rgb and alpha value</li>
+<li>RGB to Intensity: will make your rgb of your layer to intensity/alpha and replace layer rgb value itself to single color.</li>
+<li>Intensity to RGB: will make your alpha of your layer to rgb and replace layer alpha value itself to solid value</li>
+<li>Color Ramp: will use layer rgb value to a color ramp</li>
+<li>RGB Curve: will tweak your rgb value using curve</li>
+<li>Hue Saturation: will tweak your rgb value using hue and saturation parameter</li>
+<li>Brightness Contrast: will tweak your rgb value using brightness and contrast parameter</li>
+<li>Math: will tweak your rgb and alpha value using math operation</li>
+</ul>
+<h2 id="modifier-orders">Modifier orders</h2>
+<p>Be aware if you have more than one modifier, modifier order will affects the result. The order is from bottom to top, so the top modifier will be executed last. You can edit modifier order using this menu.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: Modifier menu" src="../source/06.modifier.04.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Menu for reordering modifier</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h2 id="transition">Transition</h2>
+<p>Transition is special modifier that can be only added on normal layer channel, but will affect other channels.</p>
+<!-- Need more explanation -->
+
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/06.modifier.05.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Transition Bump</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01.04.mask/" class="btn btn-neutral float-left" title="Mask"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../01.06.preview-mode/" class="btn btn-neutral float-right" title="Preview Mode">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../01.04.mask/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../01.06.preview-mode/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Channel - UCUPAINT</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Channel";
+        var mkdocs_page_input_path = "01.01.channel.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> UCUPAINT
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Channel</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creating-new-channel">Creating New Channel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#channel-types">Channel Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rgb">RGB</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#value">Value</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#normal">Normal</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#smooth-bump">Smooth Bump</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#parallax">Parallax</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#displacement">Displacement</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.02.layer/">Layer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.03.layer-channel/">Layer Channel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.04.mask/">Mask</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.05.modifier/">Modifier</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.06.preview-mode/">Preview Mode</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.07.bake-to-layer/">Bake to Layer</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-Channels/">Bake Channels</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">UCUPAINT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Channel</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="channel">Channel</h1>
+<p>Channel on Ucupaint represents the input and output of Ucupaint node. </p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="02.channel-overview.01" src="../source/02.channel-overview.01.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Ucupaint channels represents the IO on the actual node</td>
+</tr>
+</tbody>
+</table>
+<p><br/>
+One channel have at least one input and one output, but channel like normal can have multiple outputs at the end. The base color/value of the channel actually is the default input of the node, as demonstarated on the gif below</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="02.channel-overview.02" src="../source/02.channel-overview.02.gif" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Base color/value of a channel corresponds the input of the node</td>
+</tr>
+</tbody>
+</table>
+<p><br/>
+<em>If you notice that normal have default value of (999, 999, 999), just ignore that, it's basically a litlle hack to make the normal channel works properly.</em> </p>
+<p>All the inputs and outputs can be connected anywhere, so you can connect ucupaint node to your custom node setup. 
+<br/>
+<br/>
+On channel list panel, you can do some basic operations to the channel lists, like add, move and remove.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="02.channel-overview.03" src="../source/02.channel-overview.03.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Channels list panel</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>You might need to learn to create a layer before continue on this page, click <a href="../01.02.layer/#creating-new-layer-quick-guide">here</a> to jump to Layer page</em></p>
+</div>
+<h2 id="creating-new-channel">Creating New Channel</h2>
+<p>To create new channel, you can use '+' button on the right of the channel list. The video below will show you how to create Emission channel.</p>
+<!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the chanels list, it will gives you channel type options, which are RGB, Value, and Normal.
+For demonstration, let's try to create new channel that connect to emission socket on the principled bsdf.
+Now the popup appears, if you already decided to connect it to principled bsdf, you don't have to manually name the channel, just choose emission on the dropdown, it will automatically set the name of your channel, and if you click ok, it will also connect the sockets. -->
+
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/02.channel-overview.04.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Creating new channel</td>
+</tr>
+</tbody>
+</table>
+<p><br/>
+You can see Ucupaint node will have both new input and output after you created a new channel.</p>
+<h2 id="channel-types">Channel Types</h2>
+<p>There are three types of channel in Ucupaint, they are RGB, Value, and Normal</p>
+<h3 id="rgb">RGB</h3>
+<p>RGB channel consists of three value of red, green, or blue. You can also enable alpha to add alpha value, this also make the base color transparent by default.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: RGB channel settings" src="../source/02.channel.05.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">RGB channel options</td>
+</tr>
+</tbody>
+</table>
+<p><br/>
+If alpha activated it will automatically change your material to use alpha blend on Eevee. The default value of alpha is 0.0 so your background will be transparent.
+If you create a layer with mix blend, it will sit on top of your transparent background, it can be useful for many cases, like creating hair planes or vegetations</p>
+<table>
+<thead>
+<tr>
+<th align="center"><div class="video-container"><iframe src="../source/02.channel.06.mp4" style="width: 650px; height: 500px" frameborder="0" allowfullscreen></iframe></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Using alpha on color channel</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="value">Value</h3>
+<p>Value channel consist of single value</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: Value channel settings" src="../source/02.channel.07.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Value channel options</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="normal">Normal</h3>
+<p>Normal channel consists of normal vector, you can only have one normal channel in single Ucupaint node</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: Normal channel settings" src="../source/02.channel.08.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Normal channel options</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h4 id="smooth-bump">Smooth Bump</h4>
+<p>Smooth bump can make your bump map smoother than the blender default at the cost of precision.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: comparison of when smooth bump is active and not" src="../source/02.channel.09.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Smooth Bump comparison</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h4 id="parallax">Parallax</h4>
+<p>Parallax is for create parallax effect if you're using bump map. I suggest to save your file first before activate this option since it can freeze your blender. Please note that parallax only works on perspective view.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: comparison of when parallax is active and not" src="../source/02.channel.10.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Parallax comparison</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h4 id="displacement">Displacement</h4>
+<p>Displacement setup is only take effect when you're already baked your channels, and parallax settings will be disabled if you're using displacement.</p>
+<!-- Need more explanation -->
+
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="pic: Displacement Example" src="../source/02.channel.11.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Using Displacement</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01.00.quick-setup/" class="btn btn-neutral float-left" title="Quick Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../01.02.layer/" class="btn btn-neutral float-right" title="Layer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../01.00.quick-setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../01.02.layer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

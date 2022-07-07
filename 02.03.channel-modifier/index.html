@@ -1,192 +1,118 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Channel Modifier - UCUPAINT</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Channel Modifier";
-    var mkdocs_page_input_path = "02.03.channel-modifier.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>02.03.channel modifier - UCUPAINT</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "02.03.channel modifier";
+        var mkdocs_page_input_path = "02.03.channel-modifier.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> UCUPAINT</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
+          <a href=".." class="icon icon-home"> UCUPAINT
+        </a>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <p class="caption"><span class="caption-text">Tutorial</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.01.default-channels/">Default channels</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.02.creating-layers/">Creating layers</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.03.setting-up-layer-channel/">Setting up layer channel</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.04.masking-layers/">Masking layers</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.05.add-masking/">Add modifiers</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.06.bake-material/">Bake your material</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">UI</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Channels</a>
-    <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../02.00.channels/">Channels</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../02.01.channel-operation/">Channel Operation</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.01.channel/">Channel</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../02.02.channel-type/">Channel Type</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.02.layer/">Layer</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Channel Modifier</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.03.layer-channel/">Layer Channel</a>
                 </li>
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Layers</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../03.00.layers/">Layers</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.04.mask/">Mask</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../03.01.layer-operation/">Layer Operation</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.05.modifier/">Modifier</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../03.02.layer-type/">Layer Type</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.06.preview-mode/">Preview Mode</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../03.03.layer-modifier/">Layer Modifier</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.07.bake-to-layer/">Bake to Layer</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Layer Channel</a>
-    <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../03.04.00.layer-channel/">Layer Channel</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../03.04.01.layer-channel-modifier/">Layer Channel Modifier</a>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-Channels/">Bake Channels</a>
                 </li>
-    </ul>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Layer Mask</a>
-    <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../03.05.00.layer-mask/">Layer Mask</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../03.05.01.layer-mask-operation/">Layer Mask Operation</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../03.05.02.layer-mask-type/">Layer Mask Type</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../03.05.03.layer-mask-modifier/">Layer Mask Modifier</a>
-                </li>
-    </ul>
-                </li>
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Modifier</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../04.00.modifier/">Modifier</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../04.01.modifier-operation/">Modifier Operation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../04.02.modifier-type/">Modifier Type</a>
-                </li>
-    </ul>
-                    </li>
-                </ul>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">UCUPAINT</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">UCUPAINT</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>UI &raquo;</li>
-        
-      
-        
-          <li>Channels &raquo;</li>
-        
-      
-    
-    <li>Channel Modifier</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>02.03.channel modifier</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
 
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../03.00.layers/" class="btn btn-neutral float-right" title="Layers">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../02.02.channel-type/" class="btn btn-neutral" title="Channel Type"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
+          </div><footer>
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -194,21 +120,16 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../02.02.channel-type/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../03.00.layers/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
     <script>var base_url = '..';</script>
     <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
