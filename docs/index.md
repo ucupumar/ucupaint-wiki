@@ -22,6 +22,9 @@ You need at least Blender 2.79 to use this addon, but more advance features are 
 - UDIM images are not supported yet
 - At the time of this writing, Blender already have [a plan](https://code.blender.org/2022/02/layered-textures-design/) to add texture layer features natively, so if it's already available, you should probably use that instead for better performance.
 
+## Contribute
+Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or, visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of the wiki.
+
 ## Locations
 
 You can find Ucupaint on the properties panel of 3D viewport and node editor. 
