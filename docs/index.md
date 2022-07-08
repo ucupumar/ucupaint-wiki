@@ -37,7 +37,6 @@ For Blender 2.79, you should be using Cycles render engine.
 |:--:|
 |Ucupaint locations on Blender 2.79 are only available if you're using Cycles| {align=center}
 
-<br/> 
 ### Blender 2.80 and above
 
 For Blender 2.80 and above, it's on the Ucupaint tab.
@@ -46,4 +45,3 @@ For Blender 2.80 and above, it's on the Ucupaint tab.
 |:--:|
 |Ucupaint location on Blender 2.80 and above| {align=center}
 
-<br/> 
