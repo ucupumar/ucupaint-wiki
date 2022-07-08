@@ -23,7 +23,7 @@ You need at least Blender 2.79 to use this addon, but more advance features are 
 - At the time of this writing, Blender already have [a plan](https://code.blender.org/2022/02/layered-textures-design/) to add texture layer features natively, so if it's already available, you should probably use that instead for better performance.
 
 ## Contribute
-Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or, visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of the wiki.
+Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or, visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of this wiki.
 
 ## Locations
 
@@ -35,7 +35,7 @@ For Blender 2.79, you should be using Cycles render engine.
 
 |![00.b279-loc](./source/00.b279_loc.png)|
 |:--:|
-|Ucupaint location on Blender 2.79 is only available if you're using Cycles| {align=center}
+|Ucupaint locations on Blender 2.79 are only available if you're using Cycles| {align=center}
 
 <br/> 
 ### Blender 2.80 and above
