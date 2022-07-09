@@ -71,6 +71,10 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#baked-images">Baked Images</a>
     </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#layer-parameters-and-options">Layer Parameters And Options</a>
+        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#layer-vector">Layer Vector</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#transformation-vector">Transformation Vector</a>
@@ -263,8 +267,9 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 <p>You can use Blender's generated textures as a layer, for example Noise, Magic, Brick, Voronoi, etc.</p>
 <h3 id="baked-images">Baked Images</h3>
 <p>You can use a baked texture as a layer, for example AO, Cavity, Bevel. Be aware that the baking process may take a while to finish depending on your system and settings.</p>
+<h2 id="layer-parameters-and-options">Layer Parameters And Options</h2>
 <h3 id="layer-vector">Layer Vector</h3>
-<p>By default, layer will use a UVMap as vector input, but you can change it to other vector type like generated.</p>
+<p>By default, a layer will use a UVMap as vector input, but you can change it to another vector type like Generated.</p>
 <table>
 <thead>
 <tr>
@@ -292,7 +297,7 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 </tr>
 </tbody>
 </table>
-<p>Be aware you can't transform image atlas layer since it shares image with other layers/masks.</p>
+<p>Be aware you can't transform image atlas layer in this way since it shares image with other layers/masks.</p>
 <h3 id="change-layer-type">Change layer type</h3>
 <p>You can change the layer type to a different one and retain it's mask and modifier settings. Use this button to change the layer type.</p>
 <table>
