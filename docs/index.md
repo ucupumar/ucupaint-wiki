@@ -45,3 +45,6 @@ For Blender 2.80 and above, it's in the Ucupaint tab.
 |:--:|
 |Ucupaint location in Blender 2.80 and above| {align=center}
 
+### Discord Server
+
+You can join [Ucupaint Discord](https://discord.com/invite/vSwDdFdd) to ask or discuss things related to Ucupaint
