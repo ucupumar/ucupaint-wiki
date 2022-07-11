@@ -25,6 +25,10 @@ You need at least Blender 2.79 to use this addon, but more advanced features are
 ## Contribute
 Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of this wiki.
 
+## Discord Server
+
+You can join [Ucupaint Discord](https://discord.com/invite/vSwDdFdd) to ask or discuss things related to Ucupaint.
+
 ## Locations
 
 You can find Ucupaint in the properties panel of the 3D viewport and also the Shader editor. 
@@ -44,7 +48,3 @@ For Blender 2.80 and above, it's in the Ucupaint tab.
 |![00.b280-loc](./source/00.b280_loc.png)|
 |:--:|
 |Ucupaint location in Blender 2.80 and above| {align=center}
-
-### Discord Server
-
-You can join [Ucupaint Discord](https://discord.com/invite/vSwDdFdd) to ask or discuss things related to Ucupaint
