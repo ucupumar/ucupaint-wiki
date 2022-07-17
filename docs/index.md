@@ -27,7 +27,7 @@ Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contr
 
 ## Discord Server
 
-You can join [Ucupaint Discord](https://discord.com/invite/vSwDdFdd) to ask or discuss things related to Ucupaint.
+You can join [Ucupaint Discord](https://discord.gg/BdNfGGzQHh) to ask or discuss things related to Ucupaint.
 
 ## Locations
 
