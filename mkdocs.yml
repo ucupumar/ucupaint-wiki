@@ -15,7 +15,8 @@ nav:
   - Preview Mode : 01.06.preview-mode.md
   - Bake to Layer : 01.07.bake-to-layer.md
   - Transfer UV : 01.08.transfer-uv.md
-  - Bake Channels : 01.09.bake-Channels.md
+  - Bake Channels : 01.09.bake-channels.md
+  - Resources : 01.10.resources.md
 plugins:
   - mkdocs-video:
       css_style:
