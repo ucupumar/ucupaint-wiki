@@ -19,6 +19,9 @@ nav:
   - Resources : 01.10.resources.md
 plugins:
   - mkdocs-video:
+      is_video: True
+      video_muted: True
+      video_controls: True
       css_style:
         width: "650px"
         height: "500px"
