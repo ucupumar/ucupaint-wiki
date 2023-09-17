@@ -19,7 +19,6 @@ You need at least Blender 2.79 to use this addon, but more advanced features are
 
 - The addon can be really slow if you have a lot of layers with a lot of channels
 - Layer groups can make things even slower
-- UDIM images are not yet supported
 - At the time of writing, Blender already has [a plan](https://code.blender.org/2022/02/layered-textures-design/) to add texture layer features natively, so if it's already available, you should probably use that instead for better performance.
 
 ## Contribute
