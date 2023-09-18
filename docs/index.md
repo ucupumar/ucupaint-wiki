@@ -15,12 +15,6 @@ You need at least Blender 2.79 to use this addon, but more advanced features are
 - Go to [github.com/ucupumar/ucupaint/releases](https://github.com/ucupumar/ucupaint/releases) and download an addon package according to your Blender version.
 - Open Blender, go to Edit > User Preferences, select the Add-ons tab and press the Install button, browse your downloaded addon zip file and click Install add-on.
 
-## Limitations
-
-- The addon can be really slow if you have a lot of layers with a lot of channels
-- Layer groups can make things even slower
-- At the time of writing, Blender already has [a plan](https://code.blender.org/2022/02/layered-textures-design/) to add texture layer features natively, so if it's already available, you should probably use that instead for better performance.
-
 ## Contribute
 Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of this wiki.
 
