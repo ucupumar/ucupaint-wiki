@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Bake Channels - UCUPAINT</title>
+  <title>Extras - UCUPAINT</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Bake Channels";
-    var mkdocs_page_input_path = "01.09.bake-channels.md";
+    var mkdocs_page_name = "Extras";
+    var mkdocs_page_input_path = "01.11.extras.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -78,18 +78,18 @@
                     <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Bake Channels</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-channels/">Bake Channels</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../01.10.resources/">Resources</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../01.11.extras/">Extras</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Extras</a>
+    <ul class="current">
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -113,7 +113,7 @@
     
       
     
-    <li>Bake Channels</li>
+    <li>Extras</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -125,48 +125,10 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="bake-channels">Bake Channels</h1>
-<p>Channel Baking the layer is important if your model will be used in other software. That's because other software can't read Blender's node shaders.
-Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. It can be found on the gear icon under the Material Panel. Just click bake all channels and set the right configuration. The baking process then begins.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:650px;height:500px" muted controls alt="type:video"><source src="../source/10.bake-01.mp4" type="video/mp4"></source></video></div></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Bake All Channels</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<p>The baked textures are automatically packed if you save the blend file, but you can also save them to a directory of your choice, as demonstrated in the video below.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:650px;height:500px" muted controls alt="type:video"><source src="../source/10.bake-02.mp4" type="video/mp4"></source></video></div></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Save All Baked Textures</td>
-</tr>
-</tbody>
-</table>
-<p>The Baking process is a non-destructive workflow, you can still go back and edit your texture layer by layer using this toggle button.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:650px;height:500px" muted controls alt="type:video"><source src="../source/10.bake-03.mp4" type="video/mp4"></source></video></div></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Toggle between using baked textures or not</td>
-</tr>
-</tbody>
-</table></div>
+                <div><h1 id="maximum-images-per-material-in-blender">Maximum images per Material in Blender</h1>
+<p>Image atlas can be useful for machine that cannot handle that many images per material. If you exceed the number of images, the material can appear pink in the viewport. Here's some limitation found on some machine, tested on Blender 3.6
+- NVIDIA GPU: 64
+- Radeon GPU: 24</p></div>
               
             </div>
           </div>
@@ -174,10 +136,8 @@ Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../01.10.resources/" class="btn btn-neutral float-right" title="Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../01.08.transfer-uv/" class="btn btn-neutral" title="Transfer UV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../01.10.resources/" class="btn btn-neutral" title="Resources"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -203,10 +163,8 @@ Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01.08.transfer-uv/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../01.10.resources/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../01.10.resources/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
