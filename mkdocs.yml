@@ -17,6 +17,7 @@ nav:
   - Transfer UV : 01.08.transfer-uv.md
   - Bake Channels : 01.09.bake-channels.md
   - Resources : 01.10.resources.md
+  - Extras : 01.11.extras.md
 plugins:
   - mkdocs-video:
       is_video: True
