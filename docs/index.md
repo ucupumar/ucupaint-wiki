@@ -29,7 +29,7 @@ You can find Ucupaint in the properties panel of the 3D viewport and also in the
 
 ### Blender 2.79
 
-For Blender 2.79, you should be using the Cycles render engine and _Material_ viewport shading type
+For Blender 2.79, you should be using the Cycles render engine.
 
 |![00.b279-loc](./source/00.b279_loc.png)|
 |:--:|
@@ -37,7 +37,7 @@ For Blender 2.79, you should be using the Cycles render engine and _Material_ vi
 
 ### Blender 2.80 and above
 
-For Blender 2.80 and above, it's in the Ucupaint tab and you need to use _Material Preview_ or _Rendered_ shading type on your viewport.
+For Blender 2.80 and above, it's in the Ucupaint tab.
 
 |![00.b280-loc](./source/00.b280_loc.png)|
 |:--:|
