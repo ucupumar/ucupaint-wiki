@@ -8,12 +8,13 @@ Ucupaint is a Blender addon for managing textures as layers for Eevee and Cycles
 
 ## Requirements
 
-You need at least Blender 2.79 to use this addon, but more advanced features are only available in modern versions of Blender (2.80 & above).
+You need at least Blender 2.79 to use this addon, but more advanced features may only be available in modern versions of Blender (2.80 & above).
 
 ## Installation
 
-- Go to [github.com/ucupumar/ucupaint/releases](https://github.com/ucupumar/ucupaint/releases) and download an addon package according to your Blender version.
-- Open Blender, go to Edit > User Preferences, select the Add-ons tab and press the Install button, browse your downloaded addon zip file and click Install add-on.
+- Go to [GitHub release page](https://github.com/ucupumar/ucupaint/releases) and download an addon package according to your Blender version.
+- Or if you're using Blender 4.2+, you can also download it from the [extension platform](https://extensions.blender.org/add-ons/ucupaint/)
+- Open Blender, go to Edit > User Preferences, select the Add-ons tab, press the Install button, browse your downloaded addon zip file, and click Install add-on.
 
 ## Contribute
 Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of this wiki.
@@ -24,7 +25,7 @@ You can join [Ucupaint Discord](https://discord.gg/BdNfGGzQHh) to ask or discuss
 
 ## Locations
 
-You can find Ucupaint in the properties panel of the 3D viewport and also the Shader editor. 
+You can find Ucupaint in the properties panel of the 3D viewport and also in the Shader editor. 
 
 ### Blender 2.79
 
