@@ -61,7 +61,7 @@
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#smooth-bump">Smooth Bump</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#parallax">Parallax</a>
+    <li class="toctree-l4"><a class="reference internal" href="#parallax-experimental">Parallax (Experimental)</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#displacement">Displacement</a>
     </li>
@@ -284,8 +284,8 @@ If you create a layer with a mix blend, it will sit on top of your transparent b
 </tr>
 </tbody>
 </table>
-<h4 id="parallax">Parallax</h4>
-<p>Parallax is for creating parallax effects if you're using bump map. I suggest you save your file first before activating this option since it can freeze Blender. Please note that parallax only works in perspective view.</p>
+<h4 id="parallax-experimental">Parallax (Experimental)</h4>
+<p>Parallax is for creating parallax effects if you're using bump map. I suggest you save your file first before activating this option since it can freeze Blender. Please note that parallax only works in perspective view. Parallax is only available if you enable experimental features in Ucupaint User Preferences.</p>
 <table>
 <thead>
 <tr>
@@ -299,7 +299,10 @@ If you create a layer with a mix blend, it will sit on top of your transparent b
 </tbody>
 </table>
 <h4 id="displacement">Displacement</h4>
-<p>The displacement setup only takes effect once you've baked your channels, and parallax settings will be disabled if you're using displacement.</p>
+<p>Enabling <em>Displacement Setup</em> will do two things:
+- Add subdivision surface modifiers to all objects that use the same material
+- Add displacement node setup to active materials</p>
+<p>By doing this all bump maps used in layers will actually have bump geometry. Unless for layers which have 'Write Height' enabled in the layer channel settings.</p>
 <!-- Need more explanation -->
 
 <table>
