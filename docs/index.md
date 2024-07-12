@@ -4,7 +4,7 @@
 
 ## What is Ucupaint?
 
-Ucupaint is a Blender addon for managing textures as layers for Eevee and Cycles render engines.
+Ucupaint is a Blender addon to stack images, textures, and vertex colors into layers with mask and baking support.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ You can find Ucupaint in the properties panel of the 3D viewport and also in the
 
 ### Blender 2.79
 
-For Blender 2.79, you should be using the Cycles render engine.
+For Blender 2.79, you should be using the Cycles render engine and _Material_ viewport shading type
 
 |![00.b279-loc](./source/00.b279_loc.png)|
 |:--:|
@@ -37,7 +37,7 @@ For Blender 2.79, you should be using the Cycles render engine.
 
 ### Blender 2.80 and above
 
-For Blender 2.80 and above, it's in the Ucupaint tab.
+For Blender 2.80 and above, it's in the Ucupaint tab and you need to use _Material Preview_ or _Rendered_ shading type on your viewport.
 
 |![00.b280-loc](./source/00.b280_loc.png)|
 |:--:|
