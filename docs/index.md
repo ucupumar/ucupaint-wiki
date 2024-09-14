@@ -8,7 +8,7 @@ Ucupaint is a Blender addon to stack images, textures, and vertex colors into la
 
 ## Requirements
 
-You need at least Blender 2.79 to use this addon, but more advanced features may only be available in modern versions of Blender (2.80 & above).
+You need at least Blender 2.76 to use this addon, but more advanced features may only be available in modern versions of Blender (2.80 & above).
 
 ## Installation
 
@@ -27,9 +27,9 @@ You can join [Ucupaint Discord](https://discord.gg/BdNfGGzQHh) to ask or discuss
 
 You can find Ucupaint in the properties panel of the 3D viewport and also in the Shader editor. 
 
-### Blender 2.79
+### Blender 2.7x
 
-For Blender 2.79, you should be using the Cycles render engine.
+For Blender 2.7x, you should be using the Cycles render engine.
 
 |![00.b279-loc](./source/00.b279_loc.png)|
 |:--:|
