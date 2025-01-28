@@ -4,7 +4,7 @@
 
 ## What is Ucupaint?
 
-Ucupaint is a Blender addon to stack images, textures, and vertex colors into layers with mask and baking support.
+Ucupaint is a Blender addon that stacks images, textures, and vertex colors into layers with mask and baking support.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ You can find Ucupaint in the properties panel of the 3D viewport and also in the
 
 ### Blender 2.7x
 
-For Blender 2.7x, you should be using the Cycles render engine.
+For Blender 2.7x, you should be using the Cycles render engine. The UI is only visible when you select an object that can have a material (mesh, curve, etc).
 
 |![00.b279-loc](./source/00.b279_loc.png)|
 |:--:|
@@ -37,7 +37,7 @@ For Blender 2.7x, you should be using the Cycles render engine.
 
 ### Blender 2.80 and above
 
-For Blender 2.80 and above, it's in the Ucupaint tab.
+For Blender 2.80 and above, it's in the Ucupaint tab. The tab is only visible when you select an object that can have a material (mesh, curve, etc).
 
 |![00.b280-loc](./source/00.b280_loc.png)|
 |:--:|
