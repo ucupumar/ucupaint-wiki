@@ -89,6 +89,10 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Extras</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#using-vulkan">Using Vulkan</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#converting-to-image-atlas">Converting to Image Atlas</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -126,7 +130,7 @@
             <div class="section">
               
                 <div><h1 id="maximum-images-per-material-in-blender">Maximum images per Material in Blender</h1>
-<p>Image atlas can be useful for machine that cannot handle that many images per material. If you exceed the number of images, the material can appear pink in the viewport. Here's some limitation found on Blender 3.6</p>
+<p>If you exceed the number of images, material in Blender can appear pink in the viewport. Here are some limitations found in Blender 3.6</p>
 <table>
 <thead>
 <tr>
@@ -137,12 +141,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">NVIDIA</td>
+<td style="text-align: center;">NVIDIA*</td>
 <td style="text-align: center;">27</td>
 <td style="text-align: center;">55</td>
 </tr>
 <tr>
-<td style="text-align: center;">Radeon</td>
+<td style="text-align: center;">Radeon*</td>
 <td style="text-align: center;">12</td>
 <td style="text-align: center;">24</td>
 </tr>
@@ -158,6 +162,16 @@
 </tr>
 </tbody>
 </table>
+<p><em>* tested with RTX 3060 and Radeon 6800M Laptop</em></p>
+<p>Since Blender 4.2, Eevee renderer has been majorly updated, and the maximum images have been reduced on Nvidia but interestingly raised in Radeon, both now have maximum of 32 image limits.</p>
+<p>There are at least two solutions to circumvent the image limit issue: by using Vulkan or image atlas.</p>
+<h3 id="using-vulkan">Using Vulkan</h3>
+<p>For modern machines, it's recommended to use <strong>Vulkan</strong> on Blender 4.4 or above since it can handle more than 100 images. You can change the settings in <code>System</code> tab on Blender Preferences.</p>
+<p><img alt="image" src="https://github.com/user-attachments/assets/bcd9db0f-13e7-49f8-a886-83b7cf28f02d"></p>
+<p>Blender 4.3 actually can also use Vulkan, but there's a bug that won't let you paint in texture paint mode.</p>
+<h3 id="converting-to-image-atlas">Converting to Image Atlas</h3>
+<p>For older Blender versions (Blender 4.3 or lesser), you can convert already used layer/mask images to image atlas.</p>
+<p><img alt="image" src="https://github.com/user-attachments/assets/7f51fd36-6a6d-4942-9ca7-dd56b31e3093"></p>
 <h1 id="tips">Tips</h1>
 <p>Here's some tips while using ucupaint
 - Use less generated textures like noise or voronoi if you want the shader compilation faster</p></div>
