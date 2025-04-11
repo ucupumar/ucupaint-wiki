@@ -130,13 +130,15 @@
             <div class="section">
               
                 <div><h1 id="maximum-images-per-material-in-blender">Maximum images per Material in Blender</h1>
-<p>If you exceed the number of images, material in Blender can appear pink in the viewport. Here are some limitations found in Blender 3.6</p>
+<p>If you exceed the number of images, material in Blender can appear pink in the viewport. Here are some limitations found.</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: center;">GPU</th>
-<th style="text-align: center;">UDIM Images Limit</th>
-<th style="text-align: center;">Standard Images Limit</th>
+<th style="text-align: center;">UDIM Images Limit (Blender 4.1)</th>
+<th style="text-align: center;">Standard Images Limit (Blender 4.1)</th>
+<th style="text-align: center;">UDIM Images Limit (Blender 4.2)</th>
+<th style="text-align: center;">Standard Images Limit (Blender 4.2)</th>
 </tr>
 </thead>
 <tbody>
@@ -144,14 +146,20 @@
 <td style="text-align: center;">NVIDIA*</td>
 <td style="text-align: center;">27</td>
 <td style="text-align: center;">55</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">30</td>
 </tr>
 <tr>
 <td style="text-align: center;">Radeon*</td>
 <td style="text-align: center;">12</td>
 <td style="text-align: center;">24</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">31</td>
 </tr>
 <tr>
 <td style="text-align: center;">Intel</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">?</td>
 </tr>
@@ -159,11 +167,12 @@
 <td style="text-align: center;">Mac</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
-<p><em>* tested with RTX 3060 and Radeon 6800M Laptop</em></p>
-<p>Since Blender 4.2, Eevee renderer has been majorly updated, and the maximum images have been reduced on Nvidia but interestingly raised in Radeon, both now have maximum of 32 image limits.</p>
+<p><em>* tested with RTX 4080 and Radeon 6800M Laptop</em></p>
 <p>There are at least two solutions to circumvent the image limit issue: by using Vulkan or image atlas.</p>
 <h3 id="using-vulkan">Using Vulkan</h3>
 <p>For modern machines, it's recommended to use <strong>Vulkan</strong> on Blender 4.4 or above since it can handle more than 100 images. You can change the settings in <code>System</code> tab on Blender Preferences.</p>
