@@ -45,9 +45,9 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick Setup</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#before-doing-ucupaint-setup">Before doing Ucupaint Setup</a>
+    <li class="toctree-l2"><a class="reference internal" href="#before-setting-up-ucupaint">Before Setting Up Ucupaint</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#creating-ucupaint-node">Creating Ucupaint Node</a>
+    <li class="toctree-l2"><a class="reference internal" href="#creating-the-ucupaint-node">Creating The Ucupaint Node</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#quick-setup">Quick Setup</a>
     </li>
@@ -134,16 +134,16 @@
             <div class="section">
               
                 <div><h1 id="ucupaint-setup">Ucupaint Setup</h1>
-<h2 id="before-doing-ucupaint-setup">Before doing Ucupaint Setup</h2>
-<p>Assuming you've already installed the addons. The Ucupaint menu will appear on the Ucupaint tab in the n-panel if you select an object.
-Before you continue, read this list first:</p>
+<h2 id="before-setting-up-ucupaint">Before Setting Up Ucupaint</h2>
+<p>Assuming you've already installed the addon. The Ucupaint tab will appear in the N-panel when an object is selected.
+Before you continue, make sure to check the following:</p>
 <ul>
-<li><strong>Make sure you're on material view</strong></li>
-<li><strong>Make sure your object is already properly unwrapped</strong></li>
-<li>Even though this addon supports more than mesh objects, <strong>some features will not available if you choose to use non-mesh objects</strong> (like all baking related operations).</li>
+<li><strong>Make sure you are in Material Preview mode</strong></li>
+<li><strong>Make sure your object has been properly unwrapped</strong></li>
+<li>Even though this addon supports more than just mesh objects, <strong>some features, such as baking operations, will only work with mesh objects</strong>.</li>
 </ul>
-<h2 id="creating-ucupaint-node">Creating Ucupaint Node</h2>
-<p>Ucupaint is just a node group, you can create a new ucupaint node in the shader editor.</p>
+<h2 id="creating-the-ucupaint-node">Creating The Ucupaint Node</h2>
+<p><strong>Ucupaint is a node group.</strong> You can create a new Ucupaint node directly in the Shader Editor.</p>
 <table>
 <thead>
 <tr>
@@ -152,13 +152,14 @@ Before you continue, read this list first:</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Creating new Ucupaint node on shader editor</td>
+<td style="text-align: center;">Creating new Ucupaint node in the Shader Editor</td>
 </tr>
 </tbody>
 </table>
-<p>Creating Ucupaint node in the shader editor will create a node that has only one channel, which is 'Color'. You can connect the output of this channel ('Color') to whatever node you want. More details about channels are explained in <a href="../01.01.channel/">channel page</a>.</p>
+<p>In the Shader Editor, press Shift + A, go to Group, and select Ucupaint to add the node to your material. When adding a Ucupaint node in the Shader Editor, it will start with a single channel: Color.
+You can connect the Color output to any other node in your shader as needed. More details about channels are explained in <a href="../01.01.channel/">channel page</a>.</p>
 <h2 id="quick-setup">Quick Setup</h2>
-<p>You can also do a quick setup of the Ucupaint node in 3D viewport, you can click the "Quick Ucupaint Node Setup" button.</p>
+<p>You can also quickly set up the Ucupaint node in the 3D viewport by clicking the <strong>"Quick Ucupaint Node Setup"</strong> button.</p>
 <table>
 <thead>
 <tr>
@@ -171,7 +172,7 @@ Before you continue, read this list first:</p>
 </tr>
 </tbody>
 </table>
-<p>A popup menu will be shown and give you some options for setting up the node. There's an option to use different shader types and channels.</p>
+<p>A pop-up menu will appear, giving you a few options for setting up the node. You can choose different shader types and add various channels.</p>
 <table>
 <thead>
 <tr>
@@ -184,15 +185,15 @@ Before you continue, read this list first:</p>
 </tr>
 </tbody>
 </table>
-<p>There are some options on the quick setup menu :</p>
+<p>Here are the options available in the Quick Setup menu:</p>
 <ul>
-<li><strong>Type</strong>: Type of BSDF used for Ucupaint node to connect to.</li>
-<li><strong>Channels</strong>: Default channels (can be added more later).</li>
-<li><strong>Use Linear Color Blending</strong>: Use Linear color blending between layers. (It is more accurate, but it's different than software like Photoshop)</li>
-<li><strong>Mute Stencil mask Opacity</strong>: Mute texture paint overlay (to disable blender default texture paint overlay so you see other layers while painting in material view)</li>
-<li><strong>Switch to Material View</strong>: Auto switch to material view after setup.</li>
+<li><strong>Type</strong>: The BSDF shader type that the Ucupaint node will connect to.</li>
+<li><strong>Channels</strong>: The default set of channels included in the node (additional channels can be added later).</li>
+<li><strong>Use Linear Color Blending</strong>: Enables linear blending between layers. <em>This is more color-accurate but behaves differently than traditional 2D software like Photoshop.</em></li>
+<li><strong>Mute Stencil mask Opacity</strong>: Disables the default texture paint overlay, allowing visibility of other layers in Material View.</li>
+<li><strong>Switch to Material View</strong>: Automatically changes the viewport shading to Material View after setup.</li>
 </ul>
-<p>The <strong>OK</strong> button will finish the setup process, now Ucupaint is ready to use. Now you can see there are channels and layers list.</p>
+<p>The <strong>OK</strong> button completes the setup process. Ucupaint is now ready to use, and the channels, along with the layer list, will be visible.</p>
 <table>
 <thead>
 <tr>
@@ -205,7 +206,7 @@ Before you continue, read this list first:</p>
 </tr>
 </tbody>
 </table>
-<p>If you open the shader editor, what's actually happening is the quick setup is creating a group node that is connected to the default shader (Principled Shader) according to the selected channels you chose before. Please don't edit the inside of this group node manually since it can cause fatal errors.</p>
+<p>If you open the shader editor, the quick setup creates a group node connected to the default shader (Principled BSDF), based on the channels you selected earlier. <strong>Avoid editing the contents of this group node manually, as it may cause critical errors.</strong></p>
 <table>
 <thead>
 <tr>
@@ -219,7 +220,7 @@ Before you continue, read this list first:</p>
 </tbody>
 </table>
 <h2 id="expandcollapse-menu">Expand/Collapse Menu</h2>
-<p>Please notice that if you see a small triangle beside an icon, it means you can expand or collapse the extra menu, you can see it on the example gif below.</p>
+<p><strong>Please note</strong> that if you see a small triangle next to an icon, it means there is an expandable or collapsible menu. You can see this behavior in the example GIF below.</p>
 <table>
 <thead>
 <tr>
@@ -228,7 +229,7 @@ Before you continue, read this list first:</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">A triangle beside an icon means you can expand and collapse an extra options menu</td>
+<td style="text-align: center;">A triangle beside an icon indicates that you can expand and collapse an additional options menu</td>
 </tr>
 </tbody>
 </table></div>
