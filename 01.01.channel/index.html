@@ -61,13 +61,17 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#normal">Normal</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#smoother-bump">Smoother Bump</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#parallax-experimental">Parallax (Experimental)</a>
-    </li>
     <li class="toctree-l4"><a class="reference internal" href="#displacement-setup">Displacement Setup</a>
     </li>
         </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#experimental-features">Experimental Features</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#smoother-bump">Smoother Bump</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#parallax-experimental">Parallax (Experimental)</a>
     </li>
         </ul>
     </li>
@@ -147,7 +151,7 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="channel">Channel</h1>
+                <div><h1 id="channels">Channels</h1>
 <h2 id="channel-in-ucupaint">Channel in Ucupaint</h2>
 <p>A channel in Ucupaint represents a pair of an input and an output of a Ucupaint node. </p>
 <table>
@@ -273,6 +277,28 @@ If you create a layer with a mix blend, it will sit on top of your transparent b
 </tr>
 </tbody>
 </table>
+<h4 id="displacement-setup">Displacement Setup</h4>
+<p>Enabling <em>Displacement Setup</em> will do two things:</p>
+<ul>
+<li>Add subdivision surface modifiers to all objects that use the same material</li>
+<li>Add displacement node setup to active material</li>
+</ul>
+<p>By doing this all bump maps used in layers will actually have bump geometry. Unless for layers which have 'Write Height' enabled in the layer channel settings.</p>
+<!-- Need more explanation -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: Displacement Example" src="../source/02.channel.11.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Using Displacement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="experimental-features">Experimental Features</h2>
 <h4 id="smoother-bump">Smoother Bump</h4>
 <p>Smooth bump can make your bump map smoother than the Blender default at the cost of precision.</p>
 <table>
@@ -298,27 +324,6 @@ If you create a layer with a mix blend, it will sit on top of your transparent b
 <tbody>
 <tr>
 <td style="text-align: center;">Parallax comparison</td>
-</tr>
-</tbody>
-</table>
-<h4 id="displacement-setup">Displacement Setup</h4>
-<p>Enabling <em>Displacement Setup</em> will do two things:</p>
-<ul>
-<li>Add subdivision surface modifiers to all objects that use the same material</li>
-<li>Add displacement node setup to active material</li>
-</ul>
-<p>By doing this all bump maps used in layers will actually have bump geometry. Unless for layers which have 'Write Height' enabled in the layer channel settings.</p>
-<!-- Need more explanation -->
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><img alt="pic: Displacement Example" src="../source/02.channel.11.png"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Using Displacement</td>
 </tr>
 </tbody>
 </table></div>
