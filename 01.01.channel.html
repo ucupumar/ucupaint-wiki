@@ -51,15 +51,15 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#channel-in-ucupaint">Channel in Ucupaint</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#creating-new-channel">Creating New Channel</a>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-a-new-channel">Adding a New Channel</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#channel-types">Channel Types</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#rgb">RGB</a>
+    <li class="toctree-l3"><a class="reference internal" href="#rgb-channel-type">RGB Channel Type</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#value">Value</a>
+    <li class="toctree-l3"><a class="reference internal" href="#value-channel-type">Value Channel Type</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#normal">Normal</a>
+    <li class="toctree-l3"><a class="reference internal" href="#normal-channel-type">Normal Channel Type</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#displacement-setup">Displacement Setup</a>
     </li>
@@ -210,8 +210,8 @@ In the channels list panel, you can perform basic actions such as adding, moving
 </table>
 <p><strong>!!! NOTE</strong>
     <em>You may need to learn how to create a layer before continuing on this page. Click <a href="../01.02.layer/#creating-new-layer-quick-guide">here</a> to jump to the Layer page</em></p>
-<h2 id="creating-new-channel">Creating New Channel</h2>
-<p>To create a new channel, you can use '+' button on the right of the channel list. The video below will show you how to create Emission channel.</p>
+<h2 id="adding-a-new-channel">Adding a New Channel</h2>
+<p>To add a new channel, use the '+' button next to the channel list. The video below demonstrates how to create an Emission channel in Ucupaint.</p>
 <!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the chanels list, it will gives you channel type options, which are RGB, Value, and Normal.
 For demonstration, let's try to create new channel that connect to emission socket on the principled bsdf.
 Now the popup appears, if you already decided to connect it to principled bsdf, you don't have to manually name the channel, just choose emission on the dropdown, it will automatically set the name of your channel, and if you click ok, it will also connect the sockets. -->
@@ -224,15 +224,15 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Creating new channel</td>
+<td style="text-align: center;">Adding a new channel</td>
 </tr>
 </tbody>
 </table>
-<p>You can see that the Ucupaint node will have new input and output sockets after you created a new channel.</p>
+<p>After creating a new channel, the Ucupaint node will display new input and output sockets corresponding to that channel.</p>
 <h2 id="channel-types">Channel Types</h2>
-<p>There are three types of channels in Ucupaint, they are RGB, Value, and Normal.</p>
-<h3 id="rgb">RGB</h3>
-<p>RGB channel consists of three values of red, green, or blue. You can also enable alpha to add an alpha value, this also makes the base color transparent by default.</p>
+<p>There are three channel types in Ucupaint: RGB, Value, and Normal.</p>
+<h3 id="rgb-channel-type">RGB Channel Type</h3>
+<p>An RGB channel consists of three color values: red, green, and blue. You can also enable alpha to add transparency, which makes the base color transparent by default..</p>
 <table>
 <thead>
 <tr>
@@ -245,8 +245,8 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 </tr>
 </tbody>
 </table>
-<p>If alpha is activated it will automatically change your material to use alpha blend on Eevee. The default value of alpha is 0.0 so your background will be transparent.
-If you create a layer with a mix blend, it will sit on top of your transparent background, which can be useful in many cases, like creating hair planes or vegetation.</p>
+<p>If alpha is enabled, your material will automatically switch to Alpha Blend mode in Eevee. The default alpha value is 0.0, making the background fully transparent.
+If you create a layer with a mix blend, it will be placed on top of the transparent background. This can be useful for cases like creating hair planes or vegetation.</p>
 <table>
 <thead>
 <tr>
@@ -259,7 +259,7 @@ If you create a layer with a mix blend, it will sit on top of your transparent b
 </tr>
 </tbody>
 </table>
-<h3 id="value">Value</h3>
+<h3 id="value-channel-type">Value Channel Type</h3>
 <p>Value channels consist of a single value.</p>
 <table>
 <thead>
@@ -273,12 +273,12 @@ If you create a layer with a mix blend, it will sit on top of your transparent b
 </tr>
 </tbody>
 </table>
-<h3 id="normal">Normal</h3>
-<p>Normal channels consist of a normal vector, you can only have one normal channel per each Ucupaint node.</p>
+<h3 id="normal-channel-type">Normal Channel Type</h3>
+<p>Normal channels consist of a normal vector. You can have only one normal channel per Ucupaint node.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"><img alt="pic: Normal channel settings" src="source/02.channel.08.png"></th>
+<th style="text-align: center;"><img alt="pic: Normal channel settings" src="source/02.channel-overview.08.1.png"></th>
 </tr>
 </thead>
 <tbody>
