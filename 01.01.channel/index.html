@@ -290,26 +290,22 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tbody>
 </table>
 <h4 id="displacement-setup">Displacement Setup</h4>
-<p>Enabling <strong>Displacement Setup</strong> will:</p>
+<p>Enabling Displacement Setup does the following:</p>
 <ul>
-<li>Add a Subdivision Surface modifier to all objects using the same material</li>
-<li>Add a displacement node setup to the active material</li>
+<li>Adds a Subdivision Surface modifier to all objects using the same material</li>
+<li>Adds a displacement node setup to the active material</li>
+<li>Converts bump maps from Ucupaint layers into real geometry (unless Write Height is enabled on that layer, which disables displacement for it)</li>
 </ul>
-<p>By enabling this, all bump maps used in the layers will produce actual bump geometry, except for layers where <strong>Write Height</strong> is enabled in the layer’s channel settings.</p>
+<p>The Max Polygons value controls how much the object is subdivided. It’s measured in thousands; for example, a value of 1000 means up to 1 million polygons.</p>
+<p>If you enable Adaptive Subdivision (Cycles only), Ucupaint will:</p>
+<ul>
+<li>Set the render engine to Cycles</li>
+<li>Enable the Experimental feature set</li>
+<li>Automatically configure adaptive subdivision, which adjusts detail based on the camera view</li>
+</ul>
+<p>Adaptive subdivision improves detail where it's needed most, but may increase load time when entering render view.</p>
 <!-- Need more explanation -->
 
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><img alt="pic: Displacement Example" src="../source/02.channel-overview.11.2.png"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Using Displacement</td>
-</tr>
-</tbody>
-</table>
 <p>The video below demonstrates how to set up Ucupaint for drawing with displacement</p>
 <table>
 <thead>
