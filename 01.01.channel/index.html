@@ -166,7 +166,7 @@
 </tr>
 </tbody>
 </table>
-<p>Each channel has at least one input and one output, but the Normal channel can have multiple inputs and outputs.</p>
+<p>Each channel has at least one input and one output, but the Normal channel can have multiple inputs and outputs (when <a href="#displacement-setup">Displacement Setup</a> is enabled).</p>
 <p>The base color or value of the channel is the default input of the node, as shown in the GIF below.</p>
 <table>
 <thead>
@@ -223,6 +223,8 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 <p>There are three channel types in Ucupaint: RGB, Value, and Normal.</p>
 <h3 id="rgb-channel-type">RGB Channel Type</h3>
 <p>An RGB channel consists of three color values: red, green, and blue. You can also enable alpha to add transparency, which makes the base color transparent by default..</p>
+<!-- TODO: Use clamp is not explained yet -->
+
 <table>
 <thead>
 <tr>
@@ -278,7 +280,7 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tbody>
 </table>
 <h4 id="displacement-setup">Displacement Setup</h4>
-<p>Enabling the Displacement Setup will add new input and output sockets to the Ucupaint node: Height, Max Height, and Vector Displacement.
+<p>Enabling the Displacement Setup will add new input and output sockets to the Ucupaint node: <code>Height</code>, <code>Max Height</code>, and <code>Vector Displacement</code>.
 These outputs are connected to displacement nodes, automatically created by the Displacement Setup. While you can connect them to other nodes if needed, they are mainly intended to be used with displacement nodes.</p>
 <table>
 <thead>
@@ -350,8 +352,8 @@ These outputs are connected to displacement nodes, automatically created by the 
 </tbody>
 </table>
 <h4 id="parallax-experimental">Parallax (Experimental)</h4>
-<p>The Parallax option lets you create parallax effects when using bump maps. Please save your file before enabling it, as it may cause Blender to freeze.
-Note that parallax effects only work in perspective view and are only available if Experimental Features are enabled in the Ucupaint User Preferences.</p>
+<p>The Parallax option lets you create parallax effects when using bump maps. It only works after you bake the normal channel. Please save your file before enabling it, as it may cause Blender to freeze.
+Note that parallax effects only work in perspective view.</p>
 <table>
 <thead>
 <tr>
