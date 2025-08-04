@@ -166,21 +166,7 @@
 </tr>
 </tbody>
 </table>
-<p>Each channel has at least one input and one output, but some channels, like the Normal channel, can have multiple inputs and outputs.</p>
-<p>As shown in the image below, enabling the Displacement Setup will add new input and output sockets to the Ucupaint node: Height, Max Height, and Vector Displacement.
-These outputs are connected to displacement nodes, automatically created by the Displacement Setup. While you can connect them to other nodes if needed, they are mainly intended to be used with displacement nodes.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><img alt="02.channel-overview.02" src="../source/02.channel-overview.02.1.png"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Multiple Normal Inputs and Outputs when Displacement Setup is active</td>
-</tr>
-</tbody>
-</table>
+<p>Each channel has at least one input and one output, but the Normal channel can have multiple inputs and outputs.</p>
 <p>The base color or value of the channel is the default input of the node, as shown in the GIF below.</p>
 <table>
 <thead>
@@ -210,8 +196,10 @@ In the channels list panel, you can perform basic actions such as adding, moving
 </tr>
 </tbody>
 </table>
-<p><strong>!!! NOTE</strong>
-    <em>You may need to learn how to create a layer before continuing on this page. Click <a href="../01.02.layer/#creating-new-layer-quick-guide">here</a> to jump to the Layer page</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may need to learn how to create a layer before continuing on this page. Click <a href="../01.02.layer/#creating-new-layer-quick-guide">here</a> to jump to the Layer page</p>
+</div>
 <h2 id="adding-a-new-channel">Adding a New Channel</h2>
 <p>To add a new channel, use the '+' button next to the channel list. The video below demonstrates how to create an Emission channel in Ucupaint.</p>
 <!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the chanels list, it will gives you channel type options, which are RGB, Value, and Normal.
@@ -290,11 +278,25 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tbody>
 </table>
 <h4 id="displacement-setup">Displacement Setup</h4>
-<p><strong>Enabling Displacement Setup does the following:</strong></p>
+<p>Enabling the Displacement Setup will add new input and output sockets to the Ucupaint node: Height, Max Height, and Vector Displacement.
+These outputs are connected to displacement nodes, automatically created by the Displacement Setup. While you can connect them to other nodes if needed, they are mainly intended to be used with displacement nodes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="02.channel-overview.02" src="../source/02.channel-overview.02.1.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Multiple Normal Inputs and Outputs when Displacement Setup is active</td>
+</tr>
+</tbody>
+</table>
+<p>Other than adding the inputs and outputs, enabling Displacement Setup also does the following:</p>
 <ul>
 <li>Adds a Subdivision Surface modifier to all objects using the same material</li>
 <li>Adds a displacement node setup to the active material</li>
-<li>Converts bump maps from Ucupaint layers into real geometry (unless Write Height is enabled on that layer, which disables displacement for it)</li>
+<li>Converts bump maps from Ucupaint layers into real displacement (unless Write Height is enabled on that layer, which disables displacement for it)</li>
 </ul>
 <p>The <strong>Max Polygons</strong> value controls how much the object is subdivided. It’s measured in thousands; for example, a value of 1000 means up to 1 million polygons.</p>
 <p>If you enable <strong>Adaptive Subdivision</strong> (Cycles only), Ucupaint will:</p>
