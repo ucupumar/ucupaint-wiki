@@ -201,7 +201,7 @@ In the channels list panel, you can perform basic actions such as adding, moving
 <p>You may need to learn how to create a layer before continuing on this page. Click <a href="../01.02.layer/#creating-new-layer-quick-guide">here</a> to jump to the Layer page</p>
 </div>
 <h2 id="adding-a-new-channel">Adding a New Channel</h2>
-<p>To add a new channel, use the '+' button next to the channel list. The video below demonstrates how to create an Emission channel in Ucupaint.</p>
+<p>To add a new channel, use the <code>+</code> button next to the channel list. The video below demonstrates how to create an Emission channel in Ucupaint.</p>
 <!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the chanels list, it will gives you channel type options, which are RGB, Value, and Normal.
 For demonstration, let's try to create new channel that connect to emission socket on the principled bsdf.
 Now the popup appears, if you already decided to connect it to principled bsdf, you don't have to manually name the channel, just choose emission on the dropdown, it will automatically set the name of your channel, and if you click ok, it will also connect the sockets. -->
@@ -279,11 +279,10 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tr>
 </tbody>
 </table>
-<!-- TODO: Height tweak is not explained yet -->
-
+<p>The <strong>Height Tweak</strong> option is to multiply the value maximum displacement/bump height. It's useful for tweaking the total displacement/bump height without manually adjusting the height for each layer one by one.</p>
 <h4 id="displacement-setup">Displacement Setup</h4>
-<p>Enabling the Displacement Setup will add new input and output sockets to the Ucupaint node: <code>Height</code>, <code>Max Height</code>, and <code>Vector Displacement</code>.
-These outputs are connected to displacement nodes, automatically created by the Displacement Setup. While you can connect them to other nodes if needed, they are mainly intended to be used with displacement nodes.</p>
+<p>Enabling the Displacement Setup will add extra input and output sockets to the Ucupaint node: <code>Height</code>, <code>Max Height</code>, and <code>Vector Displacement</code>.
+These outputs are connected to displacement nodes, which are automatically created when the Displacement Setup is enabled for the first time. While you can connect them to other nodes if needed, they are mainly intended to be used with the given displacement nodes.</p>
 <table>
 <thead>
 <tr>
@@ -296,20 +295,18 @@ These outputs are connected to displacement nodes, automatically created by the 
 </tr>
 </tbody>
 </table>
-<p>Other than adding the inputs and outputs, enabling Displacement Setup also does the following:</p>
+<p>Enabling Displacement Setup also does the following:</p>
 <ul>
 <li>Adds a Subdivision Surface modifier to all objects using the same material</li>
-<li>Adds a displacement node setup to the active material</li>
-<li>Converts bump maps from Ucupaint layers into real displacement (unless Write Height is enabled on that layer, which disables displacement for it)</li>
+<li>Converts bump maps from Ucupaint layers into real displacement (unless <code>Write Height</code> is enabled on that layer, which disables displacement for it)</li>
 </ul>
 <p>The <strong>Max Polygons</strong> value controls how much the object is subdivided. It’s measured in thousands; for example, a value of 1000 means up to 1 million polygons.</p>
 <p>If you enable <strong>Adaptive Subdivision</strong> (Cycles only), Ucupaint will:</p>
 <ul>
-<li>Set the render engine to Cycles</li>
-<li>Enable the Experimental feature set</li>
+<li>Enable the Experimental feature set for Cycles render</li>
 <li>Automatically configure adaptive subdivision, which adjusts detail based on the camera view</li>
 </ul>
-<p>Adaptive subdivision improves detail where it's needed most, but may increase load time when entering render view.</p>
+<p>Adaptive subdivision improves displacement details when you're using Cycles renderer, but may increase load time when entering render view.</p>
 <!-- Need more explanation -->
 
 <p>The video below demonstrates how to set up Ucupaint for drawing with displacement</p>
