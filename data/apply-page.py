@@ -17,7 +17,7 @@ with open('contributors.csv', 'r') as f:
 	lines = f.readlines()
 	for line in lines:
 		parts = line.strip().split(', ')
-		if len(parts) == 3:
+		if len(parts) >= 3:
 			login, url, pic = parts
 			contributors += f'* [{login}]({url})\n'
 
@@ -25,7 +25,7 @@ with open('contributors-wiki.csv', 'r') as f:
 	lines = f.readlines()
 	for line in lines:
 		parts = line.strip().split(', ')
-		if len(parts) == 3:
+		if len(parts) >= 3:
 			login, url, pic = parts
 			wiki_contributors += f'* [{login}]({url})\n'
 
@@ -33,7 +33,7 @@ with open('sponsors.csv', 'r') as f:
 	lines = f.readlines()
 	for line in lines:
 		parts = line.strip().split(', ')
-		if len(parts) == 6:
+		if len(parts) >= 6:
 			login, url, pic, since, price_usd, is_one_time = parts
 			sponsors += f'* [{login}]({url})\n'
 
