@@ -32,9 +32,10 @@ with open('contributors-wiki.csv', 'r') as f:
 with open('sponsors.csv', 'r') as f:
 	lines = f.readlines()
 	for line in lines:
+		print("line sponsor:", line)
 		parts = line.strip().split(', ')
 		if len(parts) >= 6:
-			login, url, pic, since, price_usd, is_one_time = parts
+			login, url, pic, since, price_usd, is_one_time, index_tier = parts
 			sponsors += f'* [{login}]({url})\n'
 
 content = content.format(contributors=contributors, wiki_contributors=wiki_contributors, sponsors=sponsors)
