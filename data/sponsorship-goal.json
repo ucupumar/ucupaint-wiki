@@ -10,12 +10,20 @@
     {
       "name": "\u2615\ufe0f Backer\r",
       "price": 10,
-      "description": "### \u2615\ufe0f Backer\r\n- Get a sponsor badge on your profile"
+      "description": "### \u2615\ufe0f Backer\r\n- Get a sponsor badge on your profile",
+      "horizontal": true,
+      "default_expanded": false,
+      "scale": 1.5,
+      "per_item_width": 500
     },
     {
       "name": "\ud83c\udf69 Generous Backer\r",
       "price": 50,
-      "description": "### \ud83c\udf69 Generous Backer\r\n- Get a sponsor badge on your profile\r\n- Shoutout on Bluesky & Twitter (50k+ combined followers)"
+      "description": "### \ud83c\udf69 Generous Backer\r\n- Get a sponsor badge on your profile\r\n- Shoutout on Bluesky & Twitter (50k+ combined followers)",
+      "horizontal": false,
+      "default_expanded": true,
+      "scale": 3,
+      "per_item_width": 180
     }
   ]
 }

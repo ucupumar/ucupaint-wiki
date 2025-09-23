@@ -1,0 +1,16 @@
+{
+	"tiers": [
+		{
+			"horizontal": true,
+			"default_expanded": false,
+			"scale": 1.5,
+			"per_item_width": 500
+		},
+		{
+			"horizontal": false,
+			"default_expanded": true,
+			"scale": 3,
+			"per_item_width": 180
+		}
+	]
+}

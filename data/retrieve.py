@@ -166,6 +166,16 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 goal["tiers"] = selected_tiers
 
     tiers = goal.get("tiers") if goal else None
+
+    # tiers_default = 
+    with open('tiers.json', 'r') as f:
+        tiers_default = json.load(f)
+        if tiers and tiers_default:
+            default_items = tiers_default.get("tiers", [])
+            for i, t in enumerate(tiers):
+                if i < len(default_items):
+                    t.update(default_items[i])
+            
     while True:
         conn = data["data"]["viewer"]["sponsors"]
         for node in conn["nodes"]:
