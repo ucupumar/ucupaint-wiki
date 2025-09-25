@@ -2,15 +2,33 @@
 	"tiers": [
 		{
 			"horizontal": true,
-			"default_expanded": false,
-			"scale": 1.5,
+			"scale": 0.0,
+			"per_page_item": 20,
 			"per_item_width": 500
 		},
 		{
+			"horizontal": true,
+			"scale": 1.0,
+			"per_page_item": 4,
+			"per_item_width": 500
+		},
+		{
+			"horizontal": true,
+			"scale": 2,
+			"per_page_item": 4,
+			"per_item_width": 280
+		},
+		{
 			"horizontal": false,
-			"default_expanded": true,
 			"scale": 3,
+			"per_page_item": 3,
 			"per_item_width": 180
+		},
+		{
+			"horizontal": false,
+			"scale": 5,
+			"per_page_item": 2,
+			"per_item_width": 280
 		}
 	]
 }

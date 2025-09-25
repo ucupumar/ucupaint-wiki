@@ -184,6 +184,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
 
             new_sp = {
                 "login": node.get("login"),
+                "name": node.get("name"),
                 "profile": node.get("url"),
                 "avatar_url": node.get("avatarUrl"),
                 "tier": 0,
@@ -217,7 +218,7 @@ def retrieve_sponsors(owner:str, filename:str):
     csv_content = ''
 
     for s in sponsors:
-       csv_content += f"{s['login']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}\n"
+       csv_content += f"{s['login']},{s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}\n"
 
     print(csv_content)
     with open(filename, 'w') as f:
