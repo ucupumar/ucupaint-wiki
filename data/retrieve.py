@@ -175,6 +175,21 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
             for i, t in enumerate(tiers):
                 if i < len(default_items):
                     t.update(default_items[i])
+
+    override_users = {}
+    with open('override-users.csv', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            parts = line.strip().split(',')
+            if len(parts) >= 4:
+                login, name, url, pic = parts
+                login = login.strip()
+                override_users[login] = {
+                    "login": login,
+                    "name": name.strip(),
+                    "url": url.strip(),
+                    "avatar_url": pic.strip(),
+                }
             
     while True:
         conn = data["data"]["viewer"]["sponsors"]
@@ -193,6 +208,13 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 "is_one_time": tier["isOneTime"] if tier else None,
                 "since": sponsorship["createdAt"],
             }
+
+            if new_sp["login"] in override_users.keys():
+                ou = override_users[new_sp["login"]]
+                new_sp["name"] = ou.get("name") or new_sp["name"]
+                new_sp["profile"] = ou.get("url") or new_sp["profile"]
+                new_sp["avatar_url"] = ou.get("avatar_url") or new_sp["avatar_url"]
+
             if tiers:
                 for i, t in enumerate(tiers):
                     if new_sp["price_usd"] <= t["price"]:
@@ -218,7 +240,7 @@ def retrieve_sponsors(owner:str, filename:str):
     csv_content = ''
 
     for s in sponsors:
-       csv_content += f"{s['login']},{s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}\n"
+       csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}\n"
 
     print(csv_content)
     with open(filename, 'w') as f:
