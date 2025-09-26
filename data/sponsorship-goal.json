@@ -12,18 +12,18 @@
       "price": 10,
       "description": "### \ud83e\ude76 Silver\r\n- Get a sponsor badge on your profile",
       "horizontal": true,
-      "default_expanded": false,
-      "scale": 1.5,
+      "scale": 0.0,
+      "per_page_item": 20,
       "per_item_width": 500
     },
     {
       "name": "\ud83e\udd0d Platinum\r",
       "price": 50,
       "description": "### \ud83e\udd0d Platinum\r\n- Get a sponsor badge on your profile\r\n- Your profile icon is visible in the Ucupaint sponsorship panel (Only after version 2.4+)",
-      "horizontal": false,
-      "default_expanded": true,
-      "scale": 3,
-      "per_item_width": 180
+      "horizontal": true,
+      "scale": 1.0,
+      "per_page_item": 4,
+      "per_item_width": 500
     }
   ]
 }
