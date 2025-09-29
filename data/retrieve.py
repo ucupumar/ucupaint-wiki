@@ -44,7 +44,7 @@ def retrieve_contributors(owner:str, repo:str, filename:str):
         print("Failed to parse JSON response:")
         print(content)
 
-    print(csv_content)
+    # print(csv_content)
     # Save to file
     with open(filename, 'w') as f:
         f.write(csv_content)
@@ -133,7 +133,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
     resp.raise_for_status()
     data = resp.json()
 
-    print(json.dumps(data, indent=2))
+    # print(json.dumps(data, indent=2))
  
     listing = data["data"]["viewer"]["sponsorsListing"]
     if listing:
@@ -217,9 +217,9 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
 
             if tiers:
                 for i, t in enumerate(tiers):
-                    if new_sp["price_usd"] <= t["price"]:
+                    if new_sp["price_usd"] >= t["price"]:
                         new_sp["tier"] = i
-                        break
+            print(new_sp)
             sponsors.append(new_sp)
         if conn["pageInfo"]["hasNextPage"]:
             after = conn["pageInfo"]["endCursor"]
@@ -242,12 +242,12 @@ def retrieve_sponsors(owner:str, filename:str):
     for s in sponsors:
        csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}\n"
 
-    print(csv_content)
+    # print(csv_content)
     with open(filename, 'w') as f:
         f.write(csv_content)
 
     if goal:
-        print(json.dumps(goal, indent=2))
+        # print(json.dumps(goal, indent=2))
         with open('sponsorship-goal.json', 'w') as f:
             json.dump(goal, f, indent=2)
 
