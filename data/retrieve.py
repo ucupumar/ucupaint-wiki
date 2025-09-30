@@ -243,7 +243,10 @@ def retrieve_sponsors(owner:str, filename:str):
     csv_content = ''
 
     for s in sponsors:
-       csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
+        if not s['public']:
+            csv_content += f"Private, Private, Private, Private, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
+        else:
+            csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
 
     # print(csv_content)
     with open(filename, 'w') as f:
