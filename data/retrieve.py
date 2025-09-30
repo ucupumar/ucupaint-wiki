@@ -70,6 +70,7 @@ QUERY = """
             sponsorshipForViewerAsSponsorable {
               isActive
               createdAt
+              privacyLevel
               tier {
                 id
                 name
@@ -87,6 +88,7 @@ QUERY = """
             sponsorshipForViewerAsSponsorable {
               isActive
               createdAt
+              privacyLevel
               tier {
                 id
                 name
@@ -207,6 +209,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 "price_usd": tier["monthlyPriceInDollars"] if tier else None,
                 "is_one_time": tier["isOneTime"] if tier else None,
                 "since": sponsorship["createdAt"],
+                "public" : sponsorship["privacyLevel"] == "PUBLIC" if sponsorship else False,
             }
 
             if new_sp["login"] in override_users.keys():
@@ -240,7 +243,7 @@ def retrieve_sponsors(owner:str, filename:str):
     csv_content = ''
 
     for s in sponsors:
-       csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}\n"
+       csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
 
     # print(csv_content)
     with open(filename, 'w') as f:
