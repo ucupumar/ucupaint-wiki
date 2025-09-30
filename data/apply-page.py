@@ -34,8 +34,10 @@ with open('sponsors.csv', 'r') as f:
 	for line in lines:
 		parts = line.strip().split(',')
 		if len(parts) >= 6:
-			login, name, url, pic, since, price_usd, is_one_time, index_tier = parts
-			sponsors += f'* [{name.strip()}]({url.strip()})\n'
+			login, name, url, pic, since, price_usd, is_one_time, index_tier, public = parts
+			is_public:bool = public.strip().lower() == 'true'
+			if is_public:
+				sponsors += f'* [{name.strip()}]({url.strip()})\n'
 
 content = content.format(contributors=contributors, wiki_contributors=wiki_contributors, sponsors=sponsors)
 
