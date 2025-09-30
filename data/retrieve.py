@@ -241,10 +241,12 @@ def retrieve_sponsors(owner:str, filename:str):
     sponsors.sort(key=sponsor_sort_key)
 
     csv_content = ''
-
+    
+    private_count = 0
     for s in sponsors:
         if not s['public']:
-            csv_content += f"Private, Private, Private, Private, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
+            csv_content += f"private_{private_count}, private_{private_count}, private_{private_count}, private_{private_count}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
+            private_count += 1
         else:
             csv_content += f"{s['login']}, {s['name']}, {s['profile']}, {s['avatar_url']}, {s['since']}, {s['price_usd']}, {s['is_one_time']}, {s['tier']}, {s['public']}\n"
 
