@@ -15,19 +15,33 @@ sponsors = ''
 
 with open('contributors.csv', 'r') as f:
 	lines = f.readlines()
+	skip_first = True
 	for line in lines:
+		if skip_first:
+			skip_first = False
+			continue
 		parts = line.strip().split(',')
 		if len(parts) >= 3:
-			login, url, pic = parts
-			contributors += f'* [{login.strip()}]({url.strip()})\n'
+			login, display, url, pic = parts
+			name = display.strip()
+			if name == '':
+				name = login.strip()
+			contributors += f'* [{name}]({url.strip()})\n'
 
 with open('contributors-wiki.csv', 'r') as f:
 	lines = f.readlines()
+	skip_first = True
 	for line in lines:
+		if skip_first:
+			skip_first = False
+			continue
 		parts = line.strip().split(',')
 		if len(parts) >= 3:
-			login, url, pic = parts
-			wiki_contributors += f'* [{login.strip()}]({url.strip()})\n'
+			login, display, url, pic = parts
+			name = display.strip()
+			if name == '':
+				name = login.strip()
+			wiki_contributors += f'* [{name}]({url.strip()})\n'
 
 with open('sponsors.csv', 'r') as f:
 	lines = f.readlines()
