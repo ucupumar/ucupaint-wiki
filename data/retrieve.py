@@ -20,6 +20,21 @@ headers_repo = {
 
 def retrieve_contributors(owner:str, repo:str, filename:str):
 
+    override_contributors = {}
+    with open('override-contributors.csv', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            parts = line.strip().split(',')
+            if len(parts) >= 4:
+                login, name, url, pic = parts
+                login = login.strip()
+                override_contributors[login] = {
+                    "login": login,
+                    "name": name.strip(),
+                    "url": url.strip(),
+                    "avatar_url": pic.strip(),
+                }
+
     conn.request("GET", f"/repos/{owner}/{repo}/contributors", payload, headers_repo)
     res = conn.getresponse()
 
@@ -34,11 +49,16 @@ def retrieve_contributors(owner:str, repo:str, filename:str):
     csv_content = ''
     try:
         json_content = json.loads(content)
+
+        csv_content += "id, display_name, profile, avatar\n"
         for user in json_content:
             if user["type"] == "Bot":
                 continue
-
-            csv_content += f"{user['login']}, {user['html_url']}, {user['avatar_url']}\n"
+            if user["login"] in override_contributors.keys():
+                ou = override_contributors[user["login"]]
+                csv_content += f"{ou['login']}, {ou['name']}, {ou['url']}, {ou['avatar_url']}\n"
+            else:
+                csv_content += f"{user['login']}, , {user['html_url']}, {user['avatar_url']}\n"
         # print(json.dumps(json_content, indent=2))
     except json.JSONDecodeError:
         print("Failed to parse JSON response:")
@@ -178,15 +198,15 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 if i < len(default_items):
                     t.update(default_items[i])
 
-    override_users = {}
-    with open('override-users.csv', 'r') as f:
+    override_sponsors = {}
+    with open('override-sponsors.csv', 'r') as f:
         lines = f.readlines()
         for line in lines:
             parts = line.strip().split(',')
             if len(parts) >= 4:
                 login, name, url, pic = parts
                 login = login.strip()
-                override_users[login] = {
+                override_sponsors[login] = {
                     "login": login,
                     "name": name.strip(),
                     "url": url.strip(),
@@ -212,8 +232,8 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 "public" : sponsorship["privacyLevel"] == "PUBLIC" if sponsorship else False,
             }
 
-            if new_sp["login"] in override_users.keys():
-                ou = override_users[new_sp["login"]]
+            if new_sp["login"] in override_sponsors.keys():
+                ou = override_sponsors[new_sp["login"]]
                 new_sp["name"] = ou.get("name") or new_sp["name"]
                 new_sp["profile"] = ou.get("url") or new_sp["profile"]
                 new_sp["avatar_url"] = ou.get("avatar_url") or new_sp["avatar_url"]
@@ -240,7 +260,7 @@ def retrieve_sponsors(owner:str, filename:str):
     sponsors, goal = fetch_public_sponsors(owner)
     sponsors.sort(key=sponsor_sort_key)
 
-    csv_content = ''
+    csv_content = "id, display_name, profile, avatar, since, amount, one_time, tier_index, public\n"
     
     private_count = 0
     for s in sponsors:

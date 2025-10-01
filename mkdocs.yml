@@ -18,6 +18,7 @@ nav:
   - Bake Channels : 01.09.bake-channels.md
   - Resources : 01.10.resources.md
   - Extras : 01.11.extras.md
+  - Credits : 01.12.contributors.md
 plugins:
   - search
   - mkdocs-video:
