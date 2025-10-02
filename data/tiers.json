@@ -17,21 +17,21 @@
 		{
 			"horizontal": true,
 			"scale": 2.0,
-			"icon_size": 32,
+			"icon_size": 64,
 			"per_page_item": 4,
 			"per_item_width": 280
 		},
 		{
 			"horizontal": false,
 			"scale": 3.0,
-			"icon_size": 96,
+			"icon_size": 128,
 			"per_page_item": 3,
 			"per_item_width": 180
 		},
 		{
 			"horizontal": false,
 			"scale": 5.0,
-			"icon_size": 128,
+			"icon_size": 256,
 			"per_page_item": 2,
 			"per_item_width": 280
 		}
