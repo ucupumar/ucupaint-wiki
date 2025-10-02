@@ -35,5 +35,14 @@
 			"per_page_item": 2,
 			"per_item_width": 280
 		}
-	]
+	],
+	
+	"url": "https://github.com/sponsors/ucupumar",
+	"maintainer": "ucupumar",
+	"contributor_settings": {
+		"scale": 1.0,
+		"icon_size": 32,
+		"per_page_item": 4,
+		"per_item_width": 500
+	}
 }

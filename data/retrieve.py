@@ -23,7 +23,11 @@ def retrieve_contributors(owner:str, repo:str, filename:str):
     override_contributors = {}
     with open('override-contributors.csv', 'r') as f:
         lines = f.readlines()
+        skip_first = True
         for line in lines:
+            if skip_first:
+                skip_first = False
+                continue
             parts = line.strip().split(',')
             if len(parts) >= 4:
                 login, name, url, pic = parts
@@ -198,10 +202,18 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 if i < len(default_items):
                     t.update(default_items[i])
 
+        goal["url"] = tiers_default.get("url")
+        goal["maintainer"] = tiers_default.get("maintainer")
+        goal["contributor_settings"] = tiers_default.get("contributor_settings", {})
+
     override_sponsors = {}
     with open('override-sponsors.csv', 'r') as f:
         lines = f.readlines()
+        skip_first = True
         for line in lines:
+            if skip_first:
+                skip_first = False
+                continue
             parts = line.strip().split(',')
             if len(parts) >= 4:
                 login, name, url, pic = parts
