@@ -16,7 +16,8 @@
         "scale": 0.0,
         "icon_size": 0,
         "per_page_item": 20,
-        "per_item_width": 500
+        "per_item_width": 500,
+        "icon_value": "NODE_SOCKET_OBJECT"
       },
       {
         "name": "\ud83e\ude76 Silver\r",
@@ -26,7 +27,8 @@
         "scale": 1.0,
         "icon_size": 32,
         "per_page_item": 4,
-        "per_item_width": 500
+        "per_item_width": 500,
+        "icon_value": "NODE_SOCKET_FLOAT"
       },
       {
         "name": "\ud83d\udc9b Gold\r",
@@ -36,7 +38,8 @@
         "scale": 2.0,
         "icon_size": 64,
         "per_page_item": 4,
-        "per_item_width": 280
+        "per_item_width": 280,
+        "icon_value": "NODE_SOCKET_RGBA"
       },
       {
         "name": "\ud83e\udd0d Platinum\r",
@@ -46,7 +49,8 @@
         "scale": 3.0,
         "icon_size": 128,
         "per_page_item": 3,
-        "per_item_width": 180
+        "per_item_width": 180,
+        "icon_value": "NODE_SOCKET_STRING"
       },
       {
         "name": "\ud83e\ude75 Titanium\r",
@@ -56,12 +60,13 @@
         "scale": 5.0,
         "icon_size": 256,
         "per_page_item": 2,
-        "per_item_width": 280
+        "per_item_width": 280,
+        "icon_value": "NODE_SOCKET_BOOLEAN"
       }
     ],
     "maintainer": "ucupumar"
   },
-  "contributor_settings": {
+  "contributors": {
     "scale": 1.0,
     "icon_size": 32,
     "per_page_item": 9,

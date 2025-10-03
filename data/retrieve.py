@@ -210,7 +210,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
         goal["url"] = tiers_default.get("url")
         goal["maintainer"] = tiers_default.get("maintainer")
 
-        settings["contributor_settings"] = tiers_default.get("contributor_settings", {})
+        settings["contributors"] = tiers_default.get("contributors", {})
 
     override_sponsors = {}
     with open('override-sponsors.csv', 'r') as f:
