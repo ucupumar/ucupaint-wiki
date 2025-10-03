@@ -242,7 +242,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
                 "name": node.get("name"),
                 "profile": node.get("url"),
                 "avatar_url": node.get("avatarUrl"),
-                "tier": 0,
+                "tier": -1,
 
                 "price_usd": tier["monthlyPriceInDollars"] if tier else None,
                 "is_one_time": tier["isOneTime"] if tier else None,
