@@ -10,7 +10,7 @@
     {
       "name": "\ud83e\udd0e Bronze\r",
       "price": 5,
-      "description": "### \ud83e\udd0e Bronze\r\n- Sponsor badge on your profile\r\n- Small profile name in the sponsorship panel (v2.4+)",
+      "description": "### \ud83e\udd0e Bronze\r\nYou'll be credited with a **small** profile name in the sponsorship panel (Ucupaint v2.4+)",
       "horizontal": true,
       "scale": 0.0,
       "icon_size": 0,
@@ -20,7 +20,7 @@
     {
       "name": "\ud83e\ude76 Silver\r",
       "price": 10,
-      "description": "### \ud83e\ude76 Silver\r\n- Sponsor badge on your profile\r\n- Small profile icon in the sponsorship panel (v2.4+)",
+      "description": "### \ud83e\ude76 Silver\r\nYou'll be credited with a **small** profile icon and name in the sponsorship panel (Ucupaint v2.4+)",
       "horizontal": true,
       "scale": 1.0,
       "icon_size": 32,
@@ -30,7 +30,7 @@
     {
       "name": "\ud83d\udc9b Gold\r",
       "price": 25,
-      "description": "### \ud83d\udc9b Gold\r\n- Sponsor badge on your profile\r\n- Medium profile icon in the sponsorship panel (v2.4+)",
+      "description": "### \ud83d\udc9b Gold\r\nYou'll be credited with a **medium**-sized profile icon and name in the sponsorship panel (Ucupaint v2.4+)",
       "horizontal": true,
       "scale": 2.0,
       "icon_size": 64,
@@ -40,7 +40,7 @@
     {
       "name": "\ud83e\udd0d Platinum\r",
       "price": 50,
-      "description": "### \ud83e\udd0d Platinum\r\n- Sponsor badge on your profile\r\n- Large profile icon in the sponsorship panel (v2.4+)",
+      "description": "### \ud83e\udd0d Platinum\r\nYou'll be credited with a **large** profile icon and name in the sponsorship panel (Ucupaint v2.4+)",
       "horizontal": false,
       "scale": 3.0,
       "icon_size": 128,
@@ -50,7 +50,7 @@
     {
       "name": "\ud83e\ude75 Titanium\r",
       "price": 100,
-      "description": "### \ud83e\ude75 Titanium\r\n- Sponsor badge on your profile\r\n- Very large profile icon in the sponsorship panel (v2.4+)",
+      "description": "### \ud83e\ude75 Titanium\r\nYou'll be credited with a **very large** profile icon and name in the sponsorship panel (Ucupaint v2.4+)",
       "horizontal": false,
       "scale": 5.0,
       "icon_size": 256,
