@@ -194,7 +194,12 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
     tiers = goal.get("tiers") if goal else None
 
     # tiers_default = 
-    with open('tiers.json', 'r') as f:
+    settings = {
+        "sponsorships" : goal,
+    }
+
+    with open('settings.json', 'r') as f:
+        
         tiers_default = json.load(f)
         if tiers and tiers_default:
             default_items = tiers_default.get("tiers", [])
@@ -204,7 +209,8 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
 
         goal["url"] = tiers_default.get("url")
         goal["maintainer"] = tiers_default.get("maintainer")
-        goal["contributor_settings"] = tiers_default.get("contributor_settings", {})
+
+        settings["contributor_settings"] = tiers_default.get("contributor_settings", {})
 
     override_sponsors = {}
     with open('override-sponsors.csv', 'r') as f:
@@ -261,7 +267,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
         else:
             break
         
-    return sponsors, goal
+    return sponsors, settings
 
 def sponsor_sort_key(s):
     # sort by is_one_time (False first), price_usd (desc), since (asc)
@@ -289,7 +295,7 @@ def retrieve_sponsors(owner:str, filename:str):
 
     if goal:
         # print(json.dumps(goal, indent=2))
-        with open('sponsorship-goal.json', 'w') as f:
+        with open('credits.json', 'w') as f:
             json.dump(goal, f, indent=2)
 
 retrieve_contributors('ucupumar', 'ucupaint', 'contributors.csv')
