@@ -61,8 +61,8 @@ jobs:
             git add data/sponsors.csv
           fi
 
-          if [ -f data/sponsorship-goal.json ]; then
-            git add data/sponsorship-goal.json
+          if [ -f data/credits.json ]; then
+            git add data/credits.json
           fi
 
           if [ -f docs/01.12.contributors.md ]; then
