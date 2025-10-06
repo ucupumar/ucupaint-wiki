@@ -68,7 +68,7 @@
   },
   "contributors": {
     "scale": 1.0,
-    "icon_size": 64,
+    "icon_size": 128,
     "per_page_item": 9,
     "per_column": 3
   }
