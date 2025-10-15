@@ -1,10 +1,10 @@
 {
   "sponsorships": {
     "kind": "MONTHLY_SPONSORSHIP_AMOUNT",
-    "description": "Once we hit this goal, I\u2019ll be able to work on Ucupaint full-time! So you\u2019ll get new features way faster!",
-    "percentComplete": 1,
-    "targetValue": 5000,
-    "title": "$5,000 per month",
+    "description": "Thank you so much for all your support! When we hit this goal, I\u2019ll be able to spend at least a day each week working on ucupaint and go live once a month to show what\u2019s new.",
+    "percentComplete": 3,
+    "targetValue": 1000,
+    "title": "$1,000 per month",
     "url": "https://github.com/sponsors/ucupumar",
     "fullDescription": "### Fellow 3D artists! \ud83d\udc4b\n\nSince 2017 I've been working on Ucupaint, a free and open source Blender addon that can help you a lot with the material creation. As for September 2025, Ucupaint has been downloaded almost 200k across the [Blender Extension Platform](https://extensions.blender.org/add-ons/ucupaint/) and [GitHub](https://github.com/ucupumar/ucupaint/releases), and the number is still accelerating!\n\n### Why sponsoring me? \ud83d\ude4b\n\nSponsoring Ucupaint can help make the development sustainable. There are a lot of ideas and feature requests left to do, but the implementation takes time since I also have other responsibilities. If this funding goes well, I can put much more time into development and doing the documentation/tutorials.",
     "tiers": [
