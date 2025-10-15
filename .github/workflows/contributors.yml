@@ -46,8 +46,8 @@ jobs:
         run: |
           set -e
 
-          git config user.name "Ahmad Rifai"
-          git config user.email "riff.blend@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           if [ -f data/contributors.csv ]; then
             git add data/contributors.csv

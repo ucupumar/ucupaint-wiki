@@ -4,7 +4,7 @@
 			"horizontal": true,
 			"scale": 0.0,
 			"icon_size": 0,
-			"per_page_item": 20,
+			"per_page_item": 10,
 			"per_item_width": 500,
 			"icon_value": "NODE_SOCKET_OBJECT"
 		},
@@ -12,7 +12,7 @@
 			"horizontal": true,
 			"scale": 1.0,
 			"icon_size": 32,
-			"per_page_item": 4,
+			"per_page_item": 10,
 			"per_item_width": 500,
 			"icon_value": "NODE_SOCKET_FLOAT"
 		},
@@ -20,7 +20,7 @@
 			"horizontal": true,
 			"scale": 2.0,
 			"icon_size": 64,
-			"per_page_item": 4,
+			"per_page_item": 6,
 			"per_item_width": 280,
 			"icon_value": "NODE_SOCKET_RGBA"
 		},
@@ -28,7 +28,7 @@
 			"horizontal": false,
 			"scale": 3.0,
 			"icon_size": 128,
-			"per_page_item": 3,
+			"per_page_item": 6,
 			"per_item_width": 180,
 			"icon_value": "NODE_SOCKET_STRING"
 		},
@@ -36,7 +36,7 @@
 			"horizontal": false,
 			"scale": 5.0,
 			"icon_size": 256,
-			"per_page_item": 2,
+			"per_page_item": 4,
 			"per_item_width": 280,
 			"icon_value": "NODE_SOCKET_BOOLEAN"
 		}
