@@ -5,7 +5,7 @@
 			"scale": 0.0,
 			"icon_size": 0,
 			"per_page_item": 10,
-			"per_item_width": 250,
+			"per_column": 1,
 			"icon_value": "NODE_SOCKET_OBJECT"
 		},
 		{
@@ -13,7 +13,7 @@
 			"scale": 1.0,
 			"icon_size": 32,
 			"per_page_item": 10,
-			"per_item_width": 250,
+			"per_column": 1,
 			"icon_value": "NODE_SOCKET_FLOAT"
 		},
 		{
@@ -21,7 +21,7 @@
 			"scale": 2.0,
 			"icon_size": 64,
 			"per_page_item": 6,
-			"per_item_width": 140,
+			"per_column": 2,
 			"icon_value": "NODE_SOCKET_RGBA"
 		},
 		{
@@ -29,7 +29,7 @@
 			"scale": 3.0,
 			"icon_size": 128,
 			"per_page_item": 6,
-			"per_item_width": 90,
+			"per_column": 3,
 			"icon_value": "NODE_SOCKET_STRING"
 		},
 		{
@@ -37,11 +37,10 @@
 			"scale": 5.0,
 			"icon_size": 256,
 			"per_page_item": 4,
-			"per_item_width": 140,
+			"per_column": 2,
 			"icon_value": "NODE_SOCKET_BOOLEAN"
 		}
 	],
-
 	"url": "https://github.com/sponsors/ucupumar",
 	"maintainer": "ucupumar",
 	"contributors": {
