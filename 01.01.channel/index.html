@@ -60,6 +60,12 @@
     <li class="toctree-l2"><a class="reference internal" href="#channel-types">Channel Types</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#rgb-channel-type">RGB Channel Type</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#alpha-chanel-in-ucupaint-23x-or-lower">Alpha chanel in Ucupaint 2.3x or lower</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#alpha-channel-in-ucupaint-24">Alpha channel in Ucupaint 2.4+</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#value-channel-type">Value Channel Type</a>
     </li>
@@ -230,7 +236,7 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 <h2 id="channel-types">Channel Types</h2>
 <p>There are three channel types in Ucupaint: RGB, Value, and Normal.</p>
 <h3 id="rgb-channel-type">RGB Channel Type</h3>
-<p>An RGB channel consists of three color values: red, green, and blue. You can also enable alpha to add transparency, which makes the base color transparent by default..</p>
+<p>An RGB channel consists of three color values: red, green, and blue. You can also enable alpha (Version 2.3.x or lower) to add transparency, which makes the base color transparent by default..</p>
 <!-- TODO: Use clamp is not explained yet -->
 
 <table>
@@ -245,6 +251,7 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 </tr>
 </tbody>
 </table>
+<h4 id="alpha-chanel-in-ucupaint-23x-or-lower">Alpha chanel in Ucupaint 2.3x or lower</h4>
 <p>If alpha is enabled, your material will automatically switch to Alpha Dithered method in Eevee. The default alpha value is 0.0, making the background fully transparent.
 If you create a layer with a mix blend, it will be placed on top of the transparent background. This can be useful for cases like creating hair planes or vegetation.</p>
 <table>
@@ -259,6 +266,8 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tr>
 </tbody>
 </table>
+<h4 id="alpha-channel-in-ucupaint-24">Alpha channel in Ucupaint 2.4+</h4>
+<p>Ucupaint 2.4.0 introduces new dedicated channel for alpha channel, and it pairs to the color channel by default. Demo of the dedicated alpha channel is available in <a href="https://www.youtube.com/watch?v=EEHSA5tfbU0">YouTube video</a>.</p>
 <h3 id="value-channel-type">Value Channel Type</h3>
 <p>Value channels consist of a single value.</p>
 <table>
