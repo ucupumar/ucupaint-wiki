@@ -171,7 +171,7 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="layer">Layer</h1>
+                <div><h1 id="layer">Layer<a class="headerlink" href="#layer" title="Permanent link">¶</a></h1>
 <p>You can access layers in the layers panel.</p>
 <table>
 <thead>
@@ -185,7 +185,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="creating-new-layer-quick-guide">Creating New Layer (Quick Guide)</h2>
+<h2 id="creating-new-layer-quick-guide">Creating New Layer (Quick Guide)<a class="headerlink" href="#creating-new-layer-quick-guide" title="Permanent link">¶</a></h2>
 <p>You can create new layers by pressing the <code>+</code> button. There are various layer types that can help you finish your texturing process.</p>
 <table>
 <thead>
@@ -244,13 +244,13 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 <p class="admonition-title">Note</p>
 <p>Next Quick Guide is about how layers and channels are related, click <a href="../01.03.layer-channel/#setting-up-layer-channel-quick-guide">here</a> to continue</p>
 </div>
-<h2 id="layer-types">Layer Types</h2>
+<h2 id="layer-types">Layer Types<a class="headerlink" href="#layer-types" title="Permanent link">¶</a></h2>
 <p>There are several layer types that can be used in Ucupaint:</p>
-<h3 id="image">Image</h3>
+<h3 id="image">Image<a class="headerlink" href="#image" title="Permanent link">¶</a></h3>
 <p>You can create a new image or open an image as a layer.</p>
 <!-- TODO: Opening image from file manager -->
 
-<h4 id="udim">UDIM</h4>
+<h4 id="udim">UDIM<a class="headerlink" href="#udim" title="Permanent link">¶</a></h4>
 <p>There's an option to use UDIM when you create a new image layer. This option will automatically be turned on if the selected UV map has UV islands outside of the first tile.</p>
 <table>
 <thead>
@@ -266,7 +266,7 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 </table>
 <!-- TODO: UDIM clip and UDIM refill clip -->
 
-<h4 id="image-atlas">Image Atlas</h4>
+<h4 id="image-atlas">Image Atlas<a class="headerlink" href="#image-atlas" title="Permanent link">¶</a></h4>
 <p>When you create a new image using Ucupaint, it will give you the option to use an image atlas.</p>
 <table>
 <thead>
@@ -281,7 +281,7 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 </tbody>
 </table>
 <p>If you turn on Image Atlas, the newly created layer will use a portion of a larger image. Since Blender materials have a limited number of images that can be used in a material (8-55, depending on your system, more info <a href="../01.11.extras">here</a>), the image atlas will use a special image that can be used as several layers or masks at the same time. This system works automatically, so you don't have to worry about it.</p>
-<h3 id="vertex-color">Vertex Color</h3>
+<h3 id="vertex-color">Vertex Color<a class="headerlink" href="#vertex-color" title="Permanent link">¶</a></h3>
 <p>Vertex color can be used as a layer. There's also a special vertex color editor in edit mode.</p>
 <table>
 <thead>
@@ -295,7 +295,7 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 </tr>
 </tbody>
 </table>
-<h3 id="solid-color">Solid Color</h3>
+<h3 id="solid-color">Solid Color<a class="headerlink" href="#solid-color" title="Permanent link">¶</a></h3>
 <p>Solid Color layer contains only a single color, can be useful if you want to paint the mask first, then edit the solid color later.</p>
 <table>
 <thead>
@@ -309,22 +309,22 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 </tr>
 </tbody>
 </table>
-<h3 id="background">Background</h3>
+<h3 id="background">Background<a class="headerlink" href="#background" title="Permanent link">¶</a></h3>
 <p>Backgound will use your base color &amp; alpha settings as a layer, it can be useful to create holes on the surface.</p>
 <!-- TODO: Creating holes example -->
 
-<h3 id="fake-lighting">Fake Lighting</h3>
+<h3 id="fake-lighting">Fake Lighting<a class="headerlink" href="#fake-lighting" title="Permanent link">¶</a></h3>
 <p>Fake lighting will calculate fake lighting based on a given vector and matrix. If you're using camera space, it can be used for a fresnel effect. Be aware that if you're using camera space, the baked channel will be static.</p>
-<h3 id="group">Group</h3>
+<h3 id="group">Group<a class="headerlink" href="#group" title="Permanent link">¶</a></h3>
 <p>Group layer can combine several layers into one layer and add a mask or a modifier on top of it. This can be really slow if you're using many layers and channels at the same time.</p>
-<h3 id="blender-generated-textures">Blender Generated Textures</h3>
+<h3 id="blender-generated-textures">Blender Generated Textures<a class="headerlink" href="#blender-generated-textures" title="Permanent link">¶</a></h3>
 <p>You can use Blender's generated textures as a layer, for example Noise, Magic, Brick, Voronoi, etc.</p>
-<h3 id="baked-images">Baked Images</h3>
+<h3 id="baked-images">Baked Images<a class="headerlink" href="#baked-images" title="Permanent link">¶</a></h3>
 <p>You can use a baked texture as a layer, for example AO, Cavity, Bevel. Be aware that the baking process may take a while to finish, depending on your system and settings. Various bake to layer types are explained <a href="../01.07.bake-to-layer">here</a></p>
 <!-- TODO: Realtime AO & Edge Detect -->
 
-<h2 id="layer-parameters-and-options">Layer Parameters And Options</h2>
-<h3 id="layer-vector">Layer Vector</h3>
+<h2 id="layer-parameters-and-options">Layer Parameters And Options<a class="headerlink" href="#layer-parameters-and-options" title="Permanent link">¶</a></h2>
+<h3 id="layer-vector">Layer Vector<a class="headerlink" href="#layer-vector" title="Permanent link">¶</a></h3>
 <p>By default, a layer will use a UVMap as vector input, but you can change it to another vector type like Generated.</p>
 <table>
 <thead>
@@ -342,7 +342,7 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 <!-- TODO: Decal vector -->
 <!-- Vector are probably better to have it's own page, not decided yet -->
 
-<h3 id="transformation-vector">Transformation Vector</h3>
+<h3 id="transformation-vector">Transformation Vector<a class="headerlink" href="#transformation-vector" title="Permanent link">¶</a></h3>
 <p>You can transform your vector using this UI.</p>
 <table>
 <thead>
@@ -357,7 +357,7 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 </tbody>
 </table>
 <p>Be aware you can't transform image atlas layer in this way since it shares image with other layers/masks.</p>
-<h3 id="change-layer-type">Change layer type</h3>
+<h3 id="change-layer-type">Change layer type<a class="headerlink" href="#change-layer-type" title="Permanent link">¶</a></h3>
 <p>You can change the layer type to a different one and retain it's mask and modifier settings. Use this button to change the layer type.</p>
 <table>
 <thead>

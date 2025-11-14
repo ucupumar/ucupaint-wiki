@@ -137,7 +137,7 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="maximum-images-per-material-in-blender">Maximum images per Material in Blender</h1>
+                <div><h1 id="maximum-images-per-material-in-blender">Maximum images per Material in Blender<a class="headerlink" href="#maximum-images-per-material-in-blender" title="Permanent link">¶</a></h1>
 <p>If you exceed the number of images, material in Blender can appear pink in the viewport. The number of image limit varies across machine specifications and Blender versions. Here are some limitations found.</p>
 <table>
 <thead>
@@ -182,14 +182,14 @@
 </table>
 <p><em>* tested with RTX 4080, Radeon 6800M, and Apple M3 Laptop</em></p>
 <p>PC platform (Nvidia, AMD Radeon, Intel) has so much lower image limits compared to Apple Mac M series platform, at least on Blender 4.1 and 4.2. There are at least two solutions to circumvent the image limit issue: by using Vulkan or image atlas.</p>
-<h3 id="using-vulkan">Using Vulkan</h3>
+<h3 id="using-vulkan">Using Vulkan<a class="headerlink" href="#using-vulkan" title="Permanent link">¶</a></h3>
 <p>For modern PCs, it's recommended to use <strong>Vulkan</strong> on Blender 4.4 or above since it can handle more than 100 images. You can change the settings in <code>System</code> tab on Blender Preferences.</p>
 <p><img alt="image" src="https://github.com/user-attachments/assets/bcd9db0f-13e7-49f8-a886-83b7cf28f02d"></p>
 <p>Blender 4.3 actually can also use Vulkan, but there's a bug that won't let you paint in texture paint mode.</p>
-<h3 id="converting-to-image-atlas">Converting to Image Atlas</h3>
+<h3 id="converting-to-image-atlas">Converting to Image Atlas<a class="headerlink" href="#converting-to-image-atlas" title="Permanent link">¶</a></h3>
 <p>For older Blender versions (Blender 4.3 or lesser), you can convert already used layer/mask images to image atlas.</p>
 <p><img alt="image" src="https://github.com/user-attachments/assets/7f51fd36-6a6d-4942-9ca7-dd56b31e3093"></p>
-<h1 id="tips">Tips</h1>
+<h1 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">¶</a></h1>
 <p>Here's some tips while using ucupaint
 - Use less generated textures like noise or voronoi if you want the shader compilation faster</p></div>
               

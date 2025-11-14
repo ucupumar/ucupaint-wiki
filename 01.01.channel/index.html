@@ -165,8 +165,8 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="channels">Channels</h1>
-<h2 id="channel-in-ucupaint">Channel in Ucupaint</h2>
+                <div><h1 id="channels">Channels<a class="headerlink" href="#channels" title="Permanent link">¶</a></h1>
+<h2 id="channel-in-ucupaint">Channel in Ucupaint<a class="headerlink" href="#channel-in-ucupaint" title="Permanent link">¶</a></h2>
 <p>A channel in Ucupaint represents a pair consisting of an input and an output within the Ucupaint node. </p>
 <table>
 <thead>
@@ -214,7 +214,7 @@ In the channels list panel, you can perform basic actions such as adding, moving
 <p class="admonition-title">Note</p>
 <p>You may need to learn how to create a layer before continuing on this page. Click <a href="../01.02.layer/#creating-new-layer-quick-guide">here</a> to jump to the Layer page</p>
 </div>
-<h2 id="adding-a-new-channel">Adding a New Channel</h2>
+<h2 id="adding-a-new-channel">Adding a New Channel<a class="headerlink" href="#adding-a-new-channel" title="Permanent link">¶</a></h2>
 <p>To add a new channel, use the <code>+</code> button next to the channel list. The video below demonstrates how to create an Emission channel in Ucupaint.</p>
 <!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the chanels list, it will gives you channel type options, which are RGB, Value, and Normal.
 For demonstration, let's try to create new channel that connect to emission socket on the principled bsdf.
@@ -233,9 +233,9 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 </tbody>
 </table>
 <p>After creating a new channel, the Ucupaint node will display new input and output sockets corresponding to that channel.</p>
-<h2 id="channel-types">Channel Types</h2>
+<h2 id="channel-types">Channel Types<a class="headerlink" href="#channel-types" title="Permanent link">¶</a></h2>
 <p>There are three channel types in Ucupaint: RGB, Value, and Normal.</p>
-<h3 id="rgb-channel-type">RGB Channel Type</h3>
+<h3 id="rgb-channel-type">RGB Channel Type<a class="headerlink" href="#rgb-channel-type" title="Permanent link">¶</a></h3>
 <p>An RGB channel consists of three color values: red, green, and blue. You can also enable alpha (Version 2.3.x or lower) to add transparency, which makes the base color transparent by default..</p>
 <!-- TODO: Use clamp is not explained yet -->
 
@@ -251,7 +251,7 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 </tr>
 </tbody>
 </table>
-<h4 id="alpha-chanel-in-ucupaint-23x-or-lower">Alpha chanel in Ucupaint 2.3x or lower</h4>
+<h4 id="alpha-chanel-in-ucupaint-23x-or-lower">Alpha chanel in Ucupaint 2.3x or lower<a class="headerlink" href="#alpha-chanel-in-ucupaint-23x-or-lower" title="Permanent link">¶</a></h4>
 <p>If alpha is enabled, your material will automatically switch to Alpha Dithered method in Eevee. The default alpha value is 0.0, making the background fully transparent.
 If you create a layer with a mix blend, it will be placed on top of the transparent background. This can be useful for cases like creating hair planes or vegetation.</p>
 <table>
@@ -266,9 +266,9 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tr>
 </tbody>
 </table>
-<h4 id="alpha-channel-in-ucupaint-24">Alpha channel in Ucupaint 2.4+</h4>
+<h4 id="alpha-channel-in-ucupaint-24">Alpha channel in Ucupaint 2.4+<a class="headerlink" href="#alpha-channel-in-ucupaint-24" title="Permanent link">¶</a></h4>
 <p>Ucupaint 2.4.0 introduces new dedicated channel for alpha channel, and it pairs to the color channel by default. Demo of the dedicated alpha channel is available in <a href="https://www.youtube.com/watch?v=EEHSA5tfbU0">YouTube video</a>.</p>
-<h3 id="value-channel-type">Value Channel Type</h3>
+<h3 id="value-channel-type">Value Channel Type<a class="headerlink" href="#value-channel-type" title="Permanent link">¶</a></h3>
 <p>Value channels consist of a single value.</p>
 <table>
 <thead>
@@ -282,7 +282,7 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tr>
 </tbody>
 </table>
-<h3 id="normal-channel-type">Normal Channel Type</h3>
+<h3 id="normal-channel-type">Normal Channel Type<a class="headerlink" href="#normal-channel-type" title="Permanent link">¶</a></h3>
 <p>Normal channels consist of a normal vector. You can have only one normal channel per Ucupaint node.</p>
 <table>
 <thead>
@@ -297,7 +297,7 @@ If you create a layer with a mix blend, it will be placed on top of the transpar
 </tbody>
 </table>
 <p>The <strong>Height Tweak</strong> option is to multiply the value maximum displacement/bump height. It's useful for tweaking the total displacement/bump height without manually adjusting the height for each layer one by one.</p>
-<h4 id="displacement-setup">Displacement Setup</h4>
+<h4 id="displacement-setup">Displacement Setup<a class="headerlink" href="#displacement-setup" title="Permanent link">¶</a></h4>
 <p>Enabling the Displacement Setup will add extra input and output sockets to the Ucupaint node: <code>Height</code>, <code>Max Height</code>, and <code>Vector Displacement</code>.
 These outputs are connected to displacement nodes, which are automatically created when the Displacement Setup is enabled for the first time. While you can connect them to other nodes if needed, they are mainly intended to be used with the given displacement nodes.</p>
 <table>
@@ -339,7 +339,7 @@ These outputs are connected to displacement nodes, which are automatically creat
 </tr>
 </tbody>
 </table>
-<h2 id="experimental-features">Experimental Features</h2>
+<h2 id="experimental-features">Experimental Features<a class="headerlink" href="#experimental-features" title="Permanent link">¶</a></h2>
 <p>To access <strong>Experimental Features</strong>, go to: Edit → Preferences → Add-ons → Ucupaint, then enable the Show Experimental Features option in the Ucupaint settings.</p>
 <table>
 <thead>
@@ -354,7 +354,7 @@ These outputs are connected to displacement nodes, which are automatically creat
 </tbody>
 </table>
 <p>Experimental features will add more options to the Normal channel, which are <code>Smoother Bump</code> and <code>Parallax</code>.</p>
-<h4 id="smoother-bump-experimental">Smoother Bump (Experimental)</h4>
+<h4 id="smoother-bump-experimental">Smoother Bump (Experimental)<a class="headerlink" href="#smoother-bump-experimental" title="Permanent link">¶</a></h4>
 <p>This feature is only useful for Blender 2.7x. Smooth Bump makes your bump map appear smoother than Blender’s default, but this comes at the cost of some precision and performance.</p>
 <table>
 <thead>
@@ -368,7 +368,7 @@ These outputs are connected to displacement nodes, which are automatically creat
 </tr>
 </tbody>
 </table>
-<h4 id="parallax-experimental">Parallax (Experimental)</h4>
+<h4 id="parallax-experimental">Parallax (Experimental)<a class="headerlink" href="#parallax-experimental" title="Permanent link">¶</a></h4>
 <p>The Parallax option lets you create parallax effects when using bump maps. It only works after you bake the normal channel. Please save your file before enabling it, as it may cause Blender to freeze.
 Note that parallax effects only work in perspective view.</p>
 <table>
