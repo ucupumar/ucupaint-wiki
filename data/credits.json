@@ -64,7 +64,8 @@
         "icon_value": "NODE_SOCKET_BOOLEAN"
       }
     ],
-    "maintainer": "ucupumar"
+    "maintainer": "ucupumar",
+    "expanding_tier_member": 4
   },
   "contributors": {
     "scale": 1.0,

@@ -209,6 +209,7 @@ def fetch_public_sponsors(login: str, page_size: int = 100):
 
         goal["url"] = tiers_default.get("url")
         goal["maintainer"] = tiers_default.get("maintainer")
+        goal["expanding_tier_member"] = tiers_default.get("expanding_tier_member")
 
         settings["contributors"] = tiers_default.get("contributors", {})
 
