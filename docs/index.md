@@ -2,8 +2,8 @@
 
 ![project-example](source/00.introduction/00-yang_guifei.jpg)
 
-!!! Warning
-    Many parts of this documentation aren't updated yet.
+!!! warning
+    Many parts of this documentation have not been updated yet.
 
 ## What is Ucupaint?
 
