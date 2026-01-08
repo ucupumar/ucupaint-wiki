@@ -2,6 +2,9 @@
 
 ![project-example](source/00.introduction/00-yang_guifei.jpg)
 
+!!! Warning
+    Many parts of this documentation aren't updated yet.
+
 ## What is Ucupaint?
 
 Ucupaint is a Blender addon that stacks images, textures, and vertex colors into layers with mask and baking support.
