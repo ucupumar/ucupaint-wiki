@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Credits - UCUPAINT</title>
+  <title>Roadmaps - UCUPAINT</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Credits";
-    var mkdocs_page_input_path = "01.12.contributors.md";
+    var mkdocs_page_name = "Roadmaps";
+    var mkdocs_page_input_path = "03.01.roadmap.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -94,10 +94,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="../01.11.extras/">Extras</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Credits</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.12.contributors/">Credits</a>
                     </li>
                 </ul>
       </div>
@@ -121,7 +119,7 @@
     
       
     
-    <li>Credits</li>
+    <li>Roadmaps</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -133,57 +131,60 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">¶</a></h1>
-<ul>
-<li><a href="https://github.com/ucupumar">ucupumar</a></li>
-<li><a href="https://rifai.id">Rifai</a></li>
-<li><a href="https://github.com/passivestar">passivestar</a></li>
-<li><a href="https://github.com/agnira">agnira</a></li>
-<li><a href="https://github.com/morirain">morirain</a></li>
-<li><a href="https://github.com/Kareemov03">Kareemov03</a></li>
-<li><a href="https://github.com/swift502">swift502</a></li>
-<li><a href="https://github.com/bappitybup">bappitybup</a></li>
-<li><a href="https://github.com/ameknite">ameknite</a></li>
-<li><a href="https://github.com/BittieByte">BittieByte</a></li>
-<li><a href="https://github.com/espiondev">espiondev</a></li>
-<li><a href="https://github.com/kurethedead">kurethedead</a></li>
-<li><a href="https://github.com/minteeaa">minteeaa</a></li>
-</ul>
-<h1 id="wikis-contributors">Wiki's Contributors<a class="headerlink" href="#wikis-contributors" title="Permanent link">¶</a></h1>
-<ul>
-<li><a href="https://github.com/ucupumar">ucupumar</a></li>
-<li><a href="https://github.com/aalmaluar">aalmaluar</a></li>
-<li><a href="https://rifai.id">Rifai</a></li>
-<li><a href="https://github.com/agnira">agnira</a></li>
-<li><a href="https://github.com/swift502">swift502</a></li>
-<li><a href="https://github.com/clankill3r">clankill3r</a></li>
-<li><a href="https://github.com/Lattapotta">Lattapotta</a></li>
-</ul>
-<h1 id="sponsors">Sponsors<a class="headerlink" href="#sponsors" title="Permanent link">¶</a></h1>
-<ul>
-<li><a href="https://github.com/tonis2">Tonis</a></li>
-<li><a href="https://github.com/epsypolym">epsypolym</a></li>
-<li><a href="https://github.com/rileyb3d">rileyb3d</a></li>
-<li><a href="https://github.com/Thomas-Schmall">Thomas-Schmall</a></li>
-<li><a href="https://github.com/MikeDoscher">doscher3d</a></li>
-<li><a href="https://github.com/RyutaUehara">RyutaUehara</a></li>
-<li><a href="https://github.com/Picklebarrel3D">Picklebarrel3D</a></li>
-<li><a href="https://github.com/sirdeadduke">sirdeadduke</a></li>
-<li><a href="https://github.com/JulienKaspar">JulienKaspar</a></li>
-<li><a href="https://github.com/Xzaver">xzaver</a></li>
-<li><a href="https://github.com/shodahost">shodahost</a></li>
-</ul></div>
+                <div><h1 id="roadmaps">Roadmaps<a class="headerlink" href="#roadmaps" title="Permanent link">¶</a></h1>
+<p>This page roughly lists all the planned features for ucupaint. Items listed here may evolve as the development progresses.</p>
+<h2 id="ucupaint-30">Ucupaint 3.0<a class="headerlink" href="#ucupaint-30" title="Permanent link">¶</a></h2>
+<p>Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base layer</td>
+<td>WIP (90%)</td>
+<td>For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings.</td>
+</tr>
+<tr>
+<td>“Previous Layers” layer for channel adjustment</td>
+<td>WIP (80%)</td>
+<td>This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack.</td>
+</tr>
+<tr>
+<td>Unified bake target system</td>
+<td>WIP (40%)</td>
+<td>This will integrate the current bake channels system into the bake target system.</td>
+</tr>
+<tr>
+<td>Dealing with collapsed main channel panel by default</td>
+<td>Not started yet</td>
+<td>The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed.</td>
+</tr>
+<tr>
+<td>Normal and height separation</td>
+<td>WIP (70%)</td>
+<td>Currently Normal, Bump, and VDM are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future.</td>
+</tr>
+<tr>
+<td>Better dropdown in layer list</td>
+<td>Considered</td>
+<td>Trying to improve mask and custom data dropdown on layer list.</td>
+</tr>
+<tr>
+<td>Rename ‘Vector’ input to ‘Coordinate’</td>
+<td>Not started yet</td>
+<td>In Ucupaint, ‘Vector’ makes more sense if renamed to ‘Coordinate’.</td>
+</tr>
+</tbody>
+</table></div>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../01.11.extras/" class="btn btn-neutral" title="Extras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -206,8 +207,6 @@
   <div class="rst-versions" role="note" aria-label="versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
-    
-      <span><a href="../01.11.extras/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
