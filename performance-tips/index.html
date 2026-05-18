@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Transfer UV - UCUPAINT</title>
+  <title>Performance Tips - UCUPAINT</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Transfer UV";
-    var mkdocs_page_input_path = "01.08.transfer-uv.md";
+    var mkdocs_page_name = "Performance Tips";
+    var mkdocs_page_input_path = "performance-tips.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -48,7 +48,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <p class="caption"><span class="caption-text">Documentation</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.01.channel/">Channel</a>
@@ -65,9 +65,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.07.bake-to-layer/">Bake to Layer</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Transfer UV</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-channels/">Bake Channels</a>
                     </li>
@@ -82,8 +80,10 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../performance-tips/">Performance Tips</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Performance Tips</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.11.extras/">Pink Material</a>
                     </li>
@@ -116,11 +116,11 @@
     
       
         
-          <li>Documentation &raquo;</li>
+          <li>Tips & Troubleshooting &raquo;</li>
         
       
     
-    <li>Transfer UV</li>
+    <li>Performance Tips</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -132,46 +132,14 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="transfer-uv">TRANSFER UV<a class="headerlink" href="#transfer-uv" title="Permanent link">¶</a></h1>
-<p>Transfer UV can be useful when you need to transfer image from one UV map to another UV map. This can be useful if your original UV map wasn't very good and you already created the better one. </p>
-<p>For the demo, we have two UV maps named 'UVMap' and 'UVMap.001'. We will try to transfer an image using UVMap to UVMap.001.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><img alt="uv 1" src="../source/09.bake-uv.01.png"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">UVMap &amp; UVMap.001 has different layout and we want to transfer the image from one to another</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../source/09.bake-uv.03.mp4" type="video/mp4"></source></video></div></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Tranfer Process</td>
-</tr>
-</tbody>
-</table>
-<p>The transfer process can take a while since it uses Blender's baking system and the image result will be automatically applied to your mask or layer.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"><img alt="result uv" src="../source/09.bake-uv.02.png"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Resulting image compared to the original</td>
-</tr>
-</tbody>
-</table></div>
+                <div><h1 id="performance-tips">Performance Tips<a class="headerlink" href="#performance-tips" title="Permanent link">¶</a></h1>
+<p>Here's some performance tips while using ucupaint</p>
+<ul>
+<li>Use less generated textures like noise or voronoi if you want the shader compilation faster</li>
+<li>If you still want many generated textures, it's better to bake them as image since the performace will be a lot faster. The option to <code>Bake Mask as Image</code> is inside the gear button beside the mask.</li>
+<li>If you get lag after did a brushstroke, it's probably because Blender want to refresh the material preview image, so closing the material panel that shows the preview will likely make the lag gone.</li>
+<li>Using <code>Sculpt Mode</code> to paint color attribute layer/mask will have better performance than using <code>Vertex Paint Mode</code></li>
+</ul></div>
               
             </div>
           </div>
@@ -179,10 +147,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../01.09.bake-channels/" class="btn btn-neutral float-right" title="Bake Channels">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../01.11.extras/" class="btn btn-neutral float-right" title="Pink Material">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../01.07.bake-to-layer/" class="btn btn-neutral" title="Bake to Layer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../text-tutorials/" class="btn btn-neutral" title="Written Tutorials"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -208,10 +176,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01.07.bake-to-layer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../text-tutorials/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../01.09.bake-channels/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../01.11.extras/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
