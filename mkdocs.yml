@@ -21,7 +21,8 @@ nav:
     - File Examples : 01.10.resources.md
     - Video Tutorials : video-tutorials.md
     - Written Tutorials : text-tutorials.md
-  - Troubleshooting :
+  - Tips & Troubleshooting :
+    - Performance Tips: performance-tips.md
     - Pink Material: 01.11.extras.md
   - Development :
     - Roadmaps : roadmaps.md
