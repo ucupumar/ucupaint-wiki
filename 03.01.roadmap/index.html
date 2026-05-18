@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -103,6 +104,12 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#ucupaint-30">Ucupaint 3.0</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-31">Ucupaint 3.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-3x">Ucupaint 3.x</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#future-features-that-arent-in-planned-milestones-yet">Future features that aren’t in planned milestones yet</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -143,19 +150,166 @@
 <p>This page roughly lists all the planned features for ucupaint. Items listed here may evolve as the development progresses.</p>
 <h2 id="ucupaint-30">Ucupaint 3.0<a class="headerlink" href="#ucupaint-30" title="Permanent link">¶</a></h2>
 <p>Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.</p>
-<div style="overflow-x: auto; width: 100%;">
-
-| Feature | Status | Comments |
-|---------|---------|-----------|
-| Base layer | WIP (90%) | For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings. |
-| “Previous Layers” layer for channel adjustment | WIP (80%) | This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack. |
-| Unified bake target system | WIP (40%) | This will integrate the current bake channels system into the bake target system. |
-| Dealing with collapsed main channel panel by default | Not started yet | The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed. |
-| Normal and height separation | WIP (70%) | Currently Normal, Bump, and VDM are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future. |
-| Better dropdown in layer list | Considered | Trying to improve mask and custom data dropdown on layer list. |
-| Rename ‘Vector’ input to ‘Coordinate’ | Not started yet | In Ucupaint, ‘Vector’ makes more sense if renamed to ‘Coordinate’. |
-
-</div></div>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base layer</td>
+<td>WIP (90%)</td>
+<td>For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings.</td>
+</tr>
+<tr>
+<td>New <code>Previous Layers</code> type for in-between layers adjustment</td>
+<td>WIP (80%)</td>
+<td>This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack.</td>
+</tr>
+<tr>
+<td>Unified bake target system</td>
+<td>WIP (40%)</td>
+<td>This will integrate the current bake channels system into the bake target system.</td>
+</tr>
+<tr>
+<td>Dealing with collapsed main channel panel by default</td>
+<td>Not started yet</td>
+<td>The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed.</td>
+</tr>
+<tr>
+<td>Normal and height separation</td>
+<td>WIP (70%)</td>
+<td>Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future.</td>
+</tr>
+<tr>
+<td>Better dropdown in layer list</td>
+<td>Considered</td>
+<td>Trying to improve mask and custom data dropdown on layer list.</td>
+</tr>
+<tr>
+<td>Rename <code>Vector</code> input to <code>Coordinate</code></td>
+<td>Not started yet</td>
+<td>In Ucupaint, <code>Vector</code> makes more sense if renamed to <code>Coordinate</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ucupaint-31">Ucupaint 3.1<a class="headerlink" href="#ucupaint-31" title="Permanent link">¶</a></h2>
+<p>Ucupaint 3.1 will focus on baking any layer/layer group as image(s).</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bake layer as images for any layer types</td>
+<td>Not started yet</td>
+<td>Currently the system only works for layer types that have a source node with only one socket output.</td>
+</tr>
+<tr>
+<td>Map any image channel into ucupaint layer channel</td>
+<td>Not started yet</td>
+<td>Useful to use ORM image as layer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ucupaint-3x">Ucupaint 3.x<a class="headerlink" href="#ucupaint-3x" title="Permanent link">¶</a></h2>
+<p>Next release of Ucupaint 3 versions will focus on custom node support</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custom node group as layer/mask</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Image size presets</td>
+<td>WIP (60%)</td>
+<td>While early testing shows that it is possible, there’s a roadblock that makes the implementation trickier. If the workaround doesn’t work, this feature probably will be pushed to later releases.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="future-features-that-arent-in-planned-milestones-yet">Future features that aren’t in planned milestones yet<a class="headerlink" href="#future-features-that-arent-in-planned-milestones-yet" title="Permanent link">¶</a></h2>
+<p>These are planned features that will be implemented in future releases. Could be in ucupaint 3.x or even 4.0.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any attributes data support</td>
+<td>Not started yet</td>
+<td>Currently ucupaint can only use color attributes.</td>
+</tr>
+<tr>
+<td>Multiple decals in a single layer/mask</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Vector/Coordinate warp</td>
+<td>Testing</td>
+<td>Manipulating vector mapping using images/attributes/generated textures</td>
+</tr>
+<tr>
+<td>Multi-material batch baking</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Baking multiple maps at the same time (AO, Pointiness, etc)</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Multi-user node group support</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Lock layers</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Passthrough Group</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+<tr>
+<td>Normal map-aware edge detect</td>
+<td>Not sure if possible</td>
+<td></td>
+</tr>
+<tr>
+<td>Use blender layer backend</td>
+<td>Not possible yet</td>
+<td>Since Blender already planned to create a native layer system. If that’s implemented, it will be better to use that as the backend of Ucupaint.</td>
+</tr>
+<tr>
+<td>Reimplement parallax</td>
+<td>Not started yet</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
               
             </div>
           </div>

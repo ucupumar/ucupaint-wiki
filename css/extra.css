@@ -1,0 +1,26 @@
+.wy-nav-content .rst-content table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed !important;
+  min-width: 0 !important;
+}
+
+.wy-nav-content .rst-content table th,
+.wy-nav-content .rst-content table td {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
+
+.wy-nav-content .rst-content table th:nth-child(1),
+.wy-nav-content .rst-content table td:nth-child(1) {
+  width: 20% !important;
+}
+.wy-nav-content .rst-content table th:nth-child(2),
+.wy-nav-content .rst-content table td:nth-child(2) {
+  width: 18% !important;
+}
+.wy-nav-content .rst-content table th:nth-child(3),
+.wy-nav-content .rst-content table td:nth-child(3) {
+  width: 62% !important;
+}
