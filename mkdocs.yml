@@ -6,20 +6,26 @@ theme:
     admonition:
       <type>: <icon>
 nav:
-  - Quick Setup : 01.00.quick-setup.md
-  - Channel : 01.01.channel.md 
-  - Layer : 01.02.layer.md
-  - Layer Channel : 01.03.layer-channel.md
-  - Mask : 01.04.mask.md
-  - Modifier : 01.05.modifier.md
-  - Preview Mode : 01.06.preview-mode.md
-  - Bake to Layer : 01.07.bake-to-layer.md
-  - Transfer UV : 01.08.transfer-uv.md
-  - Bake Channels : 01.09.bake-channels.md
-  - Resources : 01.10.resources.md
-  - Extras : 01.11.extras.md
-  - Credits : 01.12.contributors.md
-  - Roadmaps : 03.01.roadmap.md
+  - Documentation :
+    - Quick Setup : 01.00.quick-setup.md
+    - Channel : 01.01.channel.md 
+    - Layer : 01.02.layer.md
+    - Layer Channel : 01.03.layer-channel.md
+    - Mask : 01.04.mask.md
+    - Modifier : 01.05.modifier.md
+    - Preview Mode : 01.06.preview-mode.md
+    - Bake to Layer : 01.07.bake-to-layer.md
+    - Transfer UV : 01.08.transfer-uv.md
+    - Bake Channels : 01.09.bake-channels.md
+  - Resources :
+    - File Examples : 01.10.resources.md
+    - Video Tutorials : video-tutorials.md
+    - Written Tutorials : text-tutorials.md
+  - Troubleshooting :
+    - Pink Material: 01.11.extras.md
+  - Development :
+    - Roadmaps : roadmaps.md
+    - Credits : 01.12.contributors.md
 extra_css:
   - css/extra.css
 plugins:
