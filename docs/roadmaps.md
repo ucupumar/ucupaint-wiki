@@ -27,7 +27,7 @@ Ucupaint 3.1 will focus on baking any layer/layer group as image(s).
 
 ## Ucupaint 3.x
 
-Next release of Ucupaint 3 versions will focus on custom node support
+Ucupaint 3.x versions will focus on custom node support
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
@@ -53,3 +53,9 @@ These are planned features that will be implemented in future releases. Could be
 | Use blender layer backend | Not possible yet | Since Blender already planned to create a native layer system. If that’s implemented, it will be better to use that as the backend of Ucupaint. |
 | Reimplement parallax | No |  |
 
+## Documentation Roadmaps
+
+| Feature | Status | Comments |
+|---------|---------|-----------|
+| Automated video clips recording| No | Since ucupaint UI still subject to changes, it's better to create a script to automate ucupaint demo clip recordings. So when the UI changes again, just tweak some parameters and run the script again to rerecord all the clips.|
+| Multi-version documentation| No | It's better to be able to switch ucupaint version documentation|
