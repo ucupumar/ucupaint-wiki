@@ -19,6 +19,7 @@ nav:
   - Resources : 01.10.resources.md
   - Extras : 01.11.extras.md
   - Credits : 01.12.contributors.md
+  - Roadmaps : 03.01.roadmap.md
 plugins:
   - search
   - mkdocs-video:
