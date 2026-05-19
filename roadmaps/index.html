@@ -158,27 +158,32 @@
 <tr>
 <td>Base layer</td>
 <td>WIP (90%)</td>
-<td>For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings.</td>
+<td>For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings. <a href="https://github.com/ucupumar/ucupaint/issues/392">(#392)</a></td>
 </tr>
 <tr>
 <td>New <code>Previous Layers</code> type for in-between layers adjustment</td>
 <td>WIP (80%)</td>
-<td>This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack.</td>
+<td>This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack. <a href="https://github.com/ucupumar/ucupaint/issues/393">(#393)</a></td>
 </tr>
 <tr>
 <td>Unified bake target system</td>
 <td>WIP (40%)</td>
-<td>This will integrate the current bake channels system into the bake target system.</td>
+<td>This will integrate the current bake channels system into the bake target system. <a href="https://github.com/ucupumar/ucupaint/issues/323">(#323)</a></td>
+</tr>
+<tr>
+<td>Ability to use color attributes as custom bake target</td>
+<td>No</td>
+<td>Will likely implemented alongside new bake target system <a href="https://github.com/ucupumar/ucupaint/issues/97">(#97)</a></td>
 </tr>
 <tr>
 <td>Dealing with collapsed main channel panel by default</td>
 <td>No</td>
-<td>The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed.</td>
+<td>The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed. <a href="https://github.com/ucupumar/ucupaint/issues/395">(#395)</a></td>
 </tr>
 <tr>
 <td>Normal and height separation</td>
 <td>WIP (70%)</td>
-<td>Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future.</td>
+<td>Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future. <a href="https://github.com/ucupumar/ucupaint/issues/356">(#356)</a></td>
 </tr>
 <tr>
 <td>Better dropdown in layer list</td>
@@ -188,7 +193,7 @@
 <tr>
 <td>Rename <code>Vector</code> input to <code>Coordinate</code></td>
 <td>No</td>
-<td>In Ucupaint, <code>Vector</code> makes more sense if renamed to <code>Coordinate</code>.</td>
+<td>In Ucupaint, <code>Vector</code> makes more sense if renamed to <code>Coordinate</code>. <a href="https://github.com/ucupumar/ucupaint/issues/394">(#394)</a></td>
 </tr>
 </tbody>
 </table>
@@ -206,12 +211,12 @@
 <tr>
 <td>Bake layer as images for any layer types</td>
 <td>No</td>
-<td>Currently the system only works for layer types that have a source node with only one socket output.</td>
+<td>Currently the system only works for layer types that have a source node with only one socket output. <a href="https://github.com/ucupumar/ucupaint/issues/65">(#65)</a></td>
 </tr>
 <tr>
 <td>Map any image channel into ucupaint layer channel</td>
 <td>No</td>
-<td>Useful to use ORM image as layer.</td>
+<td>Useful to use ORM image as layer. <a href="https://github.com/ucupumar/ucupaint/issues/128">(#128)</a></td>
 </tr>
 </tbody>
 </table>
@@ -229,12 +234,12 @@
 <tr>
 <td>Custom node group as layer/mask</td>
 <td>No</td>
-<td></td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/90">#90</a></td>
 </tr>
 <tr>
 <td>Image size presets</td>
 <td>WIP (60%)</td>
-<td>While early testing shows that it is possible, there’s a roadblock that makes the implementation trickier. If the workaround doesn’t work, this feature probably will be pushed to later releases.</td>
+<td>While early testing shows that it is possible, there’s a roadblock that makes the implementation trickier. If the workaround doesn’t work, this feature probably will be pushed to later releases. <a href="https://github.com/ucupumar/ucupaint/issues/350">(#350)</a></td>
 </tr>
 </tbody>
 </table>
@@ -252,42 +257,72 @@
 <tr>
 <td>Any attributes data support</td>
 <td>No</td>
-<td>Currently ucupaint can only use color attributes.</td>
+<td>Currently ucupaint can only use color attributes. <a href="https://github.com/ucupumar/ucupaint/issues/358">(#358)</a></td>
 </tr>
 <tr>
 <td>Multiple decals in a single layer/mask</td>
 <td>No</td>
-<td></td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/396">#396</a></td>
+</tr>
+<tr>
+<td>Mirrored decal option</td>
+<td>No</td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/270">#270</a></td>
 </tr>
 <tr>
 <td>Vector/Coordinate warp</td>
 <td>Testing</td>
-<td>Manipulating vector mapping using images/attributes/generated textures</td>
+<td>Manipulating vector mapping using images/attributes/generated textures. <a href="https://github.com/ucupumar/ucupaint/issues/96">(#96)</a></td>
 </tr>
 <tr>
 <td>Multi-material batch baking</td>
 <td>No</td>
-<td></td>
+<td>Probably will be implemented alongside <a href="https://github.com/ucupumar/ucupaint/issues/77">#77</a></td>
 </tr>
 <tr>
 <td>Baking multiple maps at the same time (AO, Pointiness, etc)</td>
 <td>No</td>
-<td></td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/399">#399</a></td>
 </tr>
 <tr>
 <td>Multi-user node group support</td>
 <td>No</td>
-<td></td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/398">#398</a></td>
 </tr>
 <tr>
 <td>Lock layers</td>
 <td>No</td>
-<td></td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/199">#199</a></td>
 </tr>
 <tr>
 <td>Passthrough Group</td>
 <td>No</td>
-<td></td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/134">#134</a></td>
+</tr>
+<tr>
+<td>Copy paste modifier</td>
+<td>No</td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/89">#89</a></td>
+</tr>
+<tr>
+<td>Duplicate mask</td>
+<td>No</td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/153">#153</a></td>
+</tr>
+<tr>
+<td>Option to apply baked layer/mask as standard image</td>
+<td>No</td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/313">#313</a></td>
+</tr>
+<tr>
+<td>Reimplement parallax</td>
+<td>No</td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/397">#397</a></td>
+</tr>
+<tr>
+<td>Principled BSDF layering support</td>
+<td>No</td>
+<td><a href="https://github.com/ucupumar/ucupaint/issues/353">#353</a></td>
 </tr>
 <tr>
 <td>Normal map-aware edge detect</td>
@@ -298,11 +333,6 @@
 <td>Use blender layer backend</td>
 <td>Not possible yet</td>
 <td>Since Blender already planned to create a native layer system. If that’s implemented, it will be better to use that as the backend of Ucupaint.</td>
-</tr>
-<tr>
-<td>Reimplement parallax</td>
-<td>No</td>
-<td></td>
 </tr>
 </tbody>
 </table>
