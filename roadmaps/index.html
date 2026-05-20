@@ -90,15 +90,21 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Roadmaps</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-30">Ucupaint 3.0</a>
+    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-plus-roadmap">Ucupaint Plus Roadmap</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-31">Ucupaint 3.1</a>
+    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-roadmap">Ucupaint Roadmap</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ucupaint-30">Ucupaint 3.0</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#ucupaint-3x">Ucupaint 3.x</a>
+    <li class="toctree-l3"><a class="reference internal" href="#ucupaint-31">Ucupaint 3.1</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#future-features-that-arent-in-planned-milestones-yet">Future features that aren’t in planned milestones yet</a>
+    <li class="toctree-l3"><a class="reference internal" href="#ucupaint-3x">Ucupaint 3.x</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#documentation-roadmaps">Documentation Roadmaps</a>
+    <li class="toctree-l3"><a class="reference internal" href="#future-features-that-arent-in-planned-milestones-yet">Future features that aren’t in planned milestones yet</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#documentation-roadmap">Documentation Roadmap</a>
     </li>
     </ul>
                     </li>
@@ -143,8 +149,66 @@
             <div class="section">
               
                 <div><h1 id="roadmaps">Roadmaps<a class="headerlink" href="#roadmaps" title="Permanent link">¶</a></h1>
-<p>This page roughly lists all the planned features for ucupaint. Items listed here may evolve as the development progresses.</p>
-<h2 id="ucupaint-30">Ucupaint 3.0<a class="headerlink" href="#ucupaint-30" title="Permanent link">¶</a></h2>
+<p>This page roughly lists all the planned features for ucupaint and ucupaint plus. Items listed here may evolve as the development progresses.</p>
+<h2 id="ucupaint-plus-roadmap">Ucupaint Plus Roadmap<a class="headerlink" href="#ucupaint-plus-roadmap" title="Permanent link">¶</a></h2>
+<p>Roadmap for Ucupaint Plus, which is available for at least <a href="https://github.com/sponsors/ucupumar">silver sponsors on GitHub</a>. Some of these features will probably eventually come to regular ucupaint if the funding goes well.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Planned for version</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PSD file export-import</td>
+<td>Initial implementation done</td>
+<td>2.4.7</td>
+<td></td>
+</tr>
+<tr>
+<td>Krita KRA file export-import</td>
+<td>No</td>
+<td>2.4.x or 3.x</td>
+<td></td>
+</tr>
+<tr>
+<td>Gimp XCF file export-import</td>
+<td>No</td>
+<td>2.4.x or 3.x</td>
+<td></td>
+</tr>
+<tr>
+<td>Sync External File</td>
+<td>No</td>
+<td>3.x if the <a href="https://github.com/sponsors/ucupumar">first goal achieved for GitHub Sponsors</a></td>
+<td>Sync external layered files like PSD, KRA, or XCF so if you edited the file in Blender or an outside application, there is a way to sync between those two.</td>
+</tr>
+<tr>
+<td>Export layers to Godot shader</td>
+<td>Internal testing</td>
+<td>3.x</td>
+<td>This will create a native ucupaint file and a Godot plugin to read the data and convert it to a shader.</td>
+</tr>
+<tr>
+<td>Godot ucupaint editor</td>
+<td>No</td>
+<td>3.x or 4.x</td>
+<td>UI for ucupaint layers and channels in Godot</td>
+</tr>
+<tr>
+<td>Painting a layer in Godot</td>
+<td>No</td>
+<td>4.x or 5.x</td>
+<td>Paint directly on layers in Godot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ucupaint-roadmap">Ucupaint Roadmap<a class="headerlink" href="#ucupaint-roadmap" title="Permanent link">¶</a></h2>
+<p>Roadmap for the standard ucupaint release, which will be available for free for all users.</p>
+<h3 id="ucupaint-30">Ucupaint 3.0<a class="headerlink" href="#ucupaint-30" title="Permanent link">¶</a></h3>
 <p>Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.</p>
 <table>
 <thead>
@@ -197,7 +261,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="ucupaint-31">Ucupaint 3.1<a class="headerlink" href="#ucupaint-31" title="Permanent link">¶</a></h2>
+<h3 id="ucupaint-31">Ucupaint 3.1<a class="headerlink" href="#ucupaint-31" title="Permanent link">¶</a></h3>
 <p>Ucupaint 3.1 will focus on baking any layer/layer group as image(s).</p>
 <table>
 <thead>
@@ -220,7 +284,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="ucupaint-3x">Ucupaint 3.x<a class="headerlink" href="#ucupaint-3x" title="Permanent link">¶</a></h2>
+<h3 id="ucupaint-3x">Ucupaint 3.x<a class="headerlink" href="#ucupaint-3x" title="Permanent link">¶</a></h3>
 <p>Ucupaint 3.x versions will focus on custom node support</p>
 <table>
 <thead>
@@ -243,7 +307,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="future-features-that-arent-in-planned-milestones-yet">Future features that aren’t in planned milestones yet<a class="headerlink" href="#future-features-that-arent-in-planned-milestones-yet" title="Permanent link">¶</a></h2>
+<h3 id="future-features-that-arent-in-planned-milestones-yet">Future features that aren’t in planned milestones yet<a class="headerlink" href="#future-features-that-arent-in-planned-milestones-yet" title="Permanent link">¶</a></h3>
 <p>These are planned features that will be implemented in future releases. Could be in ucupaint 3.x or even 4.0.</p>
 <table>
 <thead>
@@ -336,7 +400,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="documentation-roadmaps">Documentation Roadmaps<a class="headerlink" href="#documentation-roadmaps" title="Permanent link">¶</a></h2>
+<h2 id="documentation-roadmap">Documentation Roadmap<a class="headerlink" href="#documentation-roadmap" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
