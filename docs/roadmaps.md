@@ -1,8 +1,26 @@
 # Roadmaps
 
-This page roughly lists all the planned features for ucupaint. Items listed here may evolve as the development progresses.
+This page roughly lists all the planned features for ucupaint and ucupaint plus. Items listed here may evolve as the development progresses.
 
-## Ucupaint 3.0
+## Ucupaint Plus Roadmap
+
+Roadmap for Ucupaint Plus, which is available for at least [silver sponsors on GitHub](https://github.com/sponsors/ucupumar). Some of these features will probably eventually come to regular ucupaint if the funding goes well.
+
+| Feature | Status | Planned for version | Comments |
+|---------|---------|-----------|------|
+| PSD file export-import | Initial implementation done | 2.4.7 | |
+| Krita KRA file export-import | No | 2.4.x or 3.x | |
+| Gimp XCF file export-import | No | 2.4.x or 3.x | |
+| Sync External File | No | 3.x if the [first goal achieved for GitHub Sponsors](https://github.com/sponsors/ucupumar) | Sync external layered files like PSD, KRA, or XCF so if you edited the file in Blender or an outside application, there is a way to sync between those two. |
+| Export layers to Godot shader | Internal testing | 3.x | This will create a native ucupaint file and a Godot plugin to read the data and convert it to a shader. |
+| Godot ucupaint editor | No | 3.x or 4.x | UI for ucupaint layers and channels in Godot |
+| Painting a layer in Godot | No | 4.x or 5.x | Paint directly on layers in Godot |
+
+## Ucupaint Roadmap
+
+Roadmap for the standard ucupaint release, which will be available for free for all users.
+
+### Ucupaint 3.0
 
 Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.
 
@@ -17,7 +35,7 @@ Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make
 | Better dropdown in layer list | Considered | Trying to improve mask and custom data dropdown on layer list. |
 | Rename `Vector` input to `Coordinate` | No | In Ucupaint, `Vector` makes more sense if renamed to `Coordinate`. [(#394)](https://github.com/ucupumar/ucupaint/issues/394)|
 
-## Ucupaint 3.1
+### Ucupaint 3.1
 
 Ucupaint 3.1 will focus on baking any layer/layer group as image(s).
 
@@ -26,7 +44,7 @@ Ucupaint 3.1 will focus on baking any layer/layer group as image(s).
 | Bake layer as images for any layer types | No | Currently the system only works for layer types that have a source node with only one socket output. [(#65)](https://github.com/ucupumar/ucupaint/issues/65)|
 | Map any image channel into ucupaint layer channel | No | Useful to use ORM image as layer. [(#128)](https://github.com/ucupumar/ucupaint/issues/128) |
 
-## Ucupaint 3.x
+### Ucupaint 3.x
 
 Ucupaint 3.x versions will focus on custom node support
 
@@ -35,8 +53,7 @@ Ucupaint 3.x versions will focus on custom node support
 | Custom node group as layer/mask | No | [#90](https://github.com/ucupumar/ucupaint/issues/90) |
 | Image size presets | WIP (60%) | While early testing shows that it is possible, there’s a roadblock that makes the implementation trickier. If the workaround doesn’t work, this feature probably will be pushed to later releases. [(#350)](https://github.com/ucupumar/ucupaint/issues/350)|
 
-
-## Future features that aren’t in planned milestones yet
+### Future features that aren’t in planned milestones yet
 
 These are planned features that will be implemented in future releases. Could be in ucupaint 3.x or even 4.0.
 
@@ -59,7 +76,7 @@ These are planned features that will be implemented in future releases. Could be
 | Normal map-aware edge detect | Not sure if possible |  |
 | Use blender layer backend | Not possible yet | Since Blender already planned to create a native layer system. If that’s implemented, it will be better to use that as the backend of Ucupaint. |
 
-## Documentation Roadmaps
+## Documentation Roadmap
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
