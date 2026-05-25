@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Bake Channels - UCUPAINT</title>
+  <title>PSD - UCUPAINT</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Bake Channels";
-    var mkdocs_page_input_path = "01.09.bake-channels.md";
+    var mkdocs_page_name = "PSD";
+    var mkdocs_page_input_path = "psd-export-import.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -48,7 +48,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <p class="caption"><span class="caption-text">Documentation</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../01.00.quick-setup/">Quick Setup</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.01.channel/">Channel</a>
@@ -67,14 +67,22 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Bake Channels</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-channels/">Bake Channels</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../psd-export-import/">PSD</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">PSD</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#export-layers-to-psd">Export Layers to PSD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#import-layers-from-psd">Import Layers from PSD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Resources</span></p>
@@ -121,11 +129,11 @@
     
       
         
-          <li>Documentation &raquo;</li>
+          <li>Export-Import Layers &raquo;</li>
         
       
     
-    <li>Bake Channels</li>
+    <li>PSD</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -137,45 +145,102 @@
           <div role="main">
             <div class="section">
               
-                <div><h1 id="bake-channels">Bake Channels<a class="headerlink" href="#bake-channels" title="Permanent link">¶</a></h1>
-<p>Channel Baking the layer is important if your model will be used in other software. That's because other software can't read Blender's node shaders.
-Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. It can be found on the gear icon under the Material Panel. Just click bake all channels and set the right configuration. The baking process then begins.</p>
+                <div><h1 id="export-and-import-layers-to-psd-file">Export and Import Layers to PSD file<a class="headerlink" href="#export-and-import-layers-to-psd-file" title="Permanent link">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently, the export/import layers feature is available only in Ucupaint Plus, which you can get by becoming at least a silver <a href="https://github.com/sponsors/ucupumar">Github sponsor</a></p>
+</div>
+<p>Ucupaint Plus supports exporting and importing layer data to and from PSD files. This feature lets you save your layers in a format compatible with other image editors that use PSD.</p>
+<h2 id="export-layers-to-psd">Export Layers to PSD<a class="headerlink" href="#export-layers-to-psd" title="Permanent link">¶</a></h2>
+<p>To export layers as PSD, press the special menu button beside the layer list (the one with <code>V</code> icon), and choose <code>Export Layers as PSD</code>.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../source/10.bake-01.mp4" type="video/mp4"></source></video></div></th>
+<th style="text-align: center;"><img alt="[pic: export psd button]" src="../source/export_psd.png"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Bake All Channels</td>
+<td style="text-align: center;">Export layers to PSD button</td>
 </tr>
 </tbody>
 </table>
-<p><br></p>
-<p>The baked textures are automatically packed if you save the blend file, but you can also save them to a directory of your choice, as demonstrated in the video below.</p>
+<p>Then the export dialog box will appear.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../source/10.bake-02.mp4" type="video/mp4"></source></video></div></th>
+<th style="text-align: center;"><img alt="[pic: export psd dialog box]" src="../source/export_psd_dialog_box.png"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Save All Baked Textures</td>
+<td style="text-align: center;">Export layers to PSD dialog box</td>
 </tr>
 </tbody>
 </table>
-<p>The Baking process is a non-destructive workflow, you can still go back and edit your texture layer by layer using this toggle button.</p>
+<p>Ucupaint uses <a href="https://pypi.org/project/psd-tools/">PSD-Tools</a> module to make PSD import and export work, so ucupaint will download the module the first time you do PSD export/import. The necessary space needed is about 50-80MB, so the download process might take a couple seconds to minutes depending on your internet connection.</p>
+<p>There are two options for the export, the first one is <code>Channel</code>, which only layers that uses that channel will be exported.  The second option is <code>Convert Solid Colors to pixels</code>, this is to convert solid color layers to standard pixel layers. This is useful since not all 2D applications can read color fill layer from PSD file (example: Gimp).</p>
+<p>The comparison below are the exported layers as shown in Photopea.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../source/10.bake-03.mp4" type="video/mp4"></source></video></div></th>
+<th style="text-align: center;"><img alt="[pic: convert solid color disabled]" src="../source/convert_solid_color_to_pixels_disabled.png"></th>
+<th style="text-align: center;"><img alt="[pic: convert solid color enabled]" src="../source/convert_solid_color_to_pixels_enabled.png"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Toggle between using baked textures or not</td>
+<td style="text-align: center;"><code>Convert Solid Colors to pixels</code> disabled</td>
+<td style="text-align: center;"><code>Convert Solid Colors to pixels</code> enabled</td>
+</tr>
+</tbody>
+</table>
+<h2 id="import-layers-from-psd">Import Layers from PSD<a class="headerlink" href="#import-layers-from-psd" title="Permanent link">¶</a></h2>
+<p>To import layers from PSD file, you only need to open the image as layer. And there will be a menu to read the layers if you select a PSD file.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: open image button]" src="../source/open_image_as_layer.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Open image as layer</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: read psd layers option]" src="../source/read_psd_layers_option.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Read Photoshop layers</code> will show up when you select a PSD file</td>
+</tr>
+</tbody>
+</table>
+<p>The option <code>Convert Flat Layer to Solid Color</code> will detect the standard pixel image, and if the value are the same for all the pixels, it will be converted to solid color layer.</p>
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">¶</a></h2>
+<ul>
+<li>Only layers with type of <code>Image</code>, <code>Solid Color</code>, or <code>Group</code> are currently supported to export</li>
+<li>Group mask is currently not supported because of the PSD-Tools limitation</li>
+<li>PSD can only have one mask per layer, so only one image mask is supported to export</li>
+<li>Adjustment layers are not supported yet</li>
+<li>Modifiers from ucupaint are also not supported yet</li>
+</ul>
+<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">¶</a></h2>
+<p>If the color or the blending looks weird on your 2D app. Check the actual color by enabling the color channel's <code>Preview Mode</code>. And if it's still look too different, you can also try to disable <code>Use Linear Color Blending</code>. By disabling that, the blending colors between layers will be more similar to Photoshop.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: use linear color blending option]" src="../source/use_linear_color_blending_option.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Use Linear Color Blending</code> should be <strong>disabled</strong> to make the blending in ucupaint look the same with in Photoshop</td>
 </tr>
 </tbody>
 </table></div>
@@ -186,10 +251,10 @@ Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../psd-export-import/" class="btn btn-neutral float-right" title="PSD">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../01.10.resources/" class="btn btn-neutral float-right" title="File Examples">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../01.08.transfer-uv/" class="btn btn-neutral" title="Transfer UV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../01.09.bake-channels/" class="btn btn-neutral" title="Bake Channels"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -215,10 +280,10 @@ Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../01.08.transfer-uv/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../01.09.bake-channels/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../psd-export-import/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../01.10.resources/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -61,7 +61,7 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#rgb-channel-type">RGB Channel Type</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#alpha-chanel-in-ucupaint-23x-or-lower">Alpha chanel in Ucupaint 2.3x or lower</a>
+    <li class="toctree-l4"><a class="reference internal" href="#alpha-channel-in-ucupaint-23x-or-lower">Alpha channel in Ucupaint 2.3x or lower</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#alpha-channel-in-ucupaint-24">Alpha channel in Ucupaint 2.4+</a>
     </li>
@@ -102,6 +102,11 @@
                     <li class="toctree-l1"><a class="reference internal" href="../01.08.transfer-uv/">Transfer UV</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../01.09.bake-channels/">Bake Channels</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd-export-import/">PSD</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Resources</span></p>
@@ -215,7 +220,7 @@ In the channels list panel, you can perform basic actions such as adding, moving
 </div>
 <h2 id="adding-a-new-channel">Adding a New Channel<a class="headerlink" href="#adding-a-new-channel" title="Permanent link">¶</a></h2>
 <p>To add a new channel, use the <code>+</code> button next to the channel list. The video below demonstrates how to create an Emission channel in Ucupaint.</p>
-<!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the chanels list, it will gives you channel type options, which are RGB, Value, and Normal.
+<!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the channels list, it will gives you channel type options, which are RGB, Value, and Normal.
 For demonstration, let's try to create new channel that connect to emission socket on the principled bsdf.
 Now the popup appears, if you already decided to connect it to principled bsdf, you don't have to manually name the channel, just choose emission on the dropdown, it will automatically set the name of your channel, and if you click ok, it will also connect the sockets. -->
 
@@ -250,7 +255,7 @@ Now the popup appears, if you already decided to connect it to principled bsdf, 
 </tr>
 </tbody>
 </table>
-<h4 id="alpha-chanel-in-ucupaint-23x-or-lower">Alpha chanel in Ucupaint 2.3x or lower<a class="headerlink" href="#alpha-chanel-in-ucupaint-23x-or-lower" title="Permanent link">¶</a></h4>
+<h4 id="alpha-channel-in-ucupaint-23x-or-lower">Alpha channel in Ucupaint 2.3x or lower<a class="headerlink" href="#alpha-channel-in-ucupaint-23x-or-lower" title="Permanent link">¶</a></h4>
 <p>If alpha is enabled, your material will automatically switch to Alpha Dithered method in Eevee. The default alpha value is 0.0, making the background fully transparent.
 If you create a layer with a mix blend, it will be placed on top of the transparent background. This can be useful for cases like creating hair planes or vegetation.</p>
 <table>
