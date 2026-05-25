@@ -17,6 +17,8 @@ nav:
     - Bake to Layer : 01.07.bake-to-layer.md
     - Transfer UV : 01.08.transfer-uv.md
     - Bake Channels : 01.09.bake-channels.md
+  - Export-Import Layers:
+    - PSD: psd-export-import.md
   - Resources :
     - File Examples : 01.10.resources.md
     - Video Tutorials : video-tutorials.md
