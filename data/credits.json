@@ -1,17 +1,17 @@
 {
   "sponsorships": {
     "kind": "MONTHLY_SPONSORSHIP_AMOUNT",
-    "description": "Your support means a lot! Once we hit this milestone, I\u2019ll be able to commit a full day each week to developing Ucupaint and also starting monthly livestreams to showcase our progress.",
-    "percentComplete": 11,
+    "description": "If we reach this goal, I'll start implementing sync functions, starting with the PSD file, so editing/adding/removing layers in Photoshop or any 2D app will also update your layer setup in ucupaint.",
+    "percentComplete": 12,
     "targetValue": 1000,
     "title": "$1,000 per month",
     "url": "https://github.com/sponsors/ucupumar",
-    "fullDescription": "### Fellow 3D artists! \ud83d\udc4b\n\nSince 2017 I've been working on Ucupaint, a free and open source Blender addon that can help you a lot with the material creation. As for September 2025, Ucupaint has been downloaded almost 200k across the [Blender Extension Platform](https://extensions.blender.org/add-ons/ucupaint/) and [GitHub](https://github.com/ucupumar/ucupaint/releases), and the number is still going up!\n\n### Why sponsoring me? \ud83d\ude4b\n\nSponsoring Ucupaint can help make the development sustainable. There are a lot of ideas, performance improvements, and feature requests left to do, but the implementation takes time since I also have other responsibilities. With successful funding, I\u2019ll be able to dedicate significantly more time to development, documentation, and possibly livestreams.",
+    "fullDescription": "### Fellow 3D artists! \ud83d\udc4b\n\nSince 2017 I've been working on Ucupaint, a free and open source Blender addon that can help you a lot with the material creation. As for September 2025, Ucupaint has been downloaded almost 200k across the [Blender Extension Platform](https://extensions.blender.org/add-ons/ucupaint/) and [GitHub](https://github.com/ucupumar/ucupaint/releases), and the number is still going up!\n\n### Why sponsor me? \ud83d\ude4b\n\nYou can check out my plans on [the roadmap](https://ucupumar.github.io/ucupaint-wiki/roadmaps/). I really want to help level up the open\u2011source texturing ecosystem. Sponsors also get Ucupaint Plus with extra features, and if funding goes well, those features will be gradually released to everyone. \ud83d\ude4f",
     "tiers": [
       {
         "name": "\ud83e\udd0e Bronze\r",
         "price": 5,
-        "description": "### \ud83e\udd0e Bronze\r\nYou'll be credited with a **small** profile name in the sponsors panel (Ucupaint v2.4+)",
+        "description": "### \ud83e\udd0e Bronze\r\nYou'll be credited with a **small** profile name in the sponsors panel",
         "horizontal": true,
         "scale": 0.0,
         "icon_size": 0,
@@ -22,7 +22,7 @@
       {
         "name": "\ud83e\ude76 Silver\r",
         "price": 10,
-        "description": "### \ud83e\ude76 Silver\r\nYou'll be credited with a **small** profile icon and name in the sponsors panel (Ucupaint v2.4+)",
+        "description": "### \ud83e\ude76 Silver\r\nYou'll get new **Ucupaint Plus** releases as long as you subscribed and are credited with a **small** profile icon and name in the sponsors panel",
         "horizontal": true,
         "scale": 1.0,
         "icon_size": 32,
@@ -33,7 +33,7 @@
       {
         "name": "\ud83d\udc9b Gold\r",
         "price": 25,
-        "description": "### \ud83d\udc9b Gold\r\nYou'll be credited with a **medium**-sized profile icon and name in the sponsors panel (Ucupaint v2.4+)",
+        "description": "### \ud83d\udc9b Gold\r\nYou'll get new **Ucupaint Plus** releases as long as you subscribed and are credited with a **medium**-sized profile icon and name in the sponsors panel",
         "horizontal": true,
         "scale": 2.0,
         "icon_size": 64,
@@ -44,7 +44,7 @@
       {
         "name": "\ud83e\udd0d Platinum\r",
         "price": 50,
-        "description": "### \ud83e\udd0d Platinum\r\nYou'll be credited with a **large** profile icon and name in the sponsors panel (Ucupaint v2.4+)",
+        "description": "### \ud83e\udd0d Platinum\r\nYou'll get new **Ucupaint Plus** releases as long as you subscribed and are credited with a **large**-sized profile icon and name in the sponsors panel",
         "horizontal": false,
         "scale": 3.0,
         "icon_size": 128,
@@ -55,7 +55,7 @@
       {
         "name": "\ud83e\ude75 Titanium\r",
         "price": 100,
-        "description": "### \ud83e\ude75 Titanium\r\nYou'll be credited with a **very large** profile icon and name in the sponsors panel (Ucupaint v2.4+)",
+        "description": "### \ud83e\ude75 Titanium\r\nYou'll get new **Ucupaint Plus** releases as long as you subscribed and are credited with a **very large**-sized profile icon and name in the sponsors panel",
         "horizontal": false,
         "scale": 5.0,
         "icon_size": 256,
