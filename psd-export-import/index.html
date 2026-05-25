@@ -178,9 +178,9 @@
 </tr>
 </tbody>
 </table>
-<p>Ucupaint uses <a href="https://pypi.org/project/psd-tools/">PSD-Tools</a> module to make PSD import and export work, so ucupaint will download the module the first time you do PSD export/import. The necessary space needed is about 50-80MB, so the download process might take a couple seconds to minutes depending on your internet connection.</p>
-<p>There are two options for the export, the first one is <code>Channel</code>, which only layers that uses that channel will be exported.  The second option is <code>Convert Solid Colors to pixels</code>, this is to convert solid color layers to standard pixel layers. This is useful since not all 2D applications can read color fill layer from PSD file (example: Gimp).</p>
-<p>The comparison below are the exported layers as shown in Photopea.</p>
+<p>Ucupaint uses <a href="https://pypi.org/project/psd-tools/">PSD-Tools</a> module to make PSD import and export work, so ucupaint will download the module the first time you do PSD export/import. The necessary space needed is about 50-80MB, so the download process might take a couple of seconds to minutes, depending on your internet connection.</p>
+<p>There are two options for the export, the first one is <code>Channel</code>, which only layers that use that channel will be exported.  The second option is <code>Convert Solid Colors to pixels</code>, this is to convert solid color layers to standard pixel layers. This is useful since not all 2D applications can read color fill layer from PSD file (example: Gimp).</p>
+<p>The comparison below is the exported layers as shown in Photopea.</p>
 <table>
 <thead>
 <tr>
@@ -196,7 +196,7 @@
 </tbody>
 </table>
 <h2 id="import-layers-from-psd">Import Layers from PSD<a class="headerlink" href="#import-layers-from-psd" title="Permanent link">¶</a></h2>
-<p>To import layers from PSD file, you only need to open the image as layer. And there will be a menu to read the layers if you select a PSD file.</p>
+<p>To import layers from a PSD file, you only need to open the image as layer. And there will be a menu to read the layers if you select a PSD file.</p>
 <table>
 <thead>
 <tr>
@@ -221,17 +221,17 @@
 </tr>
 </tbody>
 </table>
-<p>The option <code>Convert Flat Layer to Solid Color</code> will detect the standard pixel image, and if the value are the same for all the pixels, it will be converted to solid color layer.</p>
+<p>The option <code>Convert Flat Layer to Solid Color</code> will detect the standard pixel image, and if the values are the same for all the pixels, it will be converted to a solid color layer.</p>
 <h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">¶</a></h2>
 <ul>
-<li>Only layers with type of <code>Image</code>, <code>Solid Color</code>, or <code>Group</code> are currently supported to export</li>
+<li>Only layers with types of <code>Image</code>, <code>Solid Color</code>, or <code>Group</code> are currently supported for export</li>
 <li>Group mask is currently not supported because of the PSD-Tools limitation</li>
-<li>PSD can only have one mask per layer, so only one image mask is supported to export</li>
+<li>PSD can only have one mask per layer, so only one image mask is supported for export</li>
 <li>Adjustment layers are not supported yet</li>
 <li>Modifiers from ucupaint are also not supported yet</li>
 </ul>
 <h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">¶</a></h2>
-<p>If the color or the blending looks weird on your 2D app. Check the actual color by enabling the color channel's <code>Preview Mode</code>. And if it's still look too different, you can also try to disable <code>Use Linear Color Blending</code>. By disabling that, the blending colors between layers will be more similar to Photoshop.</p>
+<p>If the color or the blending looks weird on your 2D app. Check the actual color by enabling the color channel's <code>Preview Mode</code>. And if it still looks too different, you can also try to disable <code>Use Linear Color Blending</code>. By disabling that, the blending colors between layers will be more similar to Photoshop.</p>
 <table>
 <thead>
 <tr>
@@ -240,7 +240,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><code>Use Linear Color Blending</code> should be <strong>disabled</strong> to make the blending in ucupaint look the same with in Photoshop</td>
+<td style="text-align: center;"><code>Use Linear Color Blending</code> should be <strong>disabled</strong> to make the blending in ucupaint look the same as in Photoshop</td>
 </tr>
 </tbody>
 </table></div>
