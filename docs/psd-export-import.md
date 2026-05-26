@@ -58,4 +58,10 @@ If the color or the blending looks weird on your 2D app. Check the actual color 
 |:--:|
 |`Use Linear Color Blending` should be **disabled** to make the blending in ucupaint look the same as in Photoshop | {align=center}
 
+# Video Demo
 
+You can watch PSD layers export-import demo in Youtube.
+
+| [![Ucupaint 2.4.7 PSD Export Import](https://img.youtube.com/vi/-fMaSrpi-_0/0.jpg)](https://www.youtube.com/watch?v=-fMaSrpi-_0) |
+|:--:| 
+| *Export-Import PSD Layers Demo in Ucupaint Plus 2.4.7* |
