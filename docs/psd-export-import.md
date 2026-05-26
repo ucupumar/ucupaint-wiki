@@ -60,7 +60,7 @@ If the color or the blending looks weird on your 2D app. Check the actual color 
 
 # Video Demo
 
-You can watch PSD layers export-import demo in Youtube.
+You can watch PSD layers export-import demo in [Youtube](https://www.youtube.com/watch?v=-fMaSrpi-_0).
 
 | [![Ucupaint 2.4.7 PSD Export Import](https://img.youtube.com/vi/-fMaSrpi-_0/0.jpg)](https://www.youtube.com/watch?v=-fMaSrpi-_0) |
 |:--:| 
