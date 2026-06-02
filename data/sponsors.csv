@@ -1,5 +1,4 @@
 id, display_name, profile, avatar, since, amount, one_time, tier_index, public
-tonis2, Tonis, https://github.com/tonis2, https://avatars.githubusercontent.com/u/9265556?u=4822ea1383074b2b805d2baca5c2a0962798c578&v=4, 2025-02-16T20:32:05Z, 50, True, 3, True
 epsypolym, , https://github.com/epsypolym, https://avatars.githubusercontent.com/u/30553210?u=e6e37e5e38e8e47bd3c1389c55641f043290b503&v=4, 2025-11-11T15:59:13Z, 50, False, 3, True
 rileyb3d, rileyb3d, https://github.com/rileyb3d, https://avatars.githubusercontent.com/u/226720150?u=2602c79eca3df5d011a6297f0d823ceba6cdd03e&v=4, 2025-08-15T14:02:02Z, 20, False, 1, True
 Thomas-Schmall, , https://github.com/Thomas-Schmall, https://avatars.githubusercontent.com/u/122365531?v=4, 2025-10-01T13:41:21Z, 10, False, 1, True
@@ -12,6 +11,8 @@ NA0303, , https://github.com/NA0303, https://avatars.githubusercontent.com/u/265
 stleeha, , https://github.com/stleeha, https://avatars.githubusercontent.com/u/288494516?v=4, 2026-05-28T02:02:21Z, 10, True, 1, True
 private_1, private_1, private_1, private_1, 2026-05-29T05:03:32Z, 10, False, 1, False
 private_2, private_2, private_2, private_2, 2026-05-30T16:46:58Z, 10, False, 1, False
+edamame841, , https://github.com/edamame841, https://avatars.githubusercontent.com/u/289694126?v=4, 2026-06-01T13:07:52Z, 10, False, 1, True
+beelzebe, beebz, https://github.com/beelzebe, https://avatars.githubusercontent.com/u/289865176?u=f3de0e8804c67452301f6f6e289eebdf76fc20e8&v=4, 2026-06-02T01:34:07Z, 10, False, 1, True
 Zennydeer, Zenny, https://github.com/Zennydeer, https://avatars.githubusercontent.com/u/195849987?u=d12847ecc1c420e87f45182d6aca5d49e6dcc784&v=4, 2025-03-25T19:42:21Z, 5, False, 0, True
 Picklebarrel3D, , https://github.com/Picklebarrel3D, https://avatars.githubusercontent.com/u/245609627?u=6b8fb312fb6f69dcae03f654cf7943d87bf1ed15&v=4, 2025-11-22T21:38:24Z, 5, False, 0, True
 sirdeadduke, , https://github.com/sirdeadduke, https://avatars.githubusercontent.com/u/188792035?v=4, 2025-12-01T17:19:43Z, 5, False, 0, True
