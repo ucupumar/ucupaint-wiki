@@ -45,7 +45,6 @@ The option `Convert Flat Layer to Solid Color` will detect the standard pixel im
 
 ## Limitations
 - Only layers with types of `Image`, `Solid Color`, or `Group` are currently supported for export
-- Group mask is currently not supported because of the PSD-Tools limitation
 - PSD can only have one mask per layer, so only one image mask is supported for export
 - Adjustment layers are not supported yet
 - Modifiers from ucupaint are also not supported yet
@@ -64,4 +63,8 @@ You can watch PSD layers export-import demo in [Youtube](https://www.youtube.com
 
 | [![Ucupaint 2.4.7 PSD Export Import](https://img.youtube.com/vi/-fMaSrpi-_0/0.jpg)](https://www.youtube.com/watch?v=-fMaSrpi-_0) |
 |:--:| 
-| *Export-Import PSD Layers Demo in Ucupaint Plus 2.4.7* |
+| *Export-Import PSD Layers in Ucupaint Plus 2.4.7* |
+
+| [![Ucupaint 2.4.8 Group mask support for PSD Export Import](https://img.youtube.com/vi/Pmn5w83druQ/0.jpg)](https://www.youtube.com/watch?v=Pmn5w83druQ) |
+|:--:| 
+| *Group mask support for Export-Import PSD Layers in Ucupaint Plus 2.4.8* |
