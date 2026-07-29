@@ -49,3 +49,6 @@ Thumbs.db
 *.wmv
 
 *.blend1
+
+# Python venv
+.venv/

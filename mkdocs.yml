@@ -28,6 +28,7 @@ nav:
     - Pink Material: 01.11.extras.md
   - Development :
     - Roadmaps : roadmaps.md
+    - Branding: branding.md
     - Credits : 01.12.contributors.md
 extra_css:
   - css/extra.css
