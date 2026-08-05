@@ -56,4 +56,4 @@ It's a recreation of the old Discord icon with a slightly modified `black` `Inte
 
 ### Source
 
-The Ucupaint Logo and Type were designed in inkscape ([The Inkscape File](./source/branding/ucupaint.inkscape.svg){:download=ucupaint.inkscape.svg}).
+The Ucupaint Logo and Type were designed in Inkscape ([The Inkscape File](./source/branding/ucupaint.inkscape.svg){:download=ucupaint.inkscape.svg}) by [Aaron Kerker](aaronkerker.de).
