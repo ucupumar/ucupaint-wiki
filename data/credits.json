@@ -2,7 +2,7 @@
   "sponsorships": {
     "kind": "MONTHLY_SPONSORSHIP_AMOUNT",
     "description": "If we reach this goal, I'll start implementing sync functions, starting with the PSD file, so editing/adding/removing layers in Photoshop or any 2D app will also update your layer setup in ucupaint.",
-    "percentComplete": 21,
+    "percentComplete": 22,
     "targetValue": 1000,
     "title": "$1,000 per month",
     "url": "https://github.com/sponsors/ucupumar",
