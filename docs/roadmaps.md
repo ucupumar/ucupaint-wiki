@@ -8,9 +8,9 @@ Roadmap for Ucupaint Plus, which is available for at least [silver sponsors on G
 
 | Feature | Status | Planned for version | Comments |
 |---------|---------|-----------|------|
-| PSD file export-import | Initial implementation done | 2.4.7 | |
-| Krita KRA file export-import | No | 2.4.x or 3.x | |
-| Gimp XCF file export-import | No | 2.4.x or 3.x | |
+| PSD file export-import | Done | 2.4.7 | |
+| Krita KRA file export-import | WIP | 3.x | |
+| Gimp XCF file export-import | WIP | 3.x | |
 | Sync External File | No | 3.x if the [first goal achieved for GitHub Sponsors](https://github.com/sponsors/ucupumar) | Sync external layered files like PSD, KRA, or XCF so if you edited the file in Blender or an outside application, there is a way to sync between those two. |
 | Export layers to Godot shader | Internal testing | 3.x | This will create a native ucupaint file and a Godot plugin to read the data and convert it to a shader. |
 | Godot ucupaint editor | No | 3.x or 4.x | UI for ucupaint layers and channels in Godot |
@@ -26,31 +26,32 @@ Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
-| Base layer | WIP (90%) | For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings. [(#392)](https://github.com/ucupumar/ucupaint/issues/392) |
-| New `Previous Layers` type for in-between layers adjustment| WIP (80%) | This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack. [(#393)](https://github.com/ucupumar/ucupaint/issues/393) |
-| Unified bake target system | WIP (40%) | This will integrate the current bake channels system into the bake target system. [(#323)](https://github.com/ucupumar/ucupaint/issues/323) |
-| Ability to use color attributes as custom bake target | No | Will likely implemented alongside new bake target system [(#97)](https://github.com/ucupumar/ucupaint/issues/97) |
-| Dealing with collapsed main channel panel by default | No | The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed. [(#395)](https://github.com/ucupumar/ucupaint/issues/395)|
-| Normal and height separation | WIP (70%) | Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future. [(#356)](https://github.com/ucupumar/ucupaint/issues/356)|
-| Better dropdown in layer list | Considered | Trying to improve mask and custom data dropdown on layer list. |
-| Rename `Vector` input to `Coordinate` | No | In Ucupaint, `Vector` makes more sense if renamed to `Coordinate`. [(#394)](https://github.com/ucupumar/ucupaint/issues/394)|
+| Normal and height separation | WIP (95%) | Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future. [(#356)](https://github.com/ucupumar/ucupaint/issues/356)|
+| Unified bake target system | Done | This will integrate the current bake channels system into the bake target system. [(#323)](https://github.com/ucupumar/ucupaint/issues/323) |
+| Base layer | Done | For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings. [(#392)](https://github.com/ucupumar/ucupaint/issues/392) |
+| New `Previous Layers` type for in-between layers adjustment| Done | This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack. [(#393)](https://github.com/ucupumar/ucupaint/issues/393) |
+| Ability to use color attributes as custom bake target | Done | Will likely implemented alongside new bake target system [(#97)](https://github.com/ucupumar/ucupaint/issues/97) |
+| Dealing with collapsed main channel panel by default | Done | The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed. [(#395)](https://github.com/ucupumar/ucupaint/issues/395)|
+| Rename `Vector` input to `Mapping` | Done | In Ucupaint, `Vector` makes more sense if renamed to `Mapping`. [(#394)](https://github.com/ucupumar/ucupaint/issues/394)|
 
 ### Ucupaint 3.1
 
-Ucupaint 3.1 will focus on baking any layer/layer group as image(s).
+Ucupaint 3.1 versions will focus on custom node support
+
+| Feature | Status | Comments |
+|---------|---------|-----------|
+| Custom node group as layer/mask | No | [#90](https://github.com/ucupumar/ucupaint/issues/90) |
+| Node inputs as layer/mask | No | [#426](https://github.com/ucupumar/ucupaint/issues/426) |
+
+### Ucupaint 3.x
+
+Ucupaint 3.x will focus on baking any layer/layer group as image(s).
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
 | Bake layer as images for any layer types | No | Currently the system only works for layer types that have a source node with only one socket output. [(#65)](https://github.com/ucupumar/ucupaint/issues/65)|
 | Map any image channel into ucupaint layer channel | No | Useful to use ORM image as layer. [(#128)](https://github.com/ucupumar/ucupaint/issues/128) |
-
-### Ucupaint 3.x
-
-Ucupaint 3.x versions will focus on custom node support
-
-| Feature | Status | Comments |
-|---------|---------|-----------|
-| Custom node group as layer/mask | No | [#90](https://github.com/ucupumar/ucupaint/issues/90) |
+| Better dropdown in layer list | No | Trying to improve mask and custom data dropdown on layer list. |
 | Image size presets | WIP (60%) | While early testing shows that it is possible, there’s a roadblock that makes the implementation trickier. If the workaround doesn’t work, this feature probably will be pushed to later releases. [(#350)](https://github.com/ucupumar/ucupaint/issues/350)|
 
 ### Future features that aren’t in planned milestones yet
