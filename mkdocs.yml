@@ -2,6 +2,8 @@ site_name: UCUPAINT
 site_description : Ucupaint is Blender addon to manage texture as layers for Eevee and Cycles renderer.
 theme: 
   name : readthedocs
+  custom_dir: theme
+  locale: en
   icon:
     admonition:
       <type>: <icon>
@@ -43,6 +45,44 @@ plugins:
         height: "auto"         
         display: "block"
         margin: "auto"
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: false
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 简体中文
+          build: true
+          theme:
+            locale: zh_CN
+          nav_translations:
+            Documentation: 文档
+            Quick Setup: 快速设置
+            Channel: 通道
+            Layer: 图层
+            Layer Channel: 图层通道
+            Mask: 遮罩
+            Modifier: 修改器
+            Preview Mode: 预览模式
+            Bake to Layer: 烘焙到图层
+            Transfer UV: 传递 UV
+            Bake Channels: 烘焙通道
+            Export-Import Layers: 导出与导入图层
+            Resources: 资源
+            File Examples: 文件示例
+            Video Tutorials: 视频教程
+            Written Tutorials: 文字教程
+            Tips & Troubleshooting: 提示与故障排除
+            Performance Tips: 性能提示
+            Pink Material: 粉色材质
+            Development: 开发
+            Roadmaps: 路线图
+            Credits: 致谢
 markdown_extensions:
   - toc:
       permalink: true

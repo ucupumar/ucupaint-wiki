@@ -4,3 +4,29 @@
    /* word-break: break-word !important;
    overflow-wrap: anywhere !important; */
  }
+
+/* Language control: right 150px of the 300px desktop sidebar; menu opens upward. */
+.wy-nav-side {
+  padding-bottom: 3.5em;
+}
+
+@media screen and (min-width: 769px) {
+  .rst-versions.ucupaint-languages {
+    left: 150px;
+    width: 150px;
+  }
+}
+
+.rst-versions.ucupaint-languages .rst-current-version {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.rst-versions.ucupaint-languages .ucupaint-lang-caret {
+  margin-left: auto;
+}
+
+.rst-versions.ucupaint-languages .ucupaint-lang-current a {
+  font-weight: 700;
+}

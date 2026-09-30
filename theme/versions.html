@@ -1,0 +1,22 @@
+<div class="rst-versions ucupaint-languages" data-toggle="rst-versions" role="note" aria-label="Languages">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-globe"></span>
+    {% if i18n_page_locale == 'zh' %}简体中文{% else %}English{% endif %}
+    <span class="fa fa-caret-up ucupaint-lang-caret"></span>
+  </span>
+  <div class="rst-other-versions">
+    <dl>
+      <dt>Languages</dt>
+      {% if page and page.file and page.file.alternates %}
+        {% for lang in i18n_config.languages %}
+          {% if lang.build %}
+            {% set alt = page.file.alternates[lang.locale] %}
+            <dd{% if lang.locale == i18n_page_locale %} class="ucupaint-lang-current"{% endif %}>
+              <a href="{{ alt.url|url }}">{{ lang.name }}</a>
+            </dd>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </dl>
+  </div>
+</div>
