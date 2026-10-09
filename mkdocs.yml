@@ -10,7 +10,7 @@ nav:
     - Quick Setup : 01.00.quick-setup.md
     - Channel : 01.01.channel.md 
     - Layer : 01.02.layer.md
-    - Mapping : 01.99.mapping.md
+    - Mapping : mapping.md
     - Layer Channel : 01.03.layer-channel.md
     - Mask : 01.04.mask.md
     - Modifier : 01.05.modifier.md
