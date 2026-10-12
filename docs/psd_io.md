@@ -9,13 +9,13 @@ Ucupaint Plus supports exporting and importing layer data to and from PSD files.
 
 To export layers as PSD, press the special menu button beside the layer list (the one with `V` icon), and choose `Export Layers as PSD`.
 
-|![[pic: export psd button]](./source/export_psd.png)|
+|![[pic: export psd button]](./media/psd_io//export_psd.png)|
 |:--:|
 |Export layers to PSD button| {align=center}
 
 Then the export dialog box will appear.
 
-|![[pic: export psd dialog box]](./source/export_psd_dialog_box.png)|
+|![[pic: export psd dialog box]](./media/psd_io//export_psd_dialog_box.png)|
 |:--:|
 |Export layers to PSD dialog box| {align=center}
 
@@ -25,7 +25,7 @@ There are two options for the export, the first one is `Channel`, which only lay
 
 The comparison below is the exported layers as shown in Photopea.
 
-|![[pic: convert solid color disabled]](./source/convert_solid_color_to_pixels_disabled.png)|![[pic: convert solid color enabled]](./source/convert_solid_color_to_pixels_enabled.png)|
+|![[pic: convert solid color disabled]](./media/psd_io//convert_solid_color_to_pixels_disabled.png)|![[pic: convert solid color enabled]](./media/psd_io//convert_solid_color_to_pixels_enabled.png)|
 |:--:|:--:|
 | `Convert Solid Colors to pixels` disabled | `Convert Solid Colors to pixels` enabled| {align=center}
 
@@ -33,11 +33,11 @@ The comparison below is the exported layers as shown in Photopea.
 
 To import layers from a PSD file, you only need to open the image as layer. And there will be a menu to read the layers if you select a PSD file.
 
-|![[pic: open image button]](./source/open_image_as_layer.png)|
+|![[pic: open image button]](./media/psd_io//open_image_as_layer.png)|
 |:--:|
 |Open image as layer| {align=center}
 
-|![[pic: read psd layers option]](./source/read_psd_layers_option.png)|
+|![[pic: read psd layers option]](./media/psd_io//read_psd_layers_option.png)|
 |:--:|
 | `Read Photoshop layers` will show up when you select a PSD file| {align=center}
 
@@ -53,7 +53,7 @@ The option `Convert Flat Layer to Solid Color` will detect the standard pixel im
 
 If the color or the blending looks weird on your 2D app. Check the actual color by enabling the color channel's `Preview Mode`. And if it still looks too different, you can also try to disable `Use Linear Color Blending`. By disabling that, the blending colors between layers will be more similar to Photoshop.
 
-|![[pic: use linear color blending option]](./source/use_linear_color_blending_option.png)|
+|![[pic: use linear color blending option]](./media/psd_io//use_linear_color_blending_option.png)|
 |:--:|
 |`Use Linear Color Blending` should be **disabled** to make the blending in ucupaint look the same as in Photoshop | {align=center}
 

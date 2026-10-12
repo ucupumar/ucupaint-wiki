@@ -22,7 +22,7 @@ If you choose `Image > New Image`, a dialog box will appear.
 |:--:|
 |New image mask dialog box| {align=center}
 
-Most of the options are similar to [new image layers options](../01.02.layer/#new-image-layer-options), with some exceptions:
+Most of the options are similar to [new image layers options](../layer/#new-image-layer-options), with some exceptions:
 
 - **Color**: Color of the mask, white for full opacity and black for full transparency.
 - **Blend**: Blending of the mask, the default is `Multiply`, which meant the mask will be multiplied to the layer alpha value.
@@ -49,7 +49,7 @@ Every mask their own of blending, opacity, and visibility toggle.
 |:--:|
 | Mask visibility and opacity demo | {align=center}
 
-Icon button in between of the mask opacity and mask menu is to set the active data that will be used for painting (if the mask is an image) or editing (if the mask is an color attributes or color ID). It can also be used for previewing the data (more info in [Preview Mode](../01.06.preview-mode) page)
+Icon button in between of the mask opacity and mask menu is to set the active data that will be used for painting (if the mask is an image) or editing (if the mask is an color attributes or color ID). It can also be used for previewing the data (more info in [Preview Mode](../preview_mode) page)
 
 |![type:video](./media/mask/select_active_mask_with_preview.mp4)|
 |:--:|
@@ -72,7 +72,7 @@ Baking mask as an image is available in mask menu. It will bake all kind of mask
 |:--:|
 | Bake mask as image has some special options | {align=center}
 
-Bake mask as an image has similar options to [baking data to a layer/mask](../01.07.bake-to-layer). But it has extra options:
+Bake mask as an image has similar options to [baking data to a layer/mask](../bake_as_entity). But it has extra options:
 
 - **Use Blur**: Add blur to the baked image. It uses compositing nodes, so the the blur result is much cleaner than using blur in the mapping options.
 - **Duplicate Mask**: The bake result will become a new separate mask.
@@ -110,7 +110,7 @@ Be aware that mask order in mask panel is different than the layer list order. I
 ## Mask Types
 
 <!-- Ucupaint has several mask types that can be used, most of the types are the same like layer types, except for: -->
-Ucupaint’s mask types are mostly the same as its [layer types](../01.02.layer/#layer-types), with a few exceptions.
+Ucupaint’s mask types are mostly the same as its [layer types](../layer/#layer-types), with a few exceptions.
 
 ### Color ID
 

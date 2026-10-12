@@ -9,7 +9,7 @@ Ucupaint UI centered around the layers, after creating ucupaint node, Ucupaint U
 
 ## Base Layer
 
-Base layer is the channel input values of the Ucupaint node, which can also be accessed in the [channel settings](../01.01.channel/#channel-settings). Base layer is always at the bottom of the layer stack and can't be removed.
+Base layer is the channel input values of the Ucupaint node, which can also be accessed in the [channel settings](../channel/#channel-settings). Base layer is always at the bottom of the layer stack and can't be removed.
 
 |![type:video](./media/layer/base_layer.mp4)|
 |:--:|
@@ -40,7 +40,7 @@ Here are the explanations of the options when creating new image layer:
 - **Interpolation**: Pixel filtering interpolation that will be used for the render. Choose `Closest` if you want to create pixel art textures and `Cubic` if you want to paint the height. Everything else will be enough by using the default `Linear`.
 - **Mapping**: Texture Mapping method that will be used for render. (*TODO: More explanations of all the Mapping types on a separate page*)
 - **Use UDIM Tiles**: Create UDIM tiles based on the UV Map chosen. This will automatically enabled if you choose an UVMap that has UV islands placed outside 0.0-1.0 range. To disable this automatic UDIM detection, you can disable `Enable Auto UDIM Detection` in addon preferences. (*TODO: More explanation about UDIM in separate page *)
-- **Use Image Atlas**: Use shared image atlas image for multiple layers and masks. This is to circumvent maximum image limit of Blender's OpenGL renderer mentioned in [Pink Material page](../01.11.extras)
+- **Use Image Atlas**: Use shared image atlas image for multiple layers and masks. This is to circumvent maximum image limit of Blender's OpenGL renderer mentioned in [Pink Material page](../pink_material)
 
 <!--
 Those options are mostly obvious, except for image atlas, more details about image atlas can be found [here](#image-atlas).
@@ -73,11 +73,6 @@ After you painted a layer, you'll notice that there is asterisk beside the layer
 |:--:|:--:|
 | Asterisk icons mean images are edited but not saved yet | Packed icons mean images are packed in the blend file | {align=center}
 
-
-<!--
-!!! note
-    Next Quick Guide is about how layers and channels are related, click [here](../01.03.layer-channel/#setting-up-layer-channel-quick-guide) to continue
--->
 
 ## Layer Parameters And Options
 
@@ -174,7 +169,7 @@ Also if there's a copied baked image layer/mask, there will be an option to `Reb
 
 #### Rebake All Baked Images
 
-The operator `Rebake All Baked Images` will rebake all baked image layers and masks. More explanation can be found in the [bake as layer/mask page](../01.07.bake-to-layer#batch-rebake)
+The operator `Rebake All Baked Images` will rebake all baked image layers and masks. More explanation can be found in the [bake as layer/mask page](../bake_as_entity#batch-rebake)
 
 #### Refill UDIM Tiles
 
@@ -195,7 +190,7 @@ In `Convert Image` submenu, there some operators that you can use to convert ima
 
 ### Export Layers as PSD
 
-Exporting to PSD layers currently only available in Ucupaint Plus. More explanation about this can be found in [the dedicated page](../psd-export-import/).
+Exporting to PSD layers currently only available in Ucupaint Plus. More explanation about this can be found in [the dedicated page](../psd_io/).
 
 
 ## Layer Types
@@ -240,7 +235,7 @@ Edge detect will add white color around the edge proximity of the mesh. Like Amb
 
 ### Adjustment
 
-Adjustment layer actually just a layer that use previous layer as the source data, then it will add modifier on top of it. More explanation can be found in the [modifier page](../01.05.modifier#adjustment-layer).
+Adjustment layer actually just a layer that use previous layer as the source data, then it will add modifier on top of it. More explanation can be found in the [modifier page](../modifier#adjustment-layer).
 
 ### Texture
 
@@ -248,7 +243,7 @@ You can use Blender's generated textures as a layer, for example `Noise`, `Magic
 
 ### Bake to Layer Types
 
-You can use a baked texture as a layer, for example AO, Cavity, Bevel. Be aware that the baking process may take a while to finish, depending on your system and settings. Various bake to layer types are explained [here](../01.07.bake-to-layer)
+You can use a baked texture as a layer, for example AO, Cavity, Bevel. Be aware that the baking process may take a while to finish, depending on your system and settings. Various bake to layer types are explained [here](../bake_as_entity).
 
 <!-- TODO: Realtime AO & Edge Detect -->
 

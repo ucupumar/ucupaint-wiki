@@ -15,7 +15,7 @@ Before you continue, make sure to check the following:
 |Creating new Ucupaint node in the Shader Editor| {align=center}
 
 In the Shader Editor, press Shift + A, go to Group, and select Ucupaint to add the node to your material. When adding a Ucupaint node in the Shader Editor, it will start with a single channel: Color.
-You can connect the Color output to any other node in your shader as needed. More details about channels are explained in [channel page](../01.01.channel/).
+You can connect the Color output to any other node in your shader as needed. More details about channels are explained in [channel page](../channel/).
 
 ## Quick Setup
 
