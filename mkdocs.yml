@@ -17,6 +17,7 @@ nav:
     - Bake as Layer/Mask : bake_as_entity.md
     - Transfer UV : transfer_uv.md
     - Baking Ucupaint Node : bake_target.md
+    - Preferences : preferences.md
   - Export-Import Layers:
     - PSD: psd_io.md
   - Resources :
