@@ -29,6 +29,7 @@ nav:
   - Development :
     - Roadmaps : roadmaps.md
     - Credits : 01.12.contributors.md
+    - Branding: branding.md
 extra_css:
   - css/extra.css
 plugins:
@@ -51,3 +52,4 @@ markdown_extensions:
   - pymdownx.superfences
   - md_in_html
   - tables
+  - attr_list
