@@ -12,6 +12,7 @@ nav:
     - Layer : layer.md
     - Layer Channel : layer_channel.md
     - Mask : mask.md
+    - Mapping : mapping.md
     - Modifier : modifier.md
     - Preview Mode : preview_mode.md
     - Bake as Layer/Mask : bake_as_entity.md
