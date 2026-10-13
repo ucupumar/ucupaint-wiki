@@ -1,0 +1,165 @@
+# Bake as Layer/Mask
+
+When creating a new layer or mask, there are options to bake various data as an image layer.
+
+|![type:image](./media/bake_as_layer/bake_as_layer_menu.png)|![result uv](./media/bake_as_layer/bake_as_mask_menu.png)|
+|:--:|:--:|
+| Bake as Layer Menu | Bake as Mask Menu|
+
+The bake process can take a while depending on your system. You can see how it works in the video below.
+
+|![type:video](./media/bake_as_layer/bake_bevel_normal.mp4)|
+|:--:|
+|Bake Bevel Normal as an image layer| {align=center}
+
+## Rebake
+
+After you edit the mesh or the scene, sometimes you want to rebake the layer. The easiest way to do it is by pressing the `Rebake` button in the layer/mask source panel.
+
+|![type:video](./media/bake_as_layer/rebake_bevel_normal.mp4)|
+|:--:|
+|Rebake using `Rebake` Button| {align=center}
+
+Be aware if you already have already baked data (Bevel Normal for example) and you want to bake the same data type again, the default behavior is Ucupaint will overwrite the already baked data. To disable this, you can disable the `Overwrite` option at bake dialog box.
+
+### Batch Rebake
+
+If you already have multiple data baked, and want to edit the mesh or scene again, rather that pressing the `Rebake` button one by one for each baked images, you can just press `Rebake All Baked Images`, this will rebake all baked layers/masks in the Ucupaint node. The process can take a while depending on how many data you already baked.
+
+|![type:video](./media/bake_as_layer/rebake_all_baked_images.mp4)|
+|:--:|
+|Rebake AO and Bevel Normal at the same time using `Rebake All Baked Images` Button| {align=center}
+## Baked Texture Types
+
+There are several texture types that can be baked to a layer:
+
+### AO
+
+AO (Ambient Occlusion) can darken the valleys or creases of your mesh. You can use options such as distance and local only.
+
+|![type:image](./media/bake_as_layer/ao.png)|
+|:--:|
+|AO| {align=center}
+
+### Pointiness
+
+Pointiness will highlight the valleys and ridges of your mesh. Pointiness will use 32-bit float image by default since it need more precision.
+
+|![type:image](./media/bake_as_layer/pointiness.png)|
+|:--:|
+|Pointiness| {align=center}
+
+### Curvature
+
+Curvature is similar to pointiness with different valley and ridges behavior. It uses 8-bit image by default so smaller file size.
+
+|![type:image](./media/bake_as_layer/curvature.png)|
+|:--:|
+|Curvature| {align=center}
+
+### Cavity
+
+Similar to pointiness and curvature, cavity will show valleys and ridges but with darker grayscale levels. It also uses 8-bit image by default.
+
+|![type:image](./media/bake_as_layer/cavity.png)|
+|:--:|
+|Cavity| {align=center}
+
+### Dust
+
+Dust is similar to the cavity map but adds additional Z top normals to the mix.
+
+|![type:image](./media/bake_as_layer/dust.png)|
+|:--:|
+|Dust| {align=center}
+
+### Paint Base
+
+Sometimes also referred to as the Blizzard or Dota diffuse map. This bake combines a dirt map with vertical gradient and top facing normals with a highlight. Credits to Danyl Bekhoucha for the shader setup.
+This bake is a good starting point for character texture maps.
+
+|![type:image](./media/bake_as_layer/paint_base.png)|
+|:--:|
+|Paint Base| {align=center}
+
+### Thickness
+
+Thickness will bake the thickness of the mesh. Internally, it uses the inverted normal AO to achieve the thickness.
+
+|![type:image](./media/bake_as_layer/thickness.png)|
+|:--:|
+|Thickness| {align=center}
+
+### Wireframe
+
+Wireframe will bake the wireframe of the mesh.
+
+|![type:image](./media/bake_as_layer/wireframe.png)|
+|:--:|
+|Wireframe| {align=center}
+
+### Bevel Normal
+
+Bevel normal map in tangent space. This will bake bevel on sharp edges.
+
+|![type:image](./media/bake_as_layer/bevel_normal.gif)|
+|:--:|
+|Bevel Normal| {align=center}
+
+### Bevel Grayscale
+
+Grayscale bevel of the mesh.
+
+|![type:image](./media/bake_as_layer/bevel_grayscale.png) |
+|:--:|
+|Bevel Grayscale| {align=center}
+
+
+### Multires Normal
+
+This will bake the highest level of multires to a normal map.
+
+|![type:video](./media/bake_as_layer/bake_multires_normal.mp4)|
+|:--:|
+|Bake Multires Normal Demo| {align=center}
+
+
+### Multires Displacement
+
+This will bake the highest level of multires to a displacement/bump map.
+
+|![type:video](./media/bake_as_layer/bake_multires_displacement.mp4)|
+|:--:|
+|Bake Multires Displacement Demo| {align=center}
+
+
+### Other Objects Normal
+
+This will bake the surface normal of other non-active selected objects to a normal map.
+
+|![type:video](./media/bake_as_layer/bake_other_object_normal.mp4)|
+|:--:|
+|Bake Other Objects Normal Demo| {align=center}
+
+
+### Other Objects Color
+
+This will bake the color of other non-active selected objects to a color map.
+
+|![type:video](./media/bake_as_layer/bake_other_object_color.mp4)|
+|:--:|
+|Other Objects Color| {align=center}
+
+### Other Objects Channels
+
+This will bake the principled BSDF channels of other non-active selected objects to a ucupaint channels.
+
+
+### Selected Vertices
+
+This will bake the the selected vertices to white color while other vertices will be black. This can be useful for masking.
+
+|![type:video](./media/bake_as_layer/bake_selected_vertices.mp4)|
+|:--:|
+| Bake Selected Vertices as Mask Demo| {align=center}
+
