@@ -1,4 +1,4 @@
-# Branding
+# Logo
 
 It uses the same font as blender itself: **`Inter`**
 
@@ -11,6 +11,11 @@ The major version number (in this example `3`) is added to the typeface.
 | Default | ![Ucupaint Typeface, Red on White, PNG](./source/branding/png/ucupaint_type.png) | ![Ucupaint Typeface, Red on White, SVG](./source/branding/svg/ucupaint_type.svg) |
 | Black | ![Ucupaint Typeface, Black on Transparent, PNG](./source/branding/png/ucupaint_type_black.png) | ![Ucupaint Typeface, Black on Transparent, SVG](./source/branding/svg/ucupaint_type_black.svg) |
 | White | ![Ucupaint Typeface, White on Transparent, PNG](./source/branding/png/ucupaint_type_white.png) | ![Ucupaint Typeface, White on Transparent, SVG](./source/branding/svg/ucupaint_type_white.svg) |
+
+For general purpose logo without version number are similar but omits the number.
+
+| Name | PNG | SVG |
+| --- | --- | --- |
 | Default (no version) | ![Ucupaint Typeface, Red on White, No Version, PNG](./source/branding/png/ucupaint_type_noversion.png) | ![Ucupaint Typeface, Red on White, No Version, SVG](./source/branding/svg/ucupaint_type_noversion.svg) |
 | Black (no version) | ![Ucupaint Typeface, Black on Transparent, No Version, PNG](./source/branding/png/ucupaint_type_black_noversion.png) | ![Ucupaint Typeface, Black on Transparent, No Version, SVG](./source/branding/svg/ucupaint_type_black_noversion.svg) |
 | White (no version) | ![Ucupaint Typeface, White on Transparent, No Version, PNG](./source/branding/png/ucupaint_type_white_noversion.png) | ![Ucupaint Typeface, White on Transparent, No Version, SVG](./source/branding/svg/ucupaint_type_white_noversion.svg) |
