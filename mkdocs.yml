@@ -25,13 +25,13 @@ nav:
     - File Examples : sample_files.md
     - Video Tutorials : video-tutorials.md
     - Written Tutorials : text-tutorials.md
+    - Logo and Icon : logo.md
   - Tips & Troubleshooting :
     - Performance Tips: tips.md
     - Pink Material: pink_material.md
   - Development :
     - Roadmaps : roadmaps.md
     - Credits : contributors.md
-    - Branding: branding.md
 extra_css:
   - css/extra.css
 plugins:
