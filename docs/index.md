@@ -1,13 +1,15 @@
-# INTRODUCTION TO UCUPAINT
+# Ucupaint Documentation
 
-![project-example](source/00.introduction/00-yang_guifei.jpg)
+![project-example](media/index/banner.png)
 
+<!--
 !!! warning
     Many parts of this documentation have not been updated yet.
+-->
 
 ## What is Ucupaint?
 
-Ucupaint is a Blender addon that stacks images, textures, and vertex colors into layers with mask and baking support.
+Ucupaint is a Blender addon that stacks images, textures, and color attributes into layers with mask and baking support.
 
 ## Requirements
 
@@ -23,7 +25,7 @@ You need at least Blender 2.76 to use this addon, but more advanced features may
 Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of this wiki.
 
 ## Sponsor
-If you find the addon useful, you can sponsor the addon development [here](https://github.com/sponsors/ucupumar)
+If you find the addon useful, you can sponsor the addon development [here](https://github.com/sponsors/ucupumar) and get Ucupaint Plus version of the addon.
 
 ## Discord Server
 
@@ -31,20 +33,21 @@ You can join [Ucupaint Discord](https://discord.gg/BdNfGGzQHh) to ask or discuss
 
 ## Locations
 
-You can find Ucupaint in the properties panel of the 3D viewport and also in the Shader editor. 
-
-### Blender 2.7x
-
-For Blender 2.7x, you should be using the Cycles render engine. The UI is only visible when you select an object that can have a material (mesh, curve, etc).
-
-|![00.b279-loc](./source/00.b279_loc.png)|
-|:--:|
-|Ucupaint locations in Blender 2.79 are only available if you're using Cycles| {align=center}
+You can find Ucupaint in the properties panel of the 3D Viewport and also in the Shader editor. 
 
 ### Blender 2.80 and above
 
 For Blender 2.80 and above, it's in the Ucupaint tab. The tab is only visible when you select an object that can have a material (mesh, curve, etc).
 
-|![00.b280-loc](./source/00.b280_loc.png)|
+|![00.b280-loc](./media/index/b280_loc.png)|
 |:--:|
 |Ucupaint location in Blender 2.80 and above| {align=center}
+
+### Blender 2.7x
+
+For Blender 2.7x, you should be using the Cycles render engine. The UI is only visible when you select an object that can have a material (mesh, curve, etc).
+
+|![00.b279-loc](./media/index/b27x_loc.png)|
+|:--:|
+|Ucupaint locations in Blender 2.76 to 2.79 are only available if you're using Cycles| {align=center}
+
