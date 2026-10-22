@@ -1,6 +1,6 @@
 # Layer
 
-Ucupaint UI centered around the layers, after creating ucupaint node, Ucupaint UI will show the layer list with Base layer as the first layer.
+Ucupaint UI is centered around the layers. After creating a Ucupaint node, Ucupaint UI will show the layer list with the Base layer as the first layer.
 
 |![layer list](./media/layer/layer_list.png)|
 |:--:|
@@ -9,7 +9,7 @@ Ucupaint UI centered around the layers, after creating ucupaint node, Ucupaint U
 
 ## Base Layer
 
-Base layer is the channel input values of the Ucupaint node, which can also be accessed in the [channel settings](../channel/#channel-settings). Base layer is always at the bottom of the layer stack and can't be removed.
+The base layer is the channel input values of the Ucupaint node, which can also be accessed in the [channel settings](../channel/#channel-settings). Base layer is always at the bottom of the layer stack and can't be removed.
 
 |![type:video](./media/layer/base_layer.mp4)|
 |:--:|
@@ -31,16 +31,16 @@ If you choose `Image > New Image`, a dialog box will appear.
 |:--:|
 |New image layer dialog box| {align=center}
 
-Here are the explanations of the options when creating new image layer:
+Here are the explanations of the options when creating a new image layer:
 
-- **Name**: Name of the layer, which also name of the created image.
-- **Channel**: Channel that will be used the layer for.
+- **Name**: Name of the layer, which is also the name of the created image.
+- **Channel**: Channel that will be used by the layer.
 - **Resolution**: Resolution of the created image.
-- **32-bit Float**: More precision to image created, useful for painting height, but will use a lot more disk space.
+- **32-bit Float**: More precision for the image created, useful for painting height, but will use a lot more disk space.
 - **Interpolation**: Pixel filtering interpolation that will be used for the render. Choose `Closest` if you want to create pixel art textures and `Cubic` if you want to paint the height. Everything else will be enough by using the default `Linear`.
-- **Mapping**: Texture Mapping method that will be used for render. (*TODO: More explanations of all the Mapping types on a separate page*)
-- **Use UDIM Tiles**: Create UDIM tiles based on the UV Map chosen. This will automatically enabled if you choose an UVMap that has UV islands placed outside 0.0-1.0 range. To disable this automatic UDIM detection, you can disable `Enable Auto UDIM Detection` in addon preferences. (*TODO: More explanation about UDIM in separate page *)
-- **Use Image Atlas**: Use shared image atlas image for multiple layers and masks. This is to circumvent maximum image limit of Blender's OpenGL renderer mentioned in [Pink Material page](../pink_material)
+- **Mapping**: Texture Mapping method that will be used for rendering.
+- **Use UDIM Tiles**: Create UDIM tiles based on the UV Map chosen. This will automatically be enabled if you choose a UV map that has UV islands placed outside the 0.0-1.0 range. To disable this automatic UDIM detection, you can disable `Enable Auto UDIM Detection` in addon preferences. (*TODO: More explanation about UDIM in separate page *)
+- **Use Image Atlas**: Use a shared image atlas image for multiple layers and masks. This is to circumvent the maximum image limit of Blender's OpenGL renderer mentioned in [Pink Material page](../pink_material)
 
 <!--
 Those options are mostly obvious, except for image atlas, more details about image atlas can be found [here](#image-atlas).
@@ -49,17 +49,17 @@ Once you're happy with the settings, just click ok. Now you have one image layer
 
 ## Painting an Image Layer
 
-After creating new image layer, you can start painting to the image layer by go to Texture Paint mode. You can do that by changing `Object Mode` to `Texture Paint` on Blender viewport menu or by pressing `Ctrl+Tab` and choose `Texture Paint`.
+After creating a new image layer, you can start painting to the image layer by going to Texture Paint mode. You can do that by changing `Object Mode` to `Texture Paint` on the Blender viewport menu or by pressing `Ctrl+Tab` and choosing `Texture Paint`.
 
 |![type:video](./media/layer/adding_and_painting_image_layers.mp4)|
 |:--:|
 | Example of creating image layers and painting them | {align=center}
 
-Layer in Ucupaint works like a layer in any other image editing software. So if we create another layer and draw over it, it will cover the layer below.
+Layers in Ucupaint work like layers in any other image editing software. So if we create another layer and draw over it, it will cover the layer below.
 
 ## Reordering Layers
 
-You can reorder active layer by clicking the arrow buttons beside the layer list.
+You can reorder the active layer by clicking the arrow buttons beside the layer list.
 
 |![type:image](./media/layer/reordering_layers.gif)|
 |:--:|
@@ -67,7 +67,7 @@ You can reorder active layer by clicking the arrow buttons beside the layer list
 
 ## Saving the Image Layers
 
-After you painted a layer, you'll notice that there is asterisk beside the layer name, that means the image is edited and haven't been saved yet. If you save the blend file, all images used in Ucupaint will automatically saved or packed inside the blend file. In Blender 5.2 or newer, there is prompt to tell you there unsaved images, but whether you choose to click the toggle or not, when saving the blend file, Ucupaint will always save all the images used in Ucupaint node(s).
+After you paint a layer, you'll notice that there is an asterisk beside the layer name, that means the image is edited and haven't been saved yet. If you save the blend file, all images used in Ucupaint will automatically be saved or packed inside the blend file. In Blender 5.2 or newer, there is a prompt to tell you there are unsaved images, but whether you choose to click the toggle or not, when saving the blend file, Ucupaint will always save all the images used in Ucupaint node(s).
 
 |![type:image](./media/layer/image_dirty_icons.png)|![type:image](./media/layer/image_packed_icons.png)|
 |:--:|:--:|
@@ -78,11 +78,11 @@ After you painted a layer, you'll notice that there is asterisk beside the layer
 
 ### Layer Visibility
 
-The eye icon in the layer list is to set the layer visibility.
+The eye icon in the layer list is used to set the layer visibility.
 
 |![type:image](./media/layer/layer_visibility.gif)|
 |:--:|
-| Toggling on and off layer visibility | {align=center}
+| Toggling layer visibility on and off | {align=center}
 
 ### Layer Opacity
 
@@ -94,7 +94,7 @@ Layer opacity is controlled by the slider on the left of the layer visibilty ico
 
 ### Layer Mapping
 
-A layer will use UV mapping by default, but you can change it to another mapping types. (*TODO: All mapping types explained*)
+A layer will use UV mapping by default, but you can change it to another mapping type.
 
 |![[pic: vector options]](./media/layer/layer_mapping.png)|
 |:--:|
@@ -114,7 +114,7 @@ Mapping transformation is only available for non-decal mapping.
 
 ### Layer Source
 
-You can change the layer source to a different one and retain it's mask and modifier settings. Use this button to change the layer type.
+You can change the layer source to a different one and retain its mask and modifier settings. Use this button to change the layer type.
 
 |![[pic: change layer type button]](./media/layer/layer_source_options.png)|
 |:--:|
@@ -122,13 +122,13 @@ You can change the layer source to a different one and retain it's mask and modi
 
 ### Renaming Layer
 
-To rename a layer, double click the name of the layer in the layer list and type the name of the layer. If your layer is an image layer, you'll actually also renaming your image name.
+To rename a layer, double-click the name of the layer in the layer list and type the name of the layer. If your layer is an image layer, you'll actually also be renaming your image name.
 
 |![type:video](./media/layer/renaming_layer.mp4)|
 |:--:|
 |Renaming layer| {align=center}
 
-If you already learnt about mask, make sure you select the active data to be the layer otherwise you'll rename the mask or custom data.
+If you already learnt about masks, make sure you select the active data to be the layer, otherwise you'll be renaming the mask or custom data.
 
 ## Layer Special Menu
 
@@ -140,9 +140,9 @@ Layer special menu can be accessed below the layer move up & down button. It con
 
 ### Merge Layers
 
-There are two operators for merging layer, `Merge Layer Up` and `Merge Layer Down`. Currently this only work with image layer as the active layer. The merging process is using blender bake system internally so it can take a while if you're using large resolution and UDIM. 
+There are two operators for merging layers, `Merge Layer Up` and `Merge Layer Down`. Currently, this only works with an image layer as the active layer. The merging process is using blender bake system internally so it can take a while if you're using large resolution and UDIM. 
 
-The options for merge layers are:
+The options for merging layers are:
 
 - **Main Channel**: Channel for merge reference, you can only choose one.
 - **Apply Modifiers**: This will apply the modifiers in the active layer.
@@ -150,20 +150,20 @@ The options for merge layers are:
 
 ### Duplicate Layer
 
-There are two operators for duplicating a layer, `Duplicate Layer` is for duplicating a copy of the active layer with all the pixel data if it's an image layer and all the mask pixel data (if there's a image mask) and all the modifiers and settings. `Duplicate Blank Layer` will duplicate the layer with all the modifiers and settings, but all the layer and mask pixels data will be blank.
+There are two operators for duplicating a layer, `Duplicate Layer` is for duplicating a copy of the active layer with all the pixel data if it's an image layer, all the mask pixel data (if there's an image mask) and all the modifiers and settings. `Duplicate Blank Layer` will duplicate the layer with all the modifiers and settings, but all the layer and mask pixel data will be blank.
 
 The options for duplicating a layer are:
 
-- **Duplicate Packed Images**: Only available if there's packed image data in the active layer. This will duplicate the packed image into new image, disabling this will reuse the image date in the duplicated layer.
-- **Duplicate Images on disk**: Only available if there's an image sourced externally from disk in the active layer. Enabling this will duplicate the actual image into new file in disk.
+- **Duplicate Packed Images**: Only available if there's packed image data in the active layer. This will duplicate the packed image into a new image, disabling this will reuse the image data in the duplicated layer.
+- **Duplicate Images on disk**: Only available if there's an image sourced externally from disk in the active layer. Enabling this will duplicate the actual image into a new file on disk.
 
 ### Copy & Paste Layers
 
-There are two copy layer operator, `Copy Layer` will only copy active layer and `Copy All Layers` will copy all layers in active Ucupaint node. You can only paste the layer in the same blend file opened, as you cannot paste the layer in different blender instance for example.
+There are two copy layer operators, `Copy Layer` will only copy the active layer and `Copy All Layers` will copy all layers in the active Ucupaint node. You can only paste the layer in the same blend file opened, as you cannot paste the layer in different blender instance for example.
 
-For pasting the layer, there's `Paste Layer` and `Paste Blank Layer(s)`, paste blank behave similarly to duplicate blank, it will paste the layer with all the settings and modifiers, but the image data will be blank. There will be also option similar like duplicate like `Duplicate Packed Images` and `Duplicate Images on disk` depending if there are packed images or ondisk images.
+For pasting the layer, there's `Paste Layer` and `Paste Blank Layer(s)`, paste blank behaves similarly to duplicate blank, it will paste the layer with all the settings and modifiers, but the image data will be blank. There will be also option similar like duplicate like `Duplicate Packed Images` and `Duplicate Images on disk` depending if there are packed images or ondisk images.
 
-Also if there's a copied baked image layer/mask, there will be an option to `Rebake Baked Images`, so if the layer is pasted to objects with different shape, you can immidiately rebake the images.
+Also, if there's a copied baked image layer/mask, there will be an option to `Rebake Baked Images`, so if the layer is pasted to objects with different shapes, you can immediately rebake the images.
 
 ### Extra Operators
 
@@ -173,24 +173,24 @@ The operator `Rebake All Baked Images` will rebake all baked image layers and ma
 
 #### Refill UDIM Tiles
 
-If you already have many image layers/masks that uses UDIM and want to add new UDIM tiles since you modified the UV Map, you can use `Refill UDIM Tiles` to quickly add new UDIM tiles based on the new UV Map. (*TODO: Dedicated explanation about UDIM workflow in Ucupaint*)
+If you already have many image layers/masks that use UDIM and want to add new UDIM tiles since you modified the UV Map, you can use `Refill UDIM Tiles` to quickly add new UDIM tiles based on the new UV Map. (*TODO: Dedicated explanation about UDIM workflow in Ucupaint*)
 
 ### Contextual Image Operators
 
-Some of operators in the layer special menu is only applied to the selected active image data. Those operators are `Resize Image`, `Invert Image`, `Pack Image`, `Save Image`, and `Convert Image`.
+Some operators in the layer special menu are only applied to the selected active image data. Those operators are `Resize Image`, `Invert Image`, `Pack Image`, `Save Image`, and `Convert Image`.
 
 #### Convert Image
 
-In `Convert Image` submenu, there some operators that you can use to convert images.
+In `Convert Image` submenu, there are some operators that you can use to convert images.
 
-- **Convert to Float/Byte Image**: You can convert to high/lower precision image.
-- **Convert to UDIM/Non-UDIM Image**: You can convert the active non-UDIM image to become UDIM image or vice versa
-- **Convert to Image Atlas**: Convert the active image to use image atlas so it will shares image data to other image layers and masks. Or converting back to standard image from image atlas.
-- **Convert All Images to Image Atlas**: Convert all images used in current Ucupaint node to use image atlas. This will only applied to packed images and images that has no transformation mapping.
+- **Convert to Float/Byte Image**: You can convert to a high/lower precision image.
+- **Convert to UDIM/Non-UDIM Image**: You can convert the active non-UDIM image to become a UDIM image or vice versa
+- **Convert to Image Atlas**: Convert the active image to use an image atlas so it will share image data to other image layers and masks. Or convert back to a standard image from an image atlas.
+- **Convert All Images to Image Atlas**: Convert all images used in the current Ucupaint node to use image atlas. This will only be applied to packed images and images that have no transformation mapping.
 
 ### Export Layers as PSD
 
-Exporting to PSD layers currently only available in Ucupaint Plus. More explanation about this can be found in [the dedicated page](../psd_io/).
+Exporting to PSD layers is currently only available in Ucupaint Plus. More explanation about this can be found in [the dedicated page](../psd_io/).
 
 
 ## Layer Types
@@ -199,7 +199,7 @@ There are several layer types that can be used in Ucupaint.
 
 ### Image
 
-Other than creating new layer image explained [here](#new-image-layer-options), you can also open image from disk, or open existing image in current blend file. (*TODO: Open Image from materials/Open images to single layers explanations*)
+Other than creating a new layer image explained [here](#new-image-layer-options), you can also open an image from disk, or open an existing image in the current blend file. (*TODO: Open Image from materials/Open images to single layers explanations*)
 
 ### Color Attribute
 
@@ -207,13 +207,13 @@ Color attribute can be used as a layer. There's also a special color attribute e
 
 |![type:video](./media/layer/vcol_layer.mp4)|
 |:--:|
-| Adding new color attribute layer and edit it in edit mode | {align=center}
+| Adding a new color attribute layer and editing it in edit mode | {align=center}
 
-You can assign selected vertex/polygons to certain color in edit mode. There will be buttons to assign them with `White`, `Black` or custom `Color`. The color assigned in vertex select mode will bleed through all the corner of the connected polygons. In polygon select mode, the assigned color will only affected the selected polygons.
+You can assign selected vertex/polygons to a certain color in edit mode. There will be buttons to assign them with `White`, `Black` or a custom `Color`. The color assigned in vertex select mode will bleed through all the corners of the connected polygons. In polygon select mode, the assigned color will only affect the selected polygons.
 
 ### Solid Color
 
-Solid Color layer contains only a single color, can be useful if you want to paint the mask first, then edit the solid color later.
+Solid Color layer contains only a single color and can be useful if you want to paint the mask first, then edit the solid color later.
 
 |![type:video](./media/layer/solid_color_layer.mp4)|
 |:--:|
@@ -223,19 +223,19 @@ Solid Color layer contains only a single color, can be useful if you want to pai
 
 #### Fake Lighting
 
-Fake lighting will calculate fake lighting based on a given vector and matrix. If you're using camera space, it can be used for a fresnel effect. Be aware that if you're using camera space, the baked channel will be static.
+Fake lighting will calculate fake lighting based on a given vector and matrix. If you're using camera space, it can be used for a Fresnel effect. Be aware that if you're using camera space, the baked channel will be static.
 
 #### Ambient Occlusion
 
-Ambient occlusion will create a dark color around the corner area for the objects. This layer is heavy to use, so it's better to bake it as image after you finish tweaking the settings.
+Ambient occlusion will create a dark color around the corner area for the objects. This layer is heavy to use, so it's better to bake it as an image after you finish tweaking the settings.
 
 #### Edge Detect
 
-Edge detect will add white color around the edge proximity of the mesh. Like Ambient Occlusion layer, this is a heavy realtime layer to use, so it's better to bake it as image if you finish tweaking the settings.
+Edge detect will add white color around the edge proximity of the mesh. Like the Ambient Occlusion layer, this is a heavy realtime layer to use, so it's better to bake it as an image if you finish tweaking the settings.
 
 ### Adjustment
 
-Adjustment layer actually just a layer that use previous layer as the source data, then it will add modifier on top of it. More explanation can be found in the [modifier page](../modifier#adjustment-layer).
+Adjustment layer is actually just a layer that uses the previous layer as the source data, then it will add a modifier on top of it. More explanation can be found in the [modifier page](../modifier#adjustment-layer).
 
 ### Texture
 
@@ -243,7 +243,7 @@ You can use Blender's generated textures as a layer, for example `Noise`, `Magic
 
 ### Bake to Layer Types
 
-You can use a baked texture as a layer, for example AO, Cavity, Bevel. Be aware that the baking process may take a while to finish, depending on your system and settings. Various bake to layer types are explained [here](../bake_as_entity).
+You can use a baked texture as a layer, for example AO, Cavity, Bevel. Be aware that the baking process may take a while to finish, depending on your system and settings. Various bake-to-layer types are explained [here](../bake_as_entity).
 
 <!-- TODO: Realtime AO & Edge Detect -->
 
@@ -265,6 +265,6 @@ This feature is currently still experimental, but you can make the layer list cl
 
 The options for layer list options are:
 
-- **Expandable Subitems**: Enabling this will make layers with mask or custom data expandable. When you click the subitems (Mask or custom channel data), it will make the mask/custom data active.
-- **Inline Subitems**: Enabling this will make the item in the layer list can only show one data. This option can only be enabled if `Expandable Subitems` is enabled.
+- **Expandable Subitems**: Enabling this will make layers with masks or custom data expandable. When you click the subitems (Mask or custom channel data), it will make the mask/custom data active.
+- **Inline Subitems**: Enabling this will make the item in the layer list show only one data. This option can only be enabled if `Expandable Subitems` is enabled.
 
