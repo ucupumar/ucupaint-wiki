@@ -1,13 +1,13 @@
 # Export and Import Layers to PSD file
 
 !!! warning
-    Currently, the export/import layers feature is available only in Ucupaint Plus, which you can get by becoming at least a silver [Github sponsor](https://github.com/sponsors/ucupumar)
+    Currently, the export/import layers feature is available only in Ucupaint Plus, which you can get by becoming at least a silver [GitHub sponsor](https://github.com/sponsors/ucupumar)
 
 Ucupaint Plus supports exporting and importing layer data to and from PSD files. This feature lets you save your layers in a format compatible with other image editors that use PSD.
 
 ## Export Layers to PSD
 
-To export layers as PSD, press the special menu button beside the layer list (the one with `V` icon), and choose `Export Layers as PSD`.
+To export layers as PSD, press the special menu button beside the layer list (the one with the `V` icon), and choose `Export Layers as PSD`.
 
 |![[pic: export psd button]](./media/psd_io//export_psd.png)|
 |:--:|
@@ -19,11 +19,11 @@ Then the export dialog box will appear.
 |:--:|
 |Export layers to PSD dialog box| {align=center}
 
-Ucupaint uses [PSD-Tools](https://pypi.org/project/psd-tools/) module to make PSD import and export work, so ucupaint will download the module the first time you do PSD export/import. The necessary space needed is about 50-80MB, so the download process might take a couple of seconds to minutes, depending on your internet connection.
+Ucupaint uses [PSD-Tools](https://pypi.org/project/psd-tools/) module to make PSD import and export work, so Ucupaint will download the module the first time you do PSD export/import. The necessary space needed is about 50-80MB, so the download process might take a couple of seconds to minutes, depending on your internet connection.
 
-There are two options for the export, the first one is `Channel`, which only layers that use that channel will be exported.  The second option is `Convert Solid Colors to pixels`, this is to convert solid color layers to standard pixel layers. This is useful since not all 2D applications can read color fill layer from PSD file (example: Gimp).
+There are two options for the export, the first one is `Channel`, which only layers that use that channel will be exported.  The second option is `Convert Solid Colors to pixels`, this converts solid color layers to standard pixel layers. This is useful since not all 2D applications can read color fill layers from a PSD file (example: Gimp).
 
-The comparison below is the exported layers as shown in Photopea.
+The comparison below shows the exported layers as shown in Photopea.
 
 |![[pic: convert solid color disabled]](./media/psd_io//convert_solid_color_to_pixels_disabled.png)|![[pic: convert solid color enabled]](./media/psd_io//convert_solid_color_to_pixels_enabled.png)|
 |:--:|:--:|
@@ -31,7 +31,7 @@ The comparison below is the exported layers as shown in Photopea.
 
 ## Import Layers from PSD
 
-To import layers from a PSD file, you only need to open the image as layer. And there will be a menu to read the layers if you select a PSD file.
+To import layers from a PSD file, you only need to open the image as a layer. And there will be a menu to read the layers if you select a PSD file.
 
 |![[pic: open image button]](./media/psd_io//open_image_as_layer.png)|
 |:--:|
@@ -59,7 +59,7 @@ If the color or the blending looks weird on your 2D app. Check the actual color 
 
 # Video Demo
 
-You can watch PSD layers export-import demo in [Youtube](https://www.youtube.com/watch?v=-fMaSrpi-_0).
+You can watch the PSD layers export-import demo on [YouTube](https://www.youtube.com/watch?v=-fMaSrpi-_0).
 
 | [![Ucupaint 2.4.7 PSD Export Import](https://img.youtube.com/vi/-fMaSrpi-_0/0.jpg)](https://www.youtube.com/watch?v=-fMaSrpi-_0) |
 |:--:| 
