@@ -71,7 +71,7 @@ Ucupaint’s UI may look simple at first, but it offers more options hidden with
 
 # Node Gear Menu
 
-On the top right of Ucupaint there's a gear icon that when clicked shows various function to the active node.
+At the top right of Ucupaint, there's a gear icon that, when clicked, shows various functions for the active node.
 
 |![node gear menu](./media/quick_setup/node_gear_menu.png)|
 |:--:|
@@ -79,10 +79,11 @@ On the top right of Ucupaint there's a gear icon that when clicked shows various
 
 The operators and options in the menu are:
 
+- **Bake Ucupaint Node**: Bake Ucupaint node to what is specified in the bake targets. This option is the same button on the bake target popover, so it's only available for Blender 2.7x or if you enabled non-popup UI in user preferences. 
 - **Rename Ucupaint Node Tree**: This will rename the Ucupaint node tree group
 - **Remove Ucupaint Node**: This will delete the active Ucupaint Node and remove all the layers and its data, except the final baked data.
 - **Clean Ucupaint Caches**: Ucupaint sometimes store some custom images and nodes for caching, this function is to remove them all
 - **Duplicate Material and Ucupaint Nodes**: To duplicate the material and Ucupaint node for the active object.
 - **Active Node Tree**: You can use more than one ucupaint nodes in a material, so this menu is to switch between them.
-- **Use Linear Color Blending**: If _disabled_, blending between layers will happen in gamma space, which mimics how default Photoshop behave.
+- **Use Linear Color Blending**: If _disabled_, blending between layers will happen in gamma space, which mimics how default Photoshop behaves.
 - **Stats**: Shows how many images, color attributes, and other data have the node already been used.
