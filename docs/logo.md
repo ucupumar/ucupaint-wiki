@@ -1,8 +1,8 @@
 # Logo
 
-It uses the same font as blender itself: **`Inter`**
+It uses the same font as Blender itself: **`Inter`**
 
-The major version number (in this example `3`) is added to the typeface.
+The major version number (in this example, `3`) is added to the typeface.
 
 ![Ucupaint Type](./media/logo/svg/ucupaint_type.svg)
 
@@ -22,7 +22,7 @@ For general purpose logo without version number are similar but omits the number
 
 ### Icon
 
-The Ucupaint Icon is made for small scale use (within blender, favicons, discord UI, etc.) <br>
+The Ucupaint Icon is made for small-scale use (within Blender, favicons, Discord UI, etc.) <br>
 It's a recreation of the old Discord icon with a slightly modified `black` `Inter`.
 
 ![Ucupaint Icon](./media/logo/svg/ucupaint_icon.svg)
