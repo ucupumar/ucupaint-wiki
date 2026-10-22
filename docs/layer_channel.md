@@ -12,7 +12,7 @@ By default, you’ll get the option to change the blending mode of the channel y
 
 ## Layer channel panel
 
-You can do more than blending for the layer channel, if you click the triangle you'll see all the channels options. <!-- You can toggle which channel the layer will affect to, what data will you use for the channel, and more. -->
+You can do more than blending for the layer channel, if you click the triangle, you'll see all the channel options. <!-- You can toggle which channel the layer will affect, what data you will use for the channel, and more. -->
 
 |![type:image](./media/layer_channel/expand_layer_channels.gif)|
 |:--:|
@@ -26,7 +26,7 @@ Every channel that you can use in a layer has its own blending, sources, and mod
 
 ## Enabling layer channel(s)
 
-To enable the channel in a layer, you can just tick the checkbox toggle beside the channel. You can enable multiple channels at the same time and the default value that contribute to the channel is the layer color.
+To enable the channel in a layer, you can just tick the checkbox toggle beside the channel. You can enable multiple channels at the same time, and the default value that contributes to the channel is the layer color.
 
 |![type:video](./media/layer_channel/enable_layer_channels.mp4)|
 |:--:|
@@ -34,11 +34,11 @@ To enable the channel in a layer, you can just tick the checkbox toggle beside t
 
 ## Change layer channel source
 
-By default the layer color is the data that is used to contribute to channel, but you can change the source to a different data. <!-- while keeping the painted area intact.-->
+By default, the layer color is the data that is used to contribute to the channel, but you can change the source to a different data. <!-- while keeping the painted area intact.-->
 
 ### Change layer channel source to use custom value
 
-For multiple channels in a single layer, one of the most useful source is custom value, it will change the painted area to use only a single value, useful to set the metallic and roughness of the painted area independently.
+For multiple channels in a single layer, one of the most useful sources is a custom value, it will change the painted area to use only a single value, useful to set the metallic and roughness of the painted area independently.
 
 |![type:video](./media/layer_channel/layer_channel_sources.mp4)|
 |:--:|
@@ -46,7 +46,7 @@ For multiple channels in a single layer, one of the most useful source is custom
 
 ### Change layer channel source to use custom data
 
-Other than custom value, you can also use custom data for the channel source.
+Other than a custom value, you can also use custom data for the channel source.
 
 |![type:image](./media/layer_channel/layer_channel_custom_data_options.png)|
 |:--:|
@@ -64,20 +64,20 @@ Custom data can be an image, color attribute, or textures.
 |:--:|
 | Options for color layer channel | {align=center}
 
-Channel panel in a layer has various options depending on the channel type. All channel types at least has these options:
+Channel panel in a layer has various options depending on the channel type. All channel types have at least these options:
 
-- **Opacity**: Opacity of the layer channel. The value will be multiplied with the layer's opacity.
+- **Opacity**: Opacity of the layer channel. The value will be multiplied by the layer's opacity.
 - **Blend**: Blend type of the layer channel
 - **Use Clamp**: Clamp the value of the layer channel to 0.0 minimum and 1.0 maximum value
-- **Source**: Source for the layer channel, by default it uses the layer's color value.
+- **Source**: Source for the layer channel, by default, it uses the layer's color value.
 
 ### Height layer channel options
 
 Height layer channel has extra options. Those are:
 
 - **Scale**: Height scale in object space.
-- **Midlevel**: The baseline value to define the zero height. By default it uses 0.5 (gray) value which meant white color will become bumps, and black color will become creases.
-- **Use As Normal Only**: Enabling this will convert the height channel to normal channel, which meant the height bump value will be blended through the normal channel
+- **Midlevel**: The baseline value to define the zero height. By default, it uses 0.5 (gray) value, which means white color will become bumps, and black color will become creases.
+- **Use As Normal Only**: Enabling this will convert the height channel to a normal channel, which means the height bump value will be blended through the normal channel
 
 ### Normal layer channel options
 
@@ -89,21 +89,21 @@ Normal layer channel has extra options. Those are:
 ### Vector Displacement layer channel options
 
 - **Strength**: Strength of the vector displacement.
-- **Flip Y/Z**: Some VDM map can has different which axis pointing upward, so flip Y/Z can be useful to switch the axis.
+- **Flip Y/Z**: Some VDM maps can have different which axis pointing upward, so flip Y/Z can be useful to switch the axis.
 
 ### Special alpha layer channel behavior
 
-Alpha channel is a special channel that paired with color channel. If the color channel is enabled in a layer, alpha channel will also be enabled and the individual options of opacity and blending will disappear and will follow the color channel instead
+Alpha channel is a special channel that is paired with the color channel. If the color channel is enabled in a layer, the alpha channel will also be enabled and the individual options of opacity and blending will disappear and will follow the color channel instead
 
 ## Load PBR images
 
-Using custom data, especially images can be useful to assign each channel to the respective image from PBR image texture packs. There are a lot of sites that you can use to download PBR texture images, like [ambientCG](https://ambientcg.com/) or [Poly Haven](https://polyhaven.com/).
+Using custom data, especially images, can be useful to assign each channel to the respective image from PBR image texture packs. There are a lot of sites that you can use to download PBR texture images, like [ambientCG](https://ambientcg.com/) or [Poly Haven](https://polyhaven.com/).
 
-You can either use `Open Image` to load an image as a layer channel custom data one by one, or you also automatically assign images to respective channel by choosing `Open Images as Single Layer` when creating new layer.
+You can either use `Open Image` to load an image as a layer channel custom data one by one, or you can automatically assign images to the respective channel by choosing `Open Images as Single Layer` when creating a new layer.
 
 |![type:image](./media/layer_channel/open_images_as_single_layer_menu.png)|
 |:--:|
-| `Open Images as Single Layer` menu when creating new layer| {align=center}
+| `Open Images as Single Layer` menu when creating a new layer| {align=center}
 
 `Open images as single layer` automatically detects suffixes in the image filename to determine which image corresponds to which channel. Ucupaint assigns channels based on whether the channel name (or any of its synonyms) appears at the end of the image filename.
 
@@ -120,16 +120,16 @@ You can either use `Open Image` to load an image as a layer channel custom data 
 |:--:|
 | Load PBR images using `Open Images as Single Layer` | {align=center}
 
-There’s a chance you may load both a normal map and a height map. Because using both sometimes can produce an exaggerated, doubled normal effect in many PBR images set, Ucupaint includes a `Height/Normal Map Priority` option to control which one should be used. By default, Ucupaint prioritizes the height map.
+There’s a chance you may load both a normal map and a height map. Because using both sometimes can produce an exaggerated, doubled normal effect in many PBR image sets, Ucupaint includes a `Height/Normal Map Priority` option to control which one should be used. By default, Ucupaint prioritizes the height map.
 
 
 ### Load PBR images from Material
 
-Other than loading the images directly, you can also load PBR images used in a material. There are two ways to do it, you can use `Open Images from Material` in new layer menu or by right clicking a material asset in the asset browser
+Other than loading the images directly, you can also load PBR images used in a material. There are two ways to do it, you can use `Open Images from Material` in the new layer menu or by right-clicking a material asset in the asset browser
 
 |![type:image](./media/layer_channel/open_material_images_menu.png)|![type:image](./media/layer_channel/asset_library_open_material_images.png)| 
 |:--:|:--:|
 | `Open Images from Material` on new layer menu | Right-click on material asset in asset library | {align=center}
 
-Loading images from material operator will check the images that connected to Principled BSDF and if found, use them for the layer channel source. So make sure your material is using actual images rather than procedural nodes.
+Loading images from a material operator will check the images that are connected to the Principled BSDF and if found, use them for the layer channel source. So make sure your material is using actual images rather than procedural nodes.
 
