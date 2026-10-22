@@ -31,3 +31,13 @@
     *You need at least Blender 5.0.0 and Ucupaint 2.4.2 to open these files.*
 
 - [Baked custom normal demo by arsa](source/demo/2.4.2/baked_normal_demo_ucupaint_2.4.2.blend)
+
+## Ucupaint 3.0.0 Demo Files
+
+!!! note 
+    *You need at least Blender 5.2.2 and Ucupaint 3.0.0 to open these files.*
+
+- [Mushroom (Height channel demo)](source/demo/3.0.0/mushroom.blend)
+- [Speaker (Preview Mode demo)](source/demo/3.0.0/speaker.blend)
+- [Camera Lens (Cylindrical decal demo)](source/demo/3.0.0/camera_lens_cylindrical_decal.blend)
+- [Ice Cream (Spherical decal demo)](source/demo/3.0.0/ice_cream_spherical_decal.blend)
