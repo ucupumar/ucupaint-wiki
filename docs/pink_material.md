@@ -14,14 +14,14 @@ _* tested with RTX 4080, Radeon 6800M, and Apple M3 Laptop_
 PC platform (Nvidia, AMD Radeon, Intel) has so much lower image limits compared to Apple Mac M series platform, at least on Blender 4.1 and 4.2. There are at least two solutions to circumvent the image limit issue: by using Vulkan or image atlas.
 
 ### Using Vulkan
-For modern PCs, it's recommended to use **Vulkan** on Blender 4.4 or above since it can handle more than 100 images. You can change the settings in `System` tab on Blender Preferences.
+For modern PCs, it's recommended to use **Vulkan** on Blender 4.4 or above since it can handle more than 100 images. You can change the settings in `System` tab in Blender Preferences.
 
 ![image](https://github.com/user-attachments/assets/bcd9db0f-13e7-49f8-a886-83b7cf28f02d)
 
 Blender 4.3 actually can also use Vulkan, but there's a bug that won't let you paint in texture paint mode.
 
 ### Converting to Image Atlas
-For older Blender versions (Blender 4.3 or lesser), you can convert already used layer/mask images to image atlas.
+For older Blender versions (Blender 4.3 or earlier), you can convert already used layer/mask images to an image atlas.
 
 ![image](https://github.com/user-attachments/assets/7f51fd36-6a6d-4942-9ca7-dd56b31e3093)
 
