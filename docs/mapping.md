@@ -1,6 +1,6 @@
 # Mapping
 
-Mapping defines how layer/mask is projected onto the mesh. Ucupaint provides several mapping methods, each using a different coordinate system to determine how the layer/mask is applied to the surface. By default, layers and masks use UV mapping.
+Mapping defines how a layer/mask is projected onto the mesh. Ucupaint provides several mapping methods, each using a different coordinate system to determine how the layer/mask is applied to the surface. By default, layers and masks use UV mapping.
 
 ## Mapping controls
 
@@ -12,20 +12,20 @@ Most mapping methods provide controls to adjust the mapping position and orienta
 
 The mapping panel includes the following configurable parameters.
 
-- **Coordinate**: Select the mapping method. See mapping methods bellow. 
-- **UV Map**: Only availale for `UV Map` coordinate. Specifies the UV map of the object that will be used.
-- **Projection Blend**: Only availale for `Generated` and `Object` coordinate. It's to blend the textures around the projection corners.
+- **Coordinate**: Select the mapping method. See mapping methods below. 
+- **UV Map**: Only available for `UV Map` coordinate. Specifies the UV map of the object that will be used.
+- **Projection Blend**: Only available for `Generated` and `Object` coordinates. It's to blend the textures around the projection corners.
 - **Transform**: Specifies the transformation space or type.
-- **Offset**: Shifts the position on the texture across axis.
-- **Rotation**: Rotates the texture oriantation.
-- **Scale**: Scales the Textrue along axis. 
-- **Blur**: Applies a noise blur filter to mapping vector. You need to increase the sample value if you want to bake the layer/mask/node.
+- **Offset**: Shifts the position on the texture across an axis.
+- **Rotation**: Rotates the texture orientation.
+- **Scale**: Scales the texture along an axis. 
+- **Blur**: Applies a noise blur filter to the mapping vector. You need to increase the sample value if you want to bake the layer/mask/node.
 
-Other than decal, the rest of coordinate types has Transform, Offset, Rotation, and Scale controls.
+Other than decal, the rest of the coordinate types have Transform, Offset, Rotation, and Scale controls.
 
 ## Coordinate Types
 
-To ilustrate the mapping coordinate types, The examples use the same image to demonstrate how it is projected onto the mesh.
+To illustrate the mapping coordinate types, the examples use the same image to demonstrate how it is projected onto the mesh.
 
 |![Texture](./media/mapping/Rainbow-gradient-fully-saturated.png)|
 |:--:|
@@ -89,15 +89,15 @@ Reflection mapping projects the layer/mask onto the mesh using reflection direct
 
 ### Decal
 
-Decal mapping projects the layer/mask onto the mesh using a defined projection shape. After selecting decal coordinate mapping, Ucupaint will spawn an empty object that will control the decal. By default it's parented to the active object.
+Decal mapping projects the layer/mask onto the mesh using a defined projection shape. After selecting decal coordinate mapping, Ucupaint will spawn an empty object that will control the decal. By default, it's parented to the active object.
 
 The Decal method is an exception and does not provide Transform, Offset, Scale, or Rotate options. Instead, it possesses the following options:
 
-- **Decal Object**: Points to object in scene to use as decal projection. By default it points to the spawned empty object, but can be replaced by any other object.
-- **Mode**: Choses from decal projections methods (Flat, Cylinder, Sphere)
-- **Scale**: Only available for Cylinder and Sphere Decal. It provides scaling for the image X and Y across the decal projection allowing for repetition or cropping of the decal projected part. 
+- **Decal Object**: Points to the object in the scene to use as decal projection. By default, it points to the spawned empty object, but can be replaced by any other object.
+- **Mode**: Chooses from decal projection methods (Flat, Cylinder, Sphere)
+- **Scale**: Only available for Cylinder and Sphere Decal. It provides scaling for the image X and Y across the decal projection, allowing for repetition or cropping of the decal projected part. 
 - **Decal constraint**: Only available for flat decal. Applies constraints to surface modifier, pulling decal to be always on surface of the object.
-- **Decal Distance**: Controls how far texture is projected.
+- **Decal Distance**: Controls how far the texture is projected.
 - **Select Decal Object**: A button that automatically selects the decal object.
 - **Set Position to cursor**: Sets the 3d space cursor to the decal position. 
 
