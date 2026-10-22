@@ -28,7 +28,7 @@ The option `Layer Alpha` in preview mode is to see only the alpha value of the s
 
 ## Active Data/Mask Preview Mode
 
-The option `Active Mask/Data` in preview mode is to see the selected active data/mask.
+The option `Active Mask/Data` in preview mode is used to see the selected active data/mask.
 
 |![type:video](./media/preview_mode/data_preview_mode.mp4)|
 |:--:|
@@ -36,5 +36,5 @@ The option `Active Mask/Data` in preview mode is to see the selected active data
 
 ## Normal space in preview mode
 
-If normal channel is selected, there will be an option to change the space. By default it uses `View Space` since it's the one that the most helpful to check the surface of the object. You can also choose to use `World Space` or `Object Space`, these options are helpful for painting custom normal. (**TODO: Demo Needed**)
+If normal channel is selected, there will be an option to change the space. By default it uses `View Space` since it's the one that the most helpful to check the surface of the object. You can also choose to use `World Space` or `Object Space`, these options are helpful for painting custom normals. (**TODO: Demo Needed**)
 
