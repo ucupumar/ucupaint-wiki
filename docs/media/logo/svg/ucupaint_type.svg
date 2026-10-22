@@ -28,12 +28,12 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="0.20353489"
-     inkscape:cx="1921.0466"
-     inkscape:cy="-2.4565813"
-     inkscape:current-layer="g80"
+     inkscape:zoom="0.5756836"
+     inkscape:cx="509.82866"
+     inkscape:cy="125.93723"
+     inkscape:current-layer="g7"
      inkscape:export-bgcolor="#20202000"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-width="3840"
      inkscape:window-height="2089"
      inkscape:window-x="-8"
@@ -48,9 +48,9 @@
        margin="0"
        bleed="0"
        inkscape:label="ucupaint_type"
-       inkscape:export-filename="ucupaint_type.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-filename="ucupaint_type_extension_thumb.png"
+       inkscape:export-xdpi="180"
+       inkscape:export-ydpi="180" />
     <inkscape:grid
        id="grid3"
        units="px"
@@ -64,7 +64,7 @@
        opacity="0.14901961"
        empspacing="8"
        enabled="true"
-       visible="true"
+       visible="false"
        dotted="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
@@ -83,7 +83,7 @@
     <g
        id="g11"
        inkscape:label="type"
-       transform="translate(30.999459,-0.3225052)">
+       transform="translate(30.319771,-0.3225052)">
       <g
          id="g9"
          inkscape:label="paint"
@@ -145,7 +145,7 @@
            id="tspan5"
            x="848.19397"
            y="105.35147"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:inter;-inkscape-font-specification:'inter Bold';fill:#000000;fill-opacity:1;stroke-width:0.927272">3</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:96px;font-family:inter;-inkscape-font-specification:'inter Ultra-Bold';fill:#000000;fill-opacity:1;stroke-width:0.927272">3</tspan></text>
     </g>
   </g>
 </svg>

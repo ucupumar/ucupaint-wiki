@@ -28,12 +28,12 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="0.20353489"
-     inkscape:cx="1921.0466"
-     inkscape:cy="-2.4565813"
-     inkscape:current-layer="g80"
+     inkscape:zoom="0.5756836"
+     inkscape:cx="509.82866"
+     inkscape:cy="125.93723"
+     inkscape:current-layer="g7"
      inkscape:export-bgcolor="#20202000"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-width="3840"
      inkscape:window-height="2089"
      inkscape:window-x="-8"
@@ -61,13 +61,13 @@
        opacity="0.14901961"
        empspacing="8"
        enabled="true"
-       visible="true"
+       visible="false"
        dotted="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
   <g
      id="g4-2"
-     transform="translate(3.4415,-3.2365)"
+     transform="translate(2.7618,-3.2365)"
      inkscape:label="ucupaint_type_white"
      style="display:inline">
     <g
@@ -145,7 +145,7 @@
            id="tspan35"
            x="848.19397"
            y="105.35147"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:inter;-inkscape-font-specification:'inter Bold';fill:#da2826;fill-opacity:1;stroke-width:0.927272">3</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:96px;font-family:inter;-inkscape-font-specification:'inter Ultra-Bold';fill:#da2826;fill-opacity:1;stroke-width:0.927272">3</tspan></text>
     </g>
   </g>
 </svg>
