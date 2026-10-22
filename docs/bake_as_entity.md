@@ -20,11 +20,11 @@ After you edit the mesh or the scene, sometimes you want to rebake the layer. Th
 |:--:|
 |Rebake using `Rebake` Button| {align=center}
 
-Be aware if you already have already baked data (Bevel Normal for example) and you want to bake the same data type again, the default behavior is Ucupaint will overwrite the already baked data. To disable this, you can disable the `Overwrite` option at bake dialog box.
+Be aware if you already have baked data (Bevel Normal for example) and you want to bake the same data type again, the default behavior is Ucupaint will overwrite the already baked data. To disable this, you can disable the `Overwrite` option in the bake dialog box.
 
 ### Batch Rebake
 
-If you already have multiple data baked, and want to edit the mesh or scene again, rather that pressing the `Rebake` button one by one for each baked images, you can just press `Rebake All Baked Images`, this will rebake all baked layers/masks in the Ucupaint node. The process can take a while depending on how many data you already baked.
+If you already have multiple baked data, and want to edit the mesh or scene again, rather than pressing the `Rebake` button one by one for each baked image, you can just press `Rebake All Baked Images`, this will rebake all baked layers/masks in the Ucupaint node. The process can take a while depending on how much data you already baked.
 
 |![type:video](./media/bake_as_layer/rebake_all_baked_images.mp4)|
 |:--:|
@@ -43,7 +43,7 @@ AO (Ambient Occlusion) can darken the valleys or creases of your mesh. You can u
 
 ### Pointiness
 
-Pointiness will highlight the valleys and ridges of your mesh. Pointiness will use 32-bit float image by default since it need more precision.
+Pointiness will highlight the valleys and ridges of your mesh. Pointiness will use a 32-bit float image by default since it needs more precision.
 
 |![type:image](./media/bake_as_layer/pointiness.png)|
 |:--:|
@@ -51,7 +51,7 @@ Pointiness will highlight the valleys and ridges of your mesh. Pointiness will u
 
 ### Curvature
 
-Curvature is similar to pointiness with different valley and ridges behavior. It uses 8-bit image by default so smaller file size.
+Curvature is similar to pointiness, with different valley and ridges behavior. It uses 8-bit image by default so smaller file size.
 
 |![type:image](./media/bake_as_layer/curvature.png)|
 |:--:|
@@ -59,7 +59,7 @@ Curvature is similar to pointiness with different valley and ridges behavior. It
 
 ### Cavity
 
-Similar to pointiness and curvature, cavity will show valleys and ridges but with darker grayscale levels. It also uses 8-bit image by default.
+Similar to pointiness and curvature, cavity will show valleys and ridges but with darker grayscale levels. It also uses an 8-bit image by default.
 
 |![type:image](./media/bake_as_layer/cavity.png)|
 |:--:|
@@ -75,7 +75,7 @@ Dust is similar to the cavity map but adds additional Z top normals to the mix.
 
 ### Paint Base
 
-Sometimes also referred to as the Blizzard or Dota diffuse map. This bake combines a dirt map with vertical gradient and top facing normals with a highlight. Credits to Danyl Bekhoucha for the shader setup.
+Sometimes also referred to as the Blizzard or Dota diffuse map. This bake combines a dirt map with a vertical gradient and top-facing normals with a highlight. Credit to [Danyl Bekhoucha](https://www.artstation.com/linko) for the shader setup.
 This bake is a good starting point for character texture maps.
 
 |![type:image](./media/bake_as_layer/paint_base.png)|
@@ -152,12 +152,12 @@ This will bake the color of other non-active selected objects to a color map.
 
 ### Other Objects Channels
 
-This will bake the principled BSDF channels of other non-active selected objects to a ucupaint channels.
+This will bake the principled BSDF channels of other non-active selected objects to ucupaint channels.
 
 
 ### Selected Vertices
 
-This will bake the the selected vertices to white color while other vertices will be black. This can be useful for masking.
+This will bake the selected vertices to white color while other vertices will be black. This can be useful for masking.
 
 |![type:video](./media/bake_as_layer/bake_selected_vertices.mp4)|
 |:--:|
