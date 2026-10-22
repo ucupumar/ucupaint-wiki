@@ -46,12 +46,12 @@ These are planned features that will be implemented in future releases. Could be
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
-| Any attributes data support | No | Currently ucupaint can only use color attributes. [(#358)](https://github.com/ucupumar/ucupaint/issues/358)|
+| Any attributes data support | No | Currently Ucupaint can only use color attributes. [(#358)](https://github.com/ucupumar/ucupaint/issues/358)|
 | Multiple decals in a single layer/mask | No | [#396](https://github.com/ucupumar/ucupaint/issues/396) |
 | Mirrored decal option | No | [#270](https://github.com/ucupumar/ucupaint/issues/270) |
 | Vector/Coordinate warp | Testing | Manipulating vector mapping using images/attributes/generated textures. [(#96)](https://github.com/ucupumar/ucupaint/issues/96) |
 | Multi-material batch baking | No | Probably will be implemented alongside [#77](https://github.com/ucupumar/ucupaint/issues/77) |
-| Baking multiple maps at the same time (AO, Pointiness, etc) | No | [#399](https://github.com/ucupumar/ucupaint/issues/399) |
+| Baking multiple maps at the same time (AO, Pointiness, etc.) | No | [#399](https://github.com/ucupumar/ucupaint/issues/399) |
 | Multi-user node group support | No | [#398](https://github.com/ucupumar/ucupaint/issues/398) |
 | Lock layers | No | [#199](https://github.com/ucupumar/ucupaint/issues/199) |
 | Passthrough Group | No | [#134](https://github.com/ucupumar/ucupaint/issues/134) |
@@ -61,13 +61,13 @@ These are planned features that will be implemented in future releases. Could be
 | Reimplement parallax | No | [#397](https://github.com/ucupumar/ucupaint/issues/397) |
 | Principled BSDF layering support | No | [#353](https://github.com/ucupumar/ucupaint/issues/353) |
 | Normal map-aware edge detect | Not sure if possible |  |
-| Use blender layer backend | Not possible yet | Since Blender already planned to create a native layer system. If that’s implemented, it will be better to use that as the backend of Ucupaint. |
+| Use Blender layer backend | Not possible yet | Since Blender already plans to create a native layer system. If that’s implemented, it will be better to use that as the backend of Ucupaint. |
 
 ## Documentation Roadmap
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
-| Multi-version documentation| No | It's better to be able to switch ucupaint version documentation|
+| Multi-version documentation| No | It's better to be able to switch Ucupaint version documentation|
 | UDIM Workflow | No | UDIM workflow documentation |
 | Multi object workflow | No | Multi objects workflow documentation |
 | Baking other objects workflow | No | Baking other objects workflow documentation |
@@ -75,11 +75,11 @@ These are planned features that will be implemented in future releases. Could be
 
 ## Archived Roadmap
 
-The list of previous roadmaps that already finished.
+The list of previous roadmaps that have already finished.
 
 ### Ucupaint 3.0
 
-Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.
+Ucupaint 3.0 implemented a lot of internal refactors and some UI redesigns to make it easier to navigate.
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
