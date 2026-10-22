@@ -20,20 +20,6 @@ Roadmap for Ucupaint Plus, which is available for at least [silver sponsors on G
 
 Roadmap for the standard ucupaint release, which will be available for free for all users.
 
-### Ucupaint 3.0
-
-Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.
-
-| Feature | Status | Comments |
-|---------|---------|-----------|
-| Normal and height separation | WIP (95%) | Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future. [(#356)](https://github.com/ucupumar/ucupaint/issues/356)|
-| Unified bake target system | Done | This will integrate the current bake channels system into the bake target system. [(#323)](https://github.com/ucupumar/ucupaint/issues/323) |
-| Base layer | Done | For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings. [(#392)](https://github.com/ucupumar/ucupaint/issues/392) |
-| New `Previous Layers` type for in-between layers adjustment| Done | This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack. [(#393)](https://github.com/ucupumar/ucupaint/issues/393) |
-| Ability to use color attributes as custom bake target | Done | Will likely implemented alongside new bake target system [(#97)](https://github.com/ucupumar/ucupaint/issues/97) |
-| Dealing with collapsed main channel panel by default | Done | The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed. [(#395)](https://github.com/ucupumar/ucupaint/issues/395)|
-| Rename `Vector` input to `Mapping` | Done | In Ucupaint, `Vector` makes more sense if renamed to `Mapping`. [(#394)](https://github.com/ucupumar/ucupaint/issues/394)|
-
 ### Ucupaint 3.1
 
 Ucupaint 3.1 versions will focus on custom node support
@@ -81,5 +67,27 @@ These are planned features that will be implemented in future releases. Could be
 
 | Feature | Status | Comments |
 |---------|---------|-----------|
-| Automated video clips recording| No | Since ucupaint UI still subject to changes, it's better to create a script to automate ucupaint demo clip recordings. So when the UI changes again, just tweak some parameters and run the script again to rerecord all the clips.|
 | Multi-version documentation| No | It's better to be able to switch ucupaint version documentation|
+| UDIM Workflow | No | UDIM workflow documentation |
+| Multi object workflow | No | Multi objects workflow documentation |
+| Baking other objects workflow | No | Baking other objects workflow documentation |
+
+
+## Archived Roadmap
+
+The list of previous roadmaps that already finished.
+
+### Ucupaint 3.0
+
+Ucupaint 3.0 will have a lot of internal refactors and some UI redesigns to make it easier to navigate.
+
+| Feature | Status | Comments |
+|---------|---------|-----------|
+| Normal and height separation | Done | Currently normal, bump, and vector displacement are implemented in a single channel. Separating them requires a lot of refactoring, but it is worth it to avoid unnecessary complexity in the future. [(#356)](https://github.com/ucupumar/ucupaint/issues/356)|
+| Unified bake target system | Done | This will integrate the current bake channels system into the bake target system. [(#323)](https://github.com/ucupumar/ucupaint/issues/323) |
+| Base layer | Done | For less confusion, Ucupaint node inputs will be accessible as a base layer rather than channel settings. [(#392)](https://github.com/ucupumar/ucupaint/issues/392) |
+| New `Previous Layers` type for in-between layers adjustment| Done | This type of layer will use the previous layer stacks as the input. It’s useful for adjusting the channel value in the middle of the layer stack. [(#393)](https://github.com/ucupumar/ucupaint/issues/393) |
+| Ability to use color attributes as custom bake target | Done | Will likely implemented alongside new bake target system [(#97)](https://github.com/ucupumar/ucupaint/issues/97) |
+| Dealing with collapsed main channel panel by default | Done | The main channel list will be collapsed by default since most of the settings are moved somewhere else. Make sure useful features like preview mode are still accessible with the panel collapsed. [(#395)](https://github.com/ucupumar/ucupaint/issues/395)|
+| Rename `Vector` input to `Mapping` | Done | In Ucupaint, `Vector` makes more sense if renamed to `Mapping`. [(#394)](https://github.com/ucupumar/ucupaint/issues/394)|
+
