@@ -19,13 +19,13 @@ You need at least Blender 2.76 to use this addon, but more advanced features may
 
 - Go to [GitHub release page](https://github.com/ucupumar/ucupaint/releases) and download an addon package according to your Blender version.
 - Or if you're using Blender 4.2+, you can also download it from the [extension platform](https://extensions.blender.org/add-ons/ucupaint/)
-- Open Blender, go to Edit > User Preferences, select the Add-ons tab, press the Install button, browse your downloaded addon zip file, and click Install add-on.
+- Open Blender, go to Edit > User Preferences, select the Add-ons tab, press the Install button, browse to your downloaded addon zip file, and click Install add-on.
 
 ## Contribute
 Visit [Ucupaint Github](https://github.com/ucupumar/ucupaint) to access or contribute to the source code. Or visit [Ucupaint Wiki Github](https://github.com/ucupumar/ucupaint-wiki) to access or contribute to the source code of this wiki.
 
 ## Sponsor
-If you find the addon useful, you can sponsor the addon development [here](https://github.com/sponsors/ucupumar) and get Ucupaint Plus version of the addon.
+If you find the addon useful, you can sponsor the addon development [here](https://github.com/sponsors/ucupumar) and get the Ucupaint Plus version of the addon.
 
 ## Discord Server
 
