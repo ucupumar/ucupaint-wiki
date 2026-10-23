@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Layer Channel - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Layer Channel";
+    var mkdocs_page_input_path = "layer_channel.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../channel/">Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Layer Channel</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#layer-channel-blending">Layer channel blending</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#layer-channel-panel">Layer channel panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#enabling-layer-channels">Enabling layer channel(s)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#change-layer-channel-source">Change layer channel source</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#change-layer-channel-source-to-use-custom-value">Change layer channel source to use custom value</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#change-layer-channel-source-to-use-custom-data">Change layer channel source to use custom data</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#layer-channel-options">Layer channel options</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#height-layer-channel-options">Height layer channel options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#normal-layer-channel-options">Normal layer channel options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vector-displacement-layer-channel-options">Vector Displacement layer channel options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#special-alpha-layer-channel-behavior">Special alpha layer channel behavior</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#load-pbr-images">Load PBR images</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#load-pbr-images-from-material">Load PBR images from Material</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mask/">Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mapping/">Mapping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modifier/">Modifier</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_target/">Baking Ucupaint Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd_io/">PSD</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
+    
+    <li>Layer Channel</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="layer-channel">Layer Channel<a class="headerlink" href="#layer-channel" title="Permanent link">¶</a></h1>
+<p>The layer channel is a bridge between layers and channels. You can choose which channel(s) your layer will affect.</p>
+<h2 id="layer-channel-blending">Layer channel blending<a class="headerlink" href="#layer-channel-blending" title="Permanent link">¶</a></h2>
+<p>By default, you’ll get the option to change the blending mode of the channel you select when you create the new layer.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/layer_channel/layer_channel_blending.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Changing blending mode of default enabled channel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="layer-channel-panel">Layer channel panel<a class="headerlink" href="#layer-channel-panel" title="Permanent link">¶</a></h2>
+<p>You can do more than blending for the layer channel, if you click the triangle, you'll see all the channel options. <!-- You can toggle which channel the layer will affect, what data you will use for the channel, and more. --></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/expand_layer_channels.gif"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Layer channel panel has multiple levels of UI dropdown</td>
+</tr>
+</tbody>
+</table>
+<p>Every channel that you can use in a layer has its own blending, sources, and modifier stacks.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/layer_channels_legends.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Layer channels legends</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enabling-layer-channels">Enabling layer channel(s)<a class="headerlink" href="#enabling-layer-channels" title="Permanent link">¶</a></h2>
+<p>To enable the channel in a layer, you can just tick the checkbox toggle beside the channel. You can enable multiple channels at the same time, and the default value that contributes to the channel is the layer color.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/layer_channel/enable_layer_channels.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Enabling multiple layer channels</td>
+</tr>
+</tbody>
+</table>
+<h2 id="change-layer-channel-source">Change layer channel source<a class="headerlink" href="#change-layer-channel-source" title="Permanent link">¶</a></h2>
+<p>By default, the layer color is the data that is used to contribute to the channel, but you can change the source to a different data. <!-- while keeping the painted area intact.--></p>
+<h3 id="change-layer-channel-source-to-use-custom-value">Change layer channel source to use custom value<a class="headerlink" href="#change-layer-channel-source-to-use-custom-value" title="Permanent link">¶</a></h3>
+<p>For multiple channels in a single layer, one of the most useful sources is a custom value, it will change the painted area to use only a single value, useful to set the metallic and roughness of the painted area independently.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/layer_channel/layer_channel_sources.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Change layer channel source to custom value</td>
+</tr>
+</tbody>
+</table>
+<h3 id="change-layer-channel-source-to-use-custom-data">Change layer channel source to use custom data<a class="headerlink" href="#change-layer-channel-source-to-use-custom-data" title="Permanent link">¶</a></h3>
+<p>Other than a custom value, you can also use custom data for the channel source.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/layer_channel_custom_data_options.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Custom data that you can choose</td>
+</tr>
+</tbody>
+</table>
+<p>Custom data can be an image, color attribute, or textures.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/layer_channel/layer_channel_custom_texture.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Changing layer channel source to use noise</td>
+</tr>
+</tbody>
+</table>
+<h2 id="layer-channel-options">Layer channel options<a class="headerlink" href="#layer-channel-options" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/layer_channel_panel.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Options for color layer channel</td>
+</tr>
+</tbody>
+</table>
+<p>Channel panel in a layer has various options depending on the channel type. All channel types have at least these options:</p>
+<ul>
+<li><strong>Opacity</strong>: Opacity of the layer channel. The value will be multiplied by the layer's opacity.</li>
+<li><strong>Blend</strong>: Blend type of the layer channel</li>
+<li><strong>Use Clamp</strong>: Clamp the value of the layer channel to 0.0 minimum and 1.0 maximum value</li>
+<li><strong>Source</strong>: Source for the layer channel, by default, it uses the layer's color value.</li>
+</ul>
+<h3 id="height-layer-channel-options">Height layer channel options<a class="headerlink" href="#height-layer-channel-options" title="Permanent link">¶</a></h3>
+<p>Height layer channel has extra options. Those are:</p>
+<ul>
+<li><strong>Scale</strong>: Height scale in object space.</li>
+<li><strong>Midlevel</strong>: The baseline value to define the zero height. By default, it uses 0.5 (gray) value, which means white color will become bumps, and black color will become creases.</li>
+<li><strong>Use As Normal Only</strong>: Enabling this will convert the height channel to a normal channel, which means the height bump value will be blended through the normal channel</li>
+</ul>
+<h3 id="normal-layer-channel-options">Normal layer channel options<a class="headerlink" href="#normal-layer-channel-options" title="Permanent link">¶</a></h3>
+<p>Normal layer channel has extra options. Those are:</p>
+<ul>
+<li><strong>Strength</strong>: Strength of the normal.</li>
+<li><strong>Space</strong>: Normal space that will be used.</li>
+</ul>
+<h3 id="vector-displacement-layer-channel-options">Vector Displacement layer channel options<a class="headerlink" href="#vector-displacement-layer-channel-options" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>Strength</strong>: Strength of the vector displacement.</li>
+<li><strong>Flip Y/Z</strong>: Some VDM maps can have different which axis pointing upward, so flip Y/Z can be useful to switch the axis.</li>
+</ul>
+<h3 id="special-alpha-layer-channel-behavior">Special alpha layer channel behavior<a class="headerlink" href="#special-alpha-layer-channel-behavior" title="Permanent link">¶</a></h3>
+<p>Alpha channel is a special channel that is paired with the color channel. If the color channel is enabled in a layer, the alpha channel will also be enabled and the individual options of opacity and blending will disappear and will follow the color channel instead</p>
+<h2 id="load-pbr-images">Load PBR images<a class="headerlink" href="#load-pbr-images" title="Permanent link">¶</a></h2>
+<p>Using custom data, especially images, can be useful to assign each channel to the respective image from PBR image texture packs. There are a lot of sites that you can use to download PBR texture images, like <a href="https://ambientcg.com/">ambientCG</a> or <a href="https://polyhaven.com/">Poly Haven</a>.</p>
+<p>You can either use <code>Open Image</code> to load an image as a layer channel custom data one by one, or you can automatically assign images to the respective channel by choosing <code>Open Images as Single Layer</code> when creating a new layer.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/open_images_as_single_layer_menu.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Open Images as Single Layer</code> menu when creating a new layer</td>
+</tr>
+</tbody>
+</table>
+<p><code>Open images as single layer</code> automatically detects suffixes in the image filename to determine which image corresponds to which channel. Ucupaint assigns channels based on whether the channel name (or any of its synonyms) appears at the end of the image filename.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Channel Name</th>
+<th style="text-align: center;">Synonyms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Color</td>
+<td style="text-align: center;">Albedo, Diffuse, Base Color</td>
+</tr>
+<tr>
+<td style="text-align: center;">Alpha</td>
+<td style="text-align: center;">Opacity</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ambient Occlusion</td>
+<td style="text-align: center;">AO</td>
+</tr>
+<tr>
+<td style="text-align: center;">Metallic</td>
+<td style="text-align: center;">Metalness</td>
+</tr>
+<tr>
+<td style="text-align: center;">Roughness</td>
+<td style="text-align: center;">Glossiness, Smoothness</td>
+</tr>
+<tr>
+<td style="text-align: center;">Height</td>
+<td style="text-align: center;">Displacement, Bump</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/layer_channel/open_pbr_images.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Load PBR images using <code>Open Images as Single Layer</code></td>
+</tr>
+</tbody>
+</table>
+<p>There’s a chance you may load both a normal map and a height map. Because using both sometimes can produce an exaggerated, doubled normal effect in many PBR image sets, Ucupaint includes a <code>Height/Normal Map Priority</code> option to control which one should be used. By default, Ucupaint prioritizes the height map.</p>
+<h3 id="load-pbr-images-from-material">Load PBR images from Material<a class="headerlink" href="#load-pbr-images-from-material" title="Permanent link">¶</a></h3>
+<p>Other than loading the images directly, you can also load PBR images used in a material. There are two ways to do it, you can use <code>Open Images from Material</code> in the new layer menu or by right-clicking a material asset in the asset browser</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/open_material_images_menu.png"></th>
+<th style="text-align: center;"><img alt="type:image" src="../media/layer_channel/asset_library_open_material_images.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Open Images from Material</code> on new layer menu</td>
+<td style="text-align: center;">Right-click on material asset in asset library</td>
+</tr>
+</tbody>
+</table>
+<p>Loading images from a material operator will check the images that are connected to the Principled BSDF and if found, use them for the layer channel source. So make sure your material is using actual images rather than procedural nodes.</p></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mask/" class="btn btn-neutral float-right" title="Mask">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../layer/" class="btn btn-neutral" title="Layer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../layer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mask/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Modifier - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Modifier";
+    var mkdocs_page_input_path = "modifier.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../channel/">Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer_channel/">Layer Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mask/">Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mapping/">Mapping</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Modifier</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#modifier-types">Modifier types</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modifier-orders">Modifier orders</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adjustment-layer">Adjustment Layer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#transition-modifiers">Transition Modifiers</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#transition-bump">Transition Bump</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transition-ramp">Transition Ramp</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transition-ao">Transition AO</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_target/">Baking Ucupaint Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd_io/">PSD</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
+    
+    <li>Modifier</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="modifier">Modifier<a class="headerlink" href="#modifier" title="Permanent link">¶</a></h1>
+<p>Modifiers are useful to add non-destructive effects. You can apply modifiers to a layer, a mask, or the layer channel.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Pic: Modifier menu location, legend channel modifier, layer modifer, layer channel modifier, mask modifier" src="../media/modifier/add_modifier_buttons.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Various <code>Add Modifier</code> menu locations</td>
+</tr>
+</tbody>
+</table>
+<p>Keep in mind that not all modifier types are available for every item type. For example, there are only three modifiers available for masks (Invert, Ramp, and Curve).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/modifier/add_remove_modifier_on_various_data.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Adding modifier to a layer, a layer channel, and a mask</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modifier-types">Modifier types<a class="headerlink" href="#modifier-types" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>Invert</strong>: will invert selected RGB and alpha values</li>
+<li><strong>RGB to Alpha</strong>: will convert the RGB of your layer to intensity/alpha and replace the layer's RGB values with a single color.</li>
+<li><strong>Alpha to RGB</strong>: will convert the alpha of your layer to RGB and replace the layer's alpha value itself with a solid value</li>
+<li><strong>Color Ramp</strong>: will map the layer RGB values to a color ramp</li>
+<li><strong>RGB Curve</strong>: will tweak the RGB values using a curve</li>
+<li><strong>Hue Saturation</strong>: will tweak the RGB values using hue and saturation parameters</li>
+<li><strong>Brightness Contrast</strong>: will tweak the RGB values using brightness and contrast parameters</li>
+<li><strong>Math</strong>: will tweak the RGB and alpha values using math operations</li>
+</ul>
+<h2 id="modifier-orders">Modifier orders<a class="headerlink" href="#modifier-orders" title="Permanent link">¶</a></h2>
+<p>Be aware if you have more than one modifier, modifier order will affect the result. The order is from bottom to top, so the top modifier will be executed last. You can edit modifier order using this menu.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: Modifier menu" src="../media/modifier/modifier_menu.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Menu for reordering modifier</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adjustment-layer">Adjustment Layer<a class="headerlink" href="#adjustment-layer" title="Permanent link">¶</a></h2>
+<p>If you create a new layer, there's an option to create an adjustment layer. An adjustment layer actually uses a layer type called <code>Previous Layers</code> with a modifier applied. The modifier applied to the <code>Previous Layers</code> layer will be applied to the all previous layers of the current layer and it will be applied to all channels selected on the layer.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/modifier/adjustment_layer_demo.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Adjustment Layer Demo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="transition-modifiers">Transition Modifiers<a class="headerlink" href="#transition-modifiers" title="Permanent link">¶</a></h2>
+<p>Transition modifiers are special modifiers that are applied to the layer alpha (including masks) gradient value. It applied on the layer channel but will also affect other channels.</p>
+<h3 id="transition-bump">Transition Bump<a class="headerlink" href="#transition-bump" title="Permanent link">¶</a></h3>
+<p>Transition bump can be only added to a Height layer channel, it's to sharpen the alpha transition, very useful to create bump lines.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/modifier/transition_bump_demo.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Transition Bump Demo</td>
+</tr>
+</tbody>
+</table>
+<p>Options for transition bump are:</p>
+<ul>
+<li><strong>Max Height</strong>: Height of the transition bump. The layer height's midlevel will be at the level of the transition bump max height.</li>
+<li><strong>Edge 1</strong>: The sharpness of the outer edge of the alpha gradient</li>
+<li><strong>Edge 2</strong>: The sharpness of the inner edge of the alpha gradient</li>
+<li><strong>Affected Masks</strong>: Number of masks that the transition bump will be applied to</li>
+<li><strong>Flip</strong>: Flip the transition bump height, this will produce a different effect than just using a negative value of the max height</li>
+<li><strong>Crease</strong>: Add crease at the outside of the transition bump effect (Can only be used if <code>Flip</code> is disabled)</li>
+<li><strong>Falloff</strong>: Add falloff to the alpha gradient falloff.</li>
+</ul>
+<p>On other channels than height, a <code>Transition Factor</code> will appear to control the sharpness of the alpha transition of that specific channel.</p>
+<h3 id="transition-ramp">Transition Ramp<a class="headerlink" href="#transition-ramp" title="Permanent link">¶</a></h3>
+<p>Transition ramp is for adding a ramp modifier along the alpha gradient value. The transition ramp effect will be sharper if there is also a transition bump enabled in the height channel.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/modifier/transition_ramp_demo.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Transition Ramp Demo</td>
+</tr>
+</tbody>
+</table>
+<p>Options for the transition ramp are:</p>
+<ul>
+<li><strong>Opacity</strong>: Opacity of the transition ramp</li>
+<li><strong>Blend</strong>: Blend type of the transition ramp</li>
+</ul>
+<p>There's an extra option in the gear button called <code>Unlink Ramp with Channel Intensity</code>, it's for unpairing the channel opacity value with the transition ramp colors, so the layer channel can be transparent, but the transition ramp will still be opaque.</p>
+<h3 id="transition-ao">Transition AO<a class="headerlink" href="#transition-ao" title="Permanent link">¶</a></h3>
+<p>Transition AO is for adding a fake ambient occlusion effect in the area outside of the transition bump. You need the transition bump to be enabled on the height first to use Transition AO.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/modifier/transition_ao_demo.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Transition AO Demo</td>
+</tr>
+</tbody>
+</table>
+<p>Options for transition AO are:</p>
+<ul>
+<li><strong>Opacity</strong>: Opacity of the transition AO</li>
+<li><strong>Blend</strong>: Blend type of the transition AO</li>
+<li><strong>Power</strong>: Strength of the AO</li>
+<li><strong>Color</strong>: Color of the AO</li>
+<li><strong>Inside</strong>: Will also add AO inside the inner part of the transition bump</li>
+</ul></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../preview_mode/" class="btn btn-neutral float-right" title="Preview Mode">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../mapping/" class="btn btn-neutral" title="Mapping"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mapping/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../preview_mode/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>PSD - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "PSD";
+    var mkdocs_page_input_path = "psd_io.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../channel/">Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer_channel/">Layer Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mask/">Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mapping/">Mapping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modifier/">Modifier</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_target/">Baking Ucupaint Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">PSD</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#export-layers-to-psd">Export Layers to PSD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#import-layers-from-psd">Import Layers from PSD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Export-Import Layers &raquo;</li>
+        
+      
+    
+    <li>PSD</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="export-and-import-layers-to-psd-file">Export and Import Layers to PSD file<a class="headerlink" href="#export-and-import-layers-to-psd-file" title="Permanent link">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently, the export/import layers feature is available only in Ucupaint Plus, which you can get by becoming at least a silver <a href="https://github.com/sponsors/ucupumar">GitHub sponsor</a></p>
+</div>
+<p>Ucupaint Plus supports exporting and importing layer data to and from PSD files. This feature lets you save your layers in a format compatible with other image editors that use PSD.</p>
+<h2 id="export-layers-to-psd">Export Layers to PSD<a class="headerlink" href="#export-layers-to-psd" title="Permanent link">¶</a></h2>
+<p>To export layers as PSD, press the special menu button beside the layer list (the one with the <code>V</code> icon), and choose <code>Export Layers as PSD</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: export psd button]" src="../media/psd_io/export_psd.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Export layers to PSD button</td>
+</tr>
+</tbody>
+</table>
+<p>Then the export dialog box will appear.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: export psd dialog box]" src="../media/psd_io/export_psd_dialog_box.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Export layers to PSD dialog box</td>
+</tr>
+</tbody>
+</table>
+<p>Ucupaint uses <a href="https://pypi.org/project/psd-tools/">PSD-Tools</a> module to make PSD import and export work, so Ucupaint will download the module the first time you do PSD export/import. The necessary space needed is about 50-80MB, so the download process might take a couple of seconds to minutes, depending on your internet connection.</p>
+<p>There are two options for the export, the first one is <code>Channel</code>, which only layers that use that channel will be exported.  The second option is <code>Convert Solid Colors to pixels</code>, this converts solid color layers to standard pixel layers. This is useful since not all 2D applications can read color fill layers from a PSD file (example: Gimp).</p>
+<p>The comparison below shows the exported layers as shown in Photopea.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: convert solid color disabled]" src="../media/psd_io/convert_solid_color_to_pixels_disabled.png"></th>
+<th style="text-align: center;"><img alt="[pic: convert solid color enabled]" src="../media/psd_io/convert_solid_color_to_pixels_enabled.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Convert Solid Colors to pixels</code> disabled</td>
+<td style="text-align: center;"><code>Convert Solid Colors to pixels</code> enabled</td>
+</tr>
+</tbody>
+</table>
+<h2 id="import-layers-from-psd">Import Layers from PSD<a class="headerlink" href="#import-layers-from-psd" title="Permanent link">¶</a></h2>
+<p>To import layers from a PSD file, you only need to open the image as a layer. And there will be a menu to read the layers if you select a PSD file.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: open image button]" src="../media/psd_io/open_image_as_layer.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Open image as layer</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: read psd layers option]" src="../media/psd_io/read_psd_layers_option.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Read Photoshop layers</code> will show up when you select a PSD file</td>
+</tr>
+</tbody>
+</table>
+<p>The option <code>Convert Flat Layer to Solid Color</code> will detect the standard pixel image, and if the values are the same for all the pixels, it will be converted to a solid color layer.</p>
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">¶</a></h2>
+<ul>
+<li>Only layers with types of <code>Image</code>, <code>Solid Color</code>, or <code>Group</code> are currently supported for export</li>
+<li>PSD can only have one mask per layer, so only one image mask is supported for export</li>
+<li>Adjustment layers are not supported yet</li>
+<li>Modifiers from ucupaint are also not supported yet</li>
+</ul>
+<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">¶</a></h2>
+<p>If the color or the blending looks weird on your 2D app. Check the actual color by enabling the color channel's <code>Preview Mode</code>. And if it still looks too different, you can also try to disable <code>Use Linear Color Blending</code>. By disabling that, the blending colors between layers will be more similar to Photoshop.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="[pic: use linear color blending option]" src="../media/psd_io/use_linear_color_blending_option.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Use Linear Color Blending</code> should be <strong>disabled</strong> to make the blending in ucupaint look the same as in Photoshop</td>
+</tr>
+</tbody>
+</table>
+<h1 id="video-demo">Video Demo<a class="headerlink" href="#video-demo" title="Permanent link">¶</a></h1>
+<p>You can watch the PSD layers export-import demo on <a href="https://www.youtube.com/watch?v=-fMaSrpi-_0">YouTube</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><a href="https://www.youtube.com/watch?v=-fMaSrpi-_0"><img alt="Ucupaint 2.4.7 PSD Export Import" src="https://img.youtube.com/vi/-fMaSrpi-_0/0.jpg"></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Export-Import PSD Layers in Ucupaint Plus 2.4.7</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><a href="https://www.youtube.com/watch?v=Pmn5w83druQ"><img alt="Ucupaint 2.4.8 Group mask support for PSD Export Import" src="https://img.youtube.com/vi/Pmn5w83druQ/0.jpg"></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Group mask support for Export-Import PSD Layers in Ucupaint Plus 2.4.8</em></td>
+</tr>
+</tbody>
+</table></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sample_files/" class="btn btn-neutral float-right" title="File Examples">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../preferences/" class="btn btn-neutral" title="Preferences"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../preferences/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../sample_files/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Baking Ucupaint Node - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Baking Ucupaint Node";
+    var mkdocs_page_input_path = "bake_target.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../channel/">Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer_channel/">Layer Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mask/">Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mapping/">Mapping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modifier/">Modifier</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Baking Ucupaint Node</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#bake-target">Bake Target</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bake-target-settings">Bake target settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-new-bake-target">Create new bake target</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd_io/">PSD</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
+    
+    <li>Baking Ucupaint Node</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="baking-ucupaint-node">Baking Ucupaint Node<a class="headerlink" href="#baking-ucupaint-node" title="Permanent link">¶</a></h1>
+<!-- ## Bake Ucupaint Node -->
+
+<p>Ucupaint node can be baked into images or color attributes, it's very useful if you want to export for another software. To bake ucupaint node, you can click on bake target popover button and click <code>Bake Ucupaint Node</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/bake_target/bake_target_popover.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Bake Ucupaint Node</code> button</td>
+</tr>
+</tbody>
+</table>
+<p>Press <code>Bake Ucupaint Node</code> will show up the bake settings of the node</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/bake_target/bake_ucupaint_node_dialog_box.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Bake Ucupaint Node</code> dialog box</td>
+</tr>
+</tbody>
+</table>
+<p>The dialog box options for <code>Bake Ucupaint Node</code> will be applied to all bake targets that use the node settings. It can be individually set to custom settings if needed in the bake target settings. The settings for baking ucupaint node are:</p>
+<ul>
+<li><strong>Resolution</strong>: Resolution of the baked image.</li>
+<li><strong>Interpolation</strong>: Pixel filtering interpolation of the baked image. The default is linear, but use <code>Closest</code> for pixel art</li>
+<li><strong>Samples</strong>: Sample for the baked image, the default is using one sample, it's generally fine, but try to increase it if the bake result has jagged lines or noises.</li>
+<li><strong>AA Level</strong>: Supersample anti-aliasing level, you can only choose between 1 or 2. One is not using supersample anti-aliasing, and two (2) will quadruple the bake image size, and it will automatically resize back to the selected resolution, this can give good anti-aliasing in some cases, but very heavy on memory as it can cause crash if you run out of memory.</li>
+<li><strong>Margin</strong>: Number of color pixels spread along the edge of UV islands to hide the UV seams, please increase it if the seam of your model looks visible in the far distance.</li>
+<li><strong>Use UDIM Tiles</strong>: Use UDIM for the baked image. This will be enabled automatically if there are UV islands outside the 0.0-1.0 range (can be disabled in addon preferences)</li>
+<li><strong>Use FXAA</strong>: Use FXAA antialiasing method as an alternative to the supersample one, it's very lightweight but can add slight blur in some texture details.</li>
+<li><strong>Use Denoise</strong>: Use Blender denoising on the bake result, it can reduce noise if you use a realtime AO layer/mask</li>
+<li><strong>Use Dithering</strong>: Use Blender dithering on the bake result, it can reduce banding if you use a gradient layer/mask.</li>
+<li><strong>Force Bake All Polygons</strong>: This will bake all polygons even if the polygons don't use the active material. Useful if your material is a secondary material used in a Solidify modifier for example.</li>
+<li><strong>Bake Disabled Layers</strong>: This will make all disabled layers enabled while baking the node.</li>
+<li><strong>Only Necessary Channels</strong>: This will only bake channels that have at least one layer using (Base Layer is not counted, unless it's connected with an external node)</li>
+<li><strong>Bake Device</strong>: Choose between CPU, GPU, or CPU (OSL) for the baking device. The GPU is usually faster, but it can hang the first time you do it for shader compilation. The OSL is useful to bake the most complex layer/shader setup if CPU and GPU fail to bake.</li>
+</ul>
+<p>After baking, the UI will switch to <code>Use Baked</code> UI, this will show you all the baked bake targets.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/bake_target/node_use_baked_legends.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Explanations for <code>Use Baked</code> UI</td>
+</tr>
+</tbody>
+</table>
+<p>You can toggle between <code>Use Baked</code> state of the node and the layered ones. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/bake_target/bake_ucupaint_node.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Baking Ucupaint node demo</td>
+</tr>
+</tbody>
+</table>
+<p>The button labeled <code>Outside</code> beside the <code>Use Baked</code> button is used to move all baked nodes outside the Ucupaint node. This is useful for exporting the models with GLTF or FBX, which need the textures to be directly connected to the Principled BSDF.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/bake_target/use_baked_outside.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>Use Baked Outside</code> will make the baked nodes outside of Ucupaint node</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bake-target">Bake Target<a class="headerlink" href="#bake-target" title="Permanent link">¶</a></h2>
+<p>Bake target is the setting for the image or color attribute that will be used for baking the ucupaint node. A channel needs a bake target to be able to be baked when you bake the ucupaint node. By default, when a channel is created, it always also creates a bake target for it.</p>
+<p>A bake target can be an image or color attribute.</p>
+<h3 id="bake-target-settings">Bake target settings<a class="headerlink" href="#bake-target-settings" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/bake_target/bake_target_settings.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Bake target settings</td>
+</tr>
+</tbody>
+</table>
+<p>The settings for each bake target are:</p>
+<ul>
+<li><strong>Channel</strong>: You can set the <code>R</code>, <code>G</code>, <code>B</code>, and <code>A</code> of the image channel to refer to which channel of Ucupaint.</li>
+<li><strong>32-bit Float</strong>: More precision for the image created, this option is only available for image bake target.</li>
+<li><strong>Bake Settings</strong>: Bake settings like resolution, interpolation, etc. The default will use <code>Use Node Settings</code>, which means it will use the setting that is shown when you do <code>Bake Ucupaint Node</code>.</li>
+</ul>
+<p>If some special channel types are used for the bake target, there are extra bake target options:</p>
+<ul>
+<li><strong>Normalize Height</strong>: Only available for height channel, if enabled, the bake result will fit into 0.0-1.0 range.</li>
+<li><strong>Normal includes Height</strong>: Only available for the normal channel, if enabled, the height bump will be included in the normal map.</li>
+</ul>
+<h3 id="create-new-bake-target">Create new bake target<a class="headerlink" href="#create-new-bake-target" title="Permanent link">¶</a></h3>
+<p>To create a new bake target, press the <code>+</code> button beside the bake target list.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="type:image" src="../media/bake_target/new_bake_target_dialog_box.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">New bake target dialog box</td>
+</tr>
+</tbody>
+</table>
+<p>The options for creating a new bake target are:</p>
+<ul>
+<li><strong>Type</strong>: Choose between image or color attribute bake target</li>
+<li><strong>Channel</strong>: Channel that will be used for the bake target. Use <code>Custom</code> to manually set the individual <code>R</code>, <code>G</code>, <code>B</code>, and <code>A</code> image/attribute channel of the bake target</li>
+<li><strong>Preset</strong>: Only available when the <code>Custom</code> channel is selected, the only options available for preset right now are ORM and DirectX Normal.</li>
+<li><strong>32-bit Float</strong>: More precision for the image created, this option is only available for image bake targets.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/bake_target/bake_color_attribute_target.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Example of creating a color attribute bake target and baking it</td>
+</tr>
+</tbody>
+</table>
+<!--
+
+Channel Baking the layer is important if your model will be used in other software. That's because other software can't read Blender's node shaders.
+Baking channels with Ucupaint is easy, you can go to the Ucupaint special menu. It can be found on the gear icon under the Material Panel. Just click `Bake All Channels` and set the right configuration. The baking process then begins.
+
+|![type:video](./source/10.bake-01.mp4)|
+|:--:|
+|Bake All Channels| {align=center}
+
+<br/>
+
+The baked textures are automatically packed if you save the blend file, but you can also save them to a directory of your choice, as demonstrated in the video below.
+
+|![type:video](./source/10.bake-02.mp4)|
+|:--:|
+|Save All Baked Textures| {align=center}
+
+The Baking process is a non-destructive workflow, you can still go back and edit your texture layer by layer using this toggle button.
+
+|![type:video](./source/10.bake-03.mp4)|
+|:--:|
+|Toggle between using baked textures or not| {align=center}
+
+--></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../transfer_uv/" class="btn btn-neutral" title="Transfer UV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../transfer_uv/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

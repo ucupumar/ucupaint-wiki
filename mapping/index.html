@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Mapping - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Mapping";
+    var mkdocs_page_input_path = "mapping.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../channel/">Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer_channel/">Layer Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mask/">Mask</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Mapping</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#mapping-controls">Mapping controls</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#coordinate-types">Coordinate Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#generated">Generated</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#normal">Normal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#uv">UV</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#object">Object</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#camera">Camera</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#window">Window</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reflection">Reflection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#decal">Decal</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#plane-decal">Plane Decal</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#cylinder">Cylinder</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#sphere">Sphere</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modifier/">Modifier</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_target/">Baking Ucupaint Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd_io/">PSD</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
+    
+    <li>Mapping</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="mapping">Mapping<a class="headerlink" href="#mapping" title="Permanent link">¶</a></h1>
+<p>Mapping defines how a layer/mask is projected onto the mesh. Ucupaint provides several mapping methods, each using a different coordinate system to determine how the layer/mask is applied to the surface. By default, layers and masks use UV mapping.</p>
+<h2 id="mapping-controls">Mapping controls<a class="headerlink" href="#mapping-controls" title="Permanent link">¶</a></h2>
+<p>Most mapping methods provide controls to adjust the mapping position and orientation, including offset, rotation, scale, and transform vector. Decal mapping is the only mapping method that does not provide these transform controls.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Default Menu" src="../media/mapping/DefaultMenu.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Default Menu</td>
+</tr>
+</tbody>
+</table>
+<p>The mapping panel includes the following configurable parameters.</p>
+<ul>
+<li><strong>Coordinate</strong>: Select the mapping method. See mapping methods below. </li>
+<li><strong>UV Map</strong>: Only available for <code>UV Map</code> coordinate. Specifies the UV map of the object that will be used.</li>
+<li><strong>Projection Blend</strong>: Only available for <code>Generated</code> and <code>Object</code> coordinates. It's to blend the textures around the projection corners.</li>
+<li><strong>Transform</strong>: Specifies the transformation space or type.</li>
+<li><strong>Offset</strong>: Shifts the position on the texture across an axis.</li>
+<li><strong>Rotation</strong>: Rotates the texture orientation.</li>
+<li><strong>Scale</strong>: Scales the texture along an axis. </li>
+<li><strong>Blur</strong>: Applies a noise blur filter to the mapping vector. You need to increase the sample value if you want to bake the layer/mask/node.</li>
+</ul>
+<p>Other than decal, the rest of the coordinate types have Transform, Offset, Rotation, and Scale controls.</p>
+<h2 id="coordinate-types">Coordinate Types<a class="headerlink" href="#coordinate-types" title="Permanent link">¶</a></h2>
+<p>To illustrate the mapping coordinate types, the examples use the same image to demonstrate how it is projected onto the mesh.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Texture" src="../media/mapping/Rainbow-gradient-fully-saturated.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Texture used for example</td>
+</tr>
+</tbody>
+</table>
+<h3 id="generated">Generated<a class="headerlink" href="#generated" title="Permanent link">¶</a></h3>
+<p>Generated mapping projects the layer/mask around the mesh from all directions using coordinates generated from its geometry, creating a box-like projection around the object.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_generated.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Generated</td>
+</tr>
+</tbody>
+</table>
+<h3 id="normal">Normal<a class="headerlink" href="#normal" title="Permanent link">¶</a></h3>
+<p>Normal mapping projects the layer/mask onto the mesh using the direction of its surface normals, creating a projection that follows the orientation of the surface.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_normal.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Normal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uv">UV<a class="headerlink" href="#uv" title="Permanent link">¶</a></h3>
+<p>UV mapping projects the layer/mask onto the mesh using its UV coordinates, allowing the layer/mask to follow the existing UV layout of the object.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_uv.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">UV</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object">Object<a class="headerlink" href="#object" title="Permanent link">¶</a></h3>
+<p>Object mapping projects the layer/mask using the mesh's coordinates in Blender's 3D space, creating a three-dimensional projection around the object.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_object.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Object</td>
+</tr>
+</tbody>
+</table>
+<h3 id="camera">Camera<a class="headerlink" href="#camera" title="Permanent link">¶</a></h3>
+<p>Camera mapping projects the layer/mask onto the mesh from the camera's viewpoint, creating a projection that follows the camera's position and orientation.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_camera.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Camera</td>
+</tr>
+</tbody>
+</table>
+<h3 id="window">Window<a class="headerlink" href="#window" title="Permanent link">¶</a></h3>
+<p>Window mapping projects the layer/mask onto the mesh using screen-space coordinates, similar to cutting out a picture in the shape of the mesh from the background.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_window.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Window</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reflection">Reflection<a class="headerlink" href="#reflection" title="Permanent link">¶</a></h3>
+<p>Reflection mapping projects the layer/mask onto the mesh using reflection directions calculated from the camera and the surface normals, similar to reflecting a ray off a reflective surface to determine where the texture is sampled.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_reflection.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Reflection</td>
+</tr>
+</tbody>
+</table>
+<h3 id="decal">Decal<a class="headerlink" href="#decal" title="Permanent link">¶</a></h3>
+<p>Decal mapping projects the layer/mask onto the mesh using a defined projection shape. After selecting decal coordinate mapping, Ucupaint will spawn an empty object that will control the decal. By default, it's parented to the active object.</p>
+<p>The Decal method is an exception and does not provide Transform, Offset, Scale, or Rotate options. Instead, it possesses the following options:</p>
+<ul>
+<li><strong>Decal Object</strong>: Points to the object in the scene to use as decal projection. By default, it points to the spawned empty object, but can be replaced by any other object.</li>
+<li><strong>Mode</strong>: Chooses from decal projection methods (Flat, Cylinder, Sphere)</li>
+<li><strong>Scale</strong>: Only available for Cylinder and Sphere Decal. It provides scaling for the image X and Y across the decal projection, allowing for repetition or cropping of the decal projected part. </li>
+<li><strong>Decal constraint</strong>: Only available for flat decal. Applies constraints to surface modifier, pulling decal to be always on surface of the object.</li>
+<li><strong>Decal Distance</strong>: Controls how far the texture is projected.</li>
+<li><strong>Select Decal Object</strong>: A button that automatically selects the decal object.</li>
+<li><strong>Set Position to cursor</strong>: Sets the 3d space cursor to the decal position. </li>
+</ul>
+<h4 id="plane-decal">Plane Decal<a class="headerlink" href="#plane-decal" title="Permanent link">¶</a></h4>
+<p>Plane decal mapping projects the layer/mask from a flat plane onto the mesh, similar to projecting an image straight onto a surface.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_decal_plane.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Decal plane</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cylinder">Cylinder<a class="headerlink" href="#cylinder" title="Permanent link">¶</a></h4>
+<p>Cylinder decal mapping projects the layer/mask from the inside of a cylinder onto the mesh, like placing the image on the inside of a tube and projecting it onto the object.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_decal_cylinder.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Decal cylinder</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sphere">Sphere<a class="headerlink" href="#sphere" title="Permanent link">¶</a></h4>
+<p>Sphere decal mapping projects the layer/mask from the inside of a sphere onto the mesh, like placing the image on the inside of a ball and projecting it onto the object.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mapping/mapping_decal_sphere.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Decal sphere</td>
+</tr>
+</tbody>
+</table></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../modifier/" class="btn btn-neutral float-right" title="Modifier">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../mask/" class="btn btn-neutral" title="Mask"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mask/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../modifier/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

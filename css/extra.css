@@ -4,3 +4,8 @@
    /* word-break: break-word !important;
    overflow-wrap: anywhere !important; */
  }
+
+ /* Targets all table headers and data cells in MkDocs */
+th, td {
+    vertical-align: middle;
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Mask - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Mask";
+    var mkdocs_page_input_path = "mask.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../channel/">Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer_channel/">Layer Channel</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Mask</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#add-new-mask">Add New Mask</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#new-image-mask-options">New Image Mask Options</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#painting-an-image-mask">Painting an Image Mask</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ui-related-to-mask">UI related to Mask</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mask-menu">Mask Menu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#baking-a-mask-as-an-image">Baking a mask as an image</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mask-blending">Mask Blending</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mask-orders">Mask Orders</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mask-types">Mask Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#color-id">Color ID</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#object-index">Object Index</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#backface">Backface</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mapping/">Mapping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modifier/">Modifier</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_target/">Baking Ucupaint Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd_io/">PSD</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
+    
+    <li>Mask</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="mask">Mask<a class="headerlink" href="#mask" title="Permanent link">¶</a></h1>
+<p>Masks can be useful to hide or show certain parts of a layer. It uses the value 1.0 (white) as visible and 0.0 (black) as transparent. You can access layer masks below the layer channels.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: layer mask ui with no mask" src="../media/mask/layer_mask_empty.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Layer masks panel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-new-mask">Add New Mask<a class="headerlink" href="#add-new-mask" title="Permanent link">¶</a></h2>
+<p>To add a new mask, just press the '+' button and you'll be given an options menu with many mask types.  More details about layer mask types can be accessed <a href="#mask-types">here</a>. You can add as many masks as you like in a single layer, and they don't have to be using the same mask types.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: new layer mask options" src="../media/mask/new_layer_mask_menu.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">New layer mask menu</td>
+</tr>
+</tbody>
+</table>
+<h3 id="new-image-mask-options">New Image Mask Options<a class="headerlink" href="#new-image-mask-options" title="Permanent link">¶</a></h3>
+<p>If you choose <code>Image &gt; New Image</code>, a dialog box will appear.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: New Mask Image" src="../media/mask/new_image_mask_dialog_box.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">New image mask dialog box</td>
+</tr>
+</tbody>
+</table>
+<p>Most of the options are similar to <a href="../layer/#new-image-layer-options">new image layers options</a>, with some exceptions:</p>
+<ul>
+<li><strong>Color</strong>: Color of the mask, white for full opacity and black for full transparency.</li>
+<li><strong>Blend</strong>: Blending of the mask, the default is <code>Multiply</code>, which means the mask will be multiplied to the layer alpha value.</li>
+</ul>
+<h2 id="painting-an-image-mask">Painting an Image Mask<a class="headerlink" href="#painting-an-image-mask" title="Permanent link">¶</a></h2>
+<p>Painting an image mask is as simple as painting black to hide and painting white to reveal the layer. This is a very useful way to non-destructively manipulate your layer.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mask/add_and_paint_masks.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Adding and painting image masks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ui-related-to-mask">UI related to Mask<a class="headerlink" href="#ui-related-to-mask" title="Permanent link">¶</a></h2>
+<p>If a layer has one or two masks, more icons will be visible in the layer list, and there will be an icon to enable/disable all masks assigned to the layer.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic" src="../media/mask/mask_legends_main.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Explanation of mask-related UI</td>
+</tr>
+</tbody>
+</table>
+<p>Every mask their own of blending, opacity, and visibility toggle.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mask/mask_toggle_opacity.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Mask visibility and opacity demo</td>
+</tr>
+</tbody>
+</table>
+<p>The icon button between the mask opacity and mask menu is used to set the active data that will be used for painting (if the mask is an image) or editing (if the mask is a color attribute or color ID). It can also be used for previewing the data (more info in the <a href="../preview_mode">Preview Mode</a> page)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mask/select_active_mask_with_preview.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Switching active data between masks and layer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mask-menu">Mask Menu<a class="headerlink" href="#mask-menu" title="Permanent link">¶</a></h2>
+<p>Mask menu contain various operators, like for reordering the masks, merging, removing, baking, and adding modifier specific the the mask.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Pic: Layer mask menu" src="../media/mask/mask_menu.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Menu for reordering masks and other things</td>
+</tr>
+</tbody>
+</table>
+<h2 id="baking-a-mask-as-an-image">Baking a mask as an image<a class="headerlink" href="#baking-a-mask-as-an-image" title="Permanent link">¶</a></h2>
+<!-- Baking a mask as an image has many useful purposes. It can improve performance for procedural textures like noise, voronoi, etc. There's also option to add blur to the baked image. -->
+<p>Baking a mask as an image is available in the mask menu. It will bake all kinds of masks with its mapping to an image. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Pic" src="../media/mask/bake_mask_as_image_dialog_box.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Bake mask as image has some special options</td>
+</tr>
+</tbody>
+</table>
+<p>Bake mask as an image has similar options to <a href="../bake_as_entity">baking data to a layer/mask</a>. But it has extra options:</p>
+<ul>
+<li><strong>Use Blur</strong>: Add blur to the baked image. It uses compositing nodes, so the blur result is much cleaner than using blur in the mapping options.</li>
+<li><strong>Duplicate Mask</strong>: The bake result will become a new separate mask.</li>
+<li><strong>Disable Current Mask</strong>: Only shows if <code>Duplicate Mask</code> is enabled. This will make the original mask disabled after baking.</li>
+</ul>
+<p>After you bake a mask as an image (unless you choose to duplicate the mask), you can switch back to the original unbaked data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Pic" src="../media/mask/baked_mask_buttons.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Baked data information and some buttons will appear after baking</td>
+</tr>
+</tbody>
+</table>
+<p>The screenshot above is an example of noise mask baked as an image. Notice that all the noise parameters and mappings are greyed out if you use the baked image. There's also a button to rebake and remove the baked image data.</p>
+<h2 id="mask-blending">Mask Blending<a class="headerlink" href="#mask-blending" title="Permanent link">¶</a></h2>
+<p>Other than setting the opacity and blend types, there are also options for the mask to only affect specific channels.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="Pic" src="../media/mask/mask_blending_panel.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Mask blending panel</td>
+</tr>
+</tbody>
+</table>
+<p>If you notice in the screenshot above, there are some channels that have darker texts, that means those channels aren't enabled in the layer.</p>
+<p>There are many benefits of baking a mask to an image. Some of them are:</p>
+<ul>
+<li>Improve performance for Blender's generated textures (Noise, Voronoi, etc.) since images have much faster performance than procedural textures</li>
+<li>Adding blur to a Color ID mask will make it possible to be usable for the height channel.</li>
+</ul>
+<!-- Like with layers, you can edit the source, vector and blending. You can also mask only a specific channel. -->
+
+<h2 id="mask-orders">Mask Orders<a class="headerlink" href="#mask-orders" title="Permanent link">¶</a></h2>
+<p>Be aware that mask order in the mask panel is different than the layer list order. In the layer list, the blending is calculated from bottom to top, but in the mask panel, mask blending is calculated from top to bottom. The reason for this is that layer data is placed above the mask panel, and the first mask will be blended to the layer's alpha value, so the order makes more sense for it to be from top to bottom.</p>
+<h2 id="mask-types">Mask Types<a class="headerlink" href="#mask-types" title="Permanent link">¶</a></h2>
+<!-- Ucupaint has several mask types that can be used, most of the types are the same as layer types, except for: -->
+<p>Ucupaint’s mask types are mostly the same as its <a href="../layer/#layer-types">layer types</a>, with a few exceptions.</p>
+<h3 id="color-id">Color ID<a class="headerlink" href="#color-id" title="Permanent link">¶</a></h3>
+<p>Color ID will use a unique random color ID that will work as a mask. It uses a color attribute named <code>__yp_color_id</code> to store its color ID, when the color IDs match, it will be valued 1.0, otherwise it will be valued at 0.0. Like the color attribute, Ucupaint has a special editor to easily edit color IDs in edit mode.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mask/color_id_mask.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Color ID mask Demo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-index">Object Index<a class="headerlink" href="#object-index" title="Permanent link">¶</a></h3>
+<p>Object Index will mask objects with the same index. It's useful if one material is used with many objects. Make sure to expand the <code>Object &amp; Material</code> panel to check the index of the selected object.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/mask/object_index_mask.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Object Index Masks Demo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="backface">Backface<a class="headerlink" href="#backface" title="Permanent link">¶</a></h3>
+<p>Backface will mask out the backface of the surface. <em>WARNING: This mask type can't be baked</em>.</p></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mapping/" class="btn btn-neutral float-right" title="Mapping">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../layer_channel/" class="btn btn-neutral" title="Layer Channel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../layer_channel/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mapping/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

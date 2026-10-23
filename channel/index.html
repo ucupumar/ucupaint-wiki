@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Channel - Ucupaint</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Channel";
+    var mkdocs_page_input_path = "channel.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Ucupaint</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_setup/">Quick Setup</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Channel</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#accessing-channel-settings">Accessing Channel Settings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#channel-in-ucupaint">Channel in Ucupaint</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#add-new-channel">Add New Channel</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#add-custom-channel">Add custom channel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#main-channel-types">Main Channel Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#channel-settings">Channel Settings</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#special-channel-types">Special Channel Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#alpha-channel">Alpha channel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#normal-channel">Normal channel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#height-channel">Height channel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vector-displacement-channel">Vector Displacement channel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#displacement-setup">Displacement Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#quick-displacement-setup">Quick Displacement Setup</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#remove-displacement-setup">Remove Displacement Setup</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#displacement-demo">Displacement Demo</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer/">Layer</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../layer_channel/">Layer Channel</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mask/">Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mapping/">Mapping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../modifier/">Modifier</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preview_mode/">Preview Mode</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_as_entity/">Bake as Layer/Mask</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../transfer_uv/">Transfer UV</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bake_target/">Baking Ucupaint Node</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Export-Import Layers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../psd_io/">PSD</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Resources</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample_files/">File Examples</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../video-tutorials/">Video Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../text-tutorials/">Written Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../logo/">Logo and Icon</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tips & Troubleshooting</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Performance Tips</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../pink_material/">Pink Material</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../roadmaps/">Roadmaps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributors/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Ucupaint</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
+    
+    <li>Channel</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <div><h1 id="channels">Channels<a class="headerlink" href="#channels" title="Permanent link">¶</a></h1>
+<h2 id="accessing-channel-settings">Accessing Channel Settings<a class="headerlink" href="#accessing-channel-settings" title="Permanent link">¶</a></h2>
+<p>While a layer can also have channel settings, global channel settings can be accessed in the channel button above the layers list.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="02.channel-settings-popover" src="../media/channel/channel_settings_popover.gif"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Clicking the channels button above the layers list will show the channel settings list</td>
+</tr>
+</tbody>
+</table>
+<p>Blender 2.7x has the channel settings below the layers list, but you can also use this UI in modern Blender versions (2.80+) if you enable <code>Use Non-Popup Channels and Bake Targets UI</code> in the preferences.</p>
+<h2 id="channel-in-ucupaint">Channel in Ucupaint<a class="headerlink" href="#channel-in-ucupaint" title="Permanent link">¶</a></h2>
+<p>A channel in Ucupaint represents a pair consisting of an input and an output within the Ucupaint node. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="02.channel-overview.01" src="../media/channel/channel_socket_pairs.gif"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">The Ucupaint channels input and output (I/O) on the actual node</td>
+</tr>
+</tbody>
+</table>
+<p>Each channel has at least one input and one output, except for the <code>Height</code> channel, by default it doesn't have an output (read <a href="#displacement-setup">Displacement Setup</a> for more info).</p>
+<p>The base color or value of the channel is the default input of the node. They can be accessed through the channels list or on the base layer.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/channel/channel_base_values.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Channel base values correspond to the node’s default input</td>
+</tr>
+</tbody>
+</table>
+<p>All inputs and outputs can be freely connected, allowing the Ucupaint node to work with your custom node setups.
+<br>
+<br>
+In the channels list panel, you can perform basic actions such as adding, moving up/down, or removing channels.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="02.channel-overview.03" src="../media/channel/channel_list_buttons.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Channels list panel</td>
+</tr>
+</tbody>
+</table>
+<!--
+!!! note
+    You may need to learn how to create a layer before continuing on this page. Click [here](../01.02.layer/#creating-new-layer-quick-guide) to jump to the Layer page
+-->
+
+<h2 id="add-new-channel">Add New Channel<a class="headerlink" href="#add-new-channel" title="Permanent link">¶</a></h2>
+<p>To add a new channel, use the <code>+</code> button next to the channel list. There are a few options to choose, which are <code>Custom</code>, <code>Alpha</code>, <code>Ambient Occlusion</code>, <code>Emission</code>, <code>Height</code>, <code>Normal</code>, and <code>Vector Displacement</code>.</p>
+<!-- TEMP OLD TEXT: You can create new channel by using the + button on the right of the channels list, it will gives you channel type options, which are RGB, Value, and Normal.
+For demonstration, let's try to create new channel that connect to emission socket on the principled bsdf.
+Now the popup appears, if you already decided to connect it to principled bsdf, you don't have to manually name the channel, just choose emission on the dropdown, it will automatically set the name of your channel, and if you click ok, it will also connect the sockets. -->
+
+<p>The video below demonstrates how to create an Emission channel in Ucupaint. Notice that after creating a new channel, the Ucupaint node will display new input and output sockets corresponding to that channel.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/channel/add_new_channel.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Adding an emission channel</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-custom-channel">Add custom channel<a class="headerlink" href="#add-custom-channel" title="Permanent link">¶</a></h3>
+<p>If you want to create a custom channel other than the default ones (Alpha, Emission, etc.), you can choose <code>Custom</code>, it will give you more options on what the channel output will be connected to and the data types.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: new custom channel dialog box" src="../media/channel/new_custom_channel_dialog_box.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">New custom channel dialog box</td>
+</tr>
+</tbody>
+</table>
+<p>The options when creating a new custom channel are:</p>
+<ul>
+<li><strong>Name</strong>: Name of the new channel, automatically updated if you change the <code>Connect To</code> value to match the selected socket name.</li>
+<li><strong>Connect To</strong>: Which socket the channel output will connect to. It lists all the unconnected sockets available in the material nodes.</li>
+<li><strong>Type</strong>: Type of the channel, automatically updated if you change the <code>Connect To</code> value to match the selected socket type.</li>
+<li><strong>Color Space</strong>: Colorspace of the channel, use non-color data if the channel is not used for its color appearance.</li>
+<li><strong>Use Clamp</strong>: Limit the channel output to a minimum of 0.0 and a maximum of 1.0.</li>
+<li><strong>Ignore Unconnected Warning</strong>: By default, Ucupaint will give you a warning if the channel doesn't connect to any other socket in the material nodes, this option is to bypass that.</li>
+<li><strong>Set Strength to One</strong>: Only available on some selected sockets that have a parent strength value (example: Emission Color). Since the default strength is usually zero, this option is to set the value to one.</li>
+</ul>
+<h2 id="main-channel-types">Main Channel Types<a class="headerlink" href="#main-channel-types" title="Permanent link">¶</a></h2>
+<p>There are three main channel types in Ucupaint: <code>RGB</code>, <code>Value</code>, and <code>Vector</code>. Color is an example of a <code>RGB</code> channel, Metallic, Roughness, and Height are examples of <code>Value</code> channels, and Normal is a <code>Vector</code> channel.</p>
+<h3 id="channel-settings">Channel Settings<a class="headerlink" href="#channel-settings" title="Permanent link">¶</a></h3>
+<p>The channel settings for the selected channel can be accessed under the channel list.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: RGB channel settings" src="../media/channel/color_channel_settings.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Example of RGB channel settings</td>
+</tr>
+</tbody>
+</table>
+<p>Here are the options available in the channel settings:</p>
+<ul>
+<li><strong>Background/Base Value</strong>: The node input value of the channel, it is also accessible in the <code>Base Layer</code> and beside the channel name in the channel list.</li>
+<li><strong>Use Clamp</strong>: Limit the value output of the channel to the 0.0-1.0 range.</li>
+<li><strong>Space</strong>: Color space of the channel, use <code>Color Data</code> for channels that will be used for color, and <code>Non-Color Data</code> for channels that will be used for non-color purposes.</li>
+<li><strong>Bake Target</strong>: The bake target that will be used as the data when baking the Ucupaint node.</li>
+<li><strong>Special Type</strong>: This option will show up in certain channel, this is to set the channel as a special channel explained in the <a href="#special-channel-types">Special Channel Types</a> section</li>
+</ul>
+<h2 id="special-channel-types">Special Channel Types<a class="headerlink" href="#special-channel-types" title="Permanent link">¶</a></h2>
+<p>There are special channel types in Ucupaint that do more than regular channels. In version 3.0, the special channel types are <code>Alpha</code>, <code>Height</code>, <code>Normal</code> and <code>Vector Displacement</code>.</p>
+<h3 id="alpha-channel">Alpha channel<a class="headerlink" href="#alpha-channel" title="Permanent link">¶</a></h3>
+<p>Alpha channel needs to be paired with a color channel to work effectively.  Alpha channel also uses special blending that make sure the final color is rendered correctly.</p>
+<!--
+|![pic: Alpha channel settings](./media/channel/alpha_channel_settings.png)|
+|:--:|
+|Alpha channel settings | {align=center}
+-->
+
+<p>Specific settings available in the alpha channel are:</p>
+<ul>
+<li><strong>Channel Pair</strong>: Links a color channel with the alpha channel. When the color channel is enabled on a layer, the alpha channel is automatically activated as well.</li>
+<li><strong>Backface Mode</strong>: Option to hide the backface or frontface of the object.</li>
+</ul>
+<h3 id="normal-channel">Normal channel<a class="headerlink" href="#normal-channel" title="Permanent link">¶</a></h3>
+<p>Normal channel is a special channel that outputs world-space normals of the object surfaces.</p>
+<!--
+|![pic: Normal channel settings](./media/channel/normal_channel_settings.png)|
+|:--:|
+|Normal channel settings | {align=center}
+-->
+
+<p>Specific settings that are available in the alpha channel are:</p>
+<ul>
+<li><strong>Main UV</strong>: UV Map that will be used for calculating tangents, which are needed for <code>Overlay</code> blending mode</li>
+</ul>
+<h3 id="height-channel">Height channel<a class="headerlink" href="#height-channel" title="Permanent link">¶</a></h3>
+<!-- Height channel by default will be used as bump if there's a normal channel and the option `Use Height as Bump` is enabled. -->
+<p>Height channel by default will be used as bump if there's a normal channel and the <a href="#displacement-setup">Displacement Setup</a> isn't enabled yet.</p>
+<!--
+|![pic: Height channel settings](./media/channel/height_channel_settings.png)|
+|:--:|
+|Height channel settings | {align=center}
+-->
+
+<p>Specific settings that are available in the height channel are:</p>
+<ul>
+<li><strong>Normalize Input Output</strong>: This will normalize the height channel output to fit in the 0.0-1.0 range. It will also create a midlevel input that can control the midlevel of the height input.</li>
+<li><strong>Displacement Setup</strong>: Displacement setup is just a status label. If you do the <code>Quick Displacement Setup</code>, this will enable the displacement setup, meaning the height output will be accessible and it's automatically connected to the displacement node.</li>
+</ul>
+<!-- The button `Quick Displacement Setup` -->
+
+<h3 id="vector-displacement-channel">Vector Displacement channel<a class="headerlink" href="#vector-displacement-channel" title="Permanent link">¶</a></h3>
+<p>Vector displacement channel is similar to the height channel, but rather than just using up and down height, it can use vectors to displace the object's surface</p>
+<!--
+|![pic: VDisp channel settings](./media/channel/vdisp_channel_settings.png)|
+|:--:|
+|Vector Displacement channel settings | {align=center}
+-->
+
+<p>Specific settings available in the vector displacement channel are:</p>
+<ul>
+<li><strong>Displacement Setup</strong>: Similar to height channel, but whether displacement setup is enabled or not, the output of Vector displacement is always accessible. It just indicates that displacement setup has been done before, more details are in the <a href="#displacement-setup">Displacement Setup</a> section</li>
+</ul>
+<h2 id="displacement-setup">Displacement Setup<a class="headerlink" href="#displacement-setup" title="Permanent link">¶</a></h2>
+<p>By default, <code>Height</code> channel in Ucupaint is for the bump effect on the normal channel, but it can also work with real displacement, you only need to do displacement setup first. For the <code>Vector Displacement</code> channel, it is designed to work with displacement setup enabled, since the channel can work as sculpt layers (<strong>TODO: more info about that is on a different page</strong>)</p>
+<h3 id="quick-displacement-setup">Quick Displacement Setup<a class="headerlink" href="#quick-displacement-setup" title="Permanent link">¶</a></h3>
+<p>The ' Quick Displacement Setup ' button is available on both <code>Height</code> and <code>Vector Displacement</code> channel settings. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: quick displacement setup options" src="../media/channel/channel_quick_displacement_setup_options.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Quick Displacement Setup Options</td>
+</tr>
+</tbody>
+</table>
+<p>Options that are available for <code>Quick Displacement Setup</code>:</p>
+<ul>
+<li><strong>Method</strong>: To set the displacement method of the current active material.</li>
+<li><strong>Max Polygons</strong>: Will set the subdivision surface or multires modifier levels based on <code>Max Polygons</code> number. The input is in thousands, so 1000 means 1 million polygons.</li>
+<li><strong>Adaptive (Cycles Only)</strong>: Will enable adaptive subdivision that only works on the Cycles renderer. This can improve displacement details, but will increase load time when entering render view.</li>
+<li><strong>Dicing Rate</strong>: Will appear if adaptive is enabled. Dicing rate is the number of pixels on screen that will determine mesh subdivision.</li>
+</ul>
+<p>Doing displacement setup will also do these things:</p>
+<ul>
+<li>Add a subdivision surface modifier to all objects that share the material if there's no subdivision surface modifier yet.</li>
+<li>Set the subdivision level to reach the <code>Max Polygons</code> input. Notice that the input is in <strong>thousands</strong>, so 1000 means 1 million polygons.</li>
+<li>If the object already uses a multires modifier, it will set the levels of the multires modifier instead.</li>
+<li>If the model is detected using flat shading, the subdivision modifier will use the <code>Simple</code> type, otherwise it will use <code>Catmull-Clark</code> type subdivision.</li>
+<li>Set the displacement method of the material to the chosen method option, the default is <code>Displacement and Bump</code> so the height or vector displacement channel can actually displace the surface.</li>
+<li>By default, if there's a height and normal channel, the height channel output is not accessible. Doing a displacement setup will make it available.</li>
+<li>Create a displacement node if there's a height channel exists and connect the output of the height channel to the displacement node.</li>
+<li>Create a vector displacement node if there's a vector displacement channel exists and connect the output of the vector displacement channel to the vector displacement node.</li>
+<li>The displacement and vector displacement node will connect to the active material output, and if there are both of them, an <code>Add Vector</code> node will be added.</li>
+<li>All the displacement nodes will only be added if they don't exist yet, so it's safe to do <code>Quick Displacement Setup</code> multiple times to set the target polygons</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="02.channel-overview.02" src="../media/channel/channel_displacement_setup_nodes.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Necessary displacement nodes will be created after doing <code>Quick Displacement Setup</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="remove-displacement-setup">Remove Displacement Setup<a class="headerlink" href="#remove-displacement-setup" title="Permanent link">¶</a></h3>
+<p>To remove the displacement setup, there's a button beside the quick displacement setup that has the <code>X</code> icon.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><img alt="pic: remove displacement setup options" src="../media/channel/channel_remove_displacement_setup_options.png"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Remove Displacement Setup Options</td>
+</tr>
+</tbody>
+</table>
+<p>The action input will give you three options:</p>
+<ul>
+<li><strong>Recover Original State</strong>: This will keep or remove the subdivision modifier based on the first time you did the <code>Quick Displacement Setup</code></li>
+<li><strong>Remove Subdivision Modifier</strong>: Will remove any subdivision modifiers that exist on all objects that shared the active material.</li>
+<li><strong>Keep Subdivision Modifier</strong>: Will keep subdivision modifiers, and there's an option to set subdivision level.</li>
+</ul>
+<p>Other than doing actions to the subdivision modifiers, removing the displacement setup will also do these things:</p>
+<ul>
+<li>Set the displacement method of the material to <code>Bump Only</code> so there will be no displacement on the surface</li>
+<li>If there's a height and normal channel, the height output is no longer accessible</li>
+</ul>
+<h3 id="displacement-demo">Displacement Demo<a class="headerlink" href="#displacement-demo" title="Permanent link">¶</a></h3>
+<p>The video below demonstrates displacement setup in action.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><div class="video-container"><video style="width:100%;max-width:800px;height:auto;display:block;margin:auto" muted controls alt="type:video"><source src="../media/channel/drawing_with_displacement.mp4" type="video/mp4"></source></video></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Drawing with Displacement</td>
+</tr>
+</tbody>
+</table></div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../layer/" class="btn btn-neutral float-right" title="Layer">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../quick_setup/" class="btn btn-neutral" title="Quick Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../quick_setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../layer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
