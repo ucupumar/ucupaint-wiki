@@ -23,9 +23,9 @@
 * [aalmaluar](https://github.com/aalmaluar)
 * [Rifai](https://rifai.id)
 * [agnira](https://github.com/agnira)
+* [trulybeardless](https://github.com/trulybeardless)
 * [swift502](https://github.com/swift502)
 * [clankill3r](https://github.com/clankill3r)
-* [trulybeardless](https://github.com/trulybeardless)
 * [Lattapotta](https://github.com/Lattapotta)
 
 # Sponsors
@@ -40,11 +40,9 @@
 * [JBlitz-dw](https://github.com/JBlitz-dw)
 * [serenitycc](https://github.com/serenitycc)
 * [runahbelle](https://github.com/runahbelle)
-* [esechamfer-afk](https://github.com/esechamfer-afk)
 * [Cicieaaa111](https://github.com/Cicieaaa111)
 * [vincentmccrindle-stack](https://github.com/vincentmccrindle-stack)
 * [Zenny](https://github.com/Zennydeer)
-* [Picklebarrel3D](https://github.com/Picklebarrel3D)
 * [sirdeadduke](https://github.com/sirdeadduke)
 * [Emmanuel Garnier](https://github.com/singaii)
 * [ralfmaeder9001](https://github.com/ralfmaeder9001)
