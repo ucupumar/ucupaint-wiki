@@ -65,8 +65,8 @@ jobs:
             git add data/credits.json
           fi
 
-          if [ -f docs/01.12.contributors.md ]; then
-            git add docs/01.12.contributors.md
+          if [ -f docs/contributors.md ]; then
+            git add docs/contributors.md
           fi
 
           if git diff --cached --quiet; then
